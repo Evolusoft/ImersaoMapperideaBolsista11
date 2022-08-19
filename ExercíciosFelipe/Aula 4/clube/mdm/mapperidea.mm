@@ -56,7 +56,7 @@
 <node CREATED="1660918562639" MODIFIED="1660918562639" TEXT="then">
 <node CREATED="1660918562641" MODIFIED="1660918562641" TEXT="apply-templates">
 <node CREATED="1660918562644" MODIFIED="1660918562644" TEXT="select">
-<node CREATED="1660918562646" LINK="mailto:/classes/class[@name=$className]" MODIFIED="1660918562646" TEXT="/classes/class[@name=$className]"/>
+<node CREATED="1660918562646" MODIFIED="1660918562646" TEXT="/classes/class[@name=$className]"/>
 </node>
 <node CREATED="1660918562649" MODIFIED="1660918562649" TEXT="mode">
 <node CREATED="1660918562651" MODIFIED="1660918562651" TEXT="all"/>
@@ -74,7 +74,7 @@
 <node CREATED="1660918562663" MODIFIED="1660918562663" TEXT="then">
 <node CREATED="1660918562665" MODIFIED="1660918562665" TEXT="apply-templates">
 <node CREATED="1660918562667" MODIFIED="1660918562667" TEXT="select">
-<node CREATED="1660918562669" LINK="mailto:/classes/class[@name=$className" MODIFIED="1660918562669" TEXT="/classes/class[@name=$className and @package = $packageName]"/>
+<node CREATED="1660918562669" MODIFIED="1660918562669" TEXT="/classes/class[@name=$className and @package = $packageName]"/>
 </node>
 <node CREATED="1660918562671" MODIFIED="1660918562671" TEXT="mode">
 <node CREATED="1660918562673" MODIFIED="1660918562673" TEXT="all"/>
@@ -249,7 +249,7 @@
 </node>
 <node CREATED="1660918562861" MODIFIED="1660918562861" TEXT="start">
 <node CREATED="1660918562863" MODIFIED="1660918562863" TEXT="match">
-<node CREATED="1660918562866" LINK="mailto:/classes/class[@name" MODIFIED="1660918562866" TEXT="/classes/class[@name = $entityName]"/>
+<node CREATED="1660918562866" MODIFIED="1660918562866" TEXT="/classes/class[@name = $entityName]"/>
 </node>
 <node CREATED="1660918562868" MODIFIED="1660918562868" TEXT="body">
 <node CREATED="1660918562870" MODIFIED="1660918562870" TEXT="write-pattern">
@@ -272,7 +272,7 @@
 <node CREATED="1660918562889" MODIFIED="1660918562889" TEXT="declaraInicioModel">
 <node CREATED="1660918562891" MODIFIED="1660918562891" TEXT="module.exports = mongoose =&gt; {">
 <node CREATED="1660918562893" MODIFIED="1660918562893" TEXT="const {{ @name }} = mongoose.model(">
-<node CREATED="1660918562895" LINK="mailto:mi:first-lower(@name)" MODIFIED="1660918562895" TEXT="&quot;{{ mi:first-lower(@name) }}&quot;,"/>
+<node CREATED="1660918562895" MODIFIED="1660918562895" TEXT="&quot;{{ mi:first-lower(@name) }}&quot;,"/>
 </node>
 </node>
 </node>
@@ -321,7 +321,7 @@
 </node>
 <node CREATED="1660918562943" MODIFIED="1660918562943" TEXT="template">
 <node CREATED="1660918562945" MODIFIED="1660918562945" TEXT="match">
-<node CREATED="1660918562947" LINK="mailto:attribute[@mode" MODIFIED="1660918562947" TEXT="attribute[@mode = &apos;directToField&apos;]"/>
+<node CREATED="1660918562947" MODIFIED="1660918562947" TEXT="attribute[@mode = &apos;directToField&apos;]"/>
 </node>
 <node CREATED="1660918562949" MODIFIED="1660918562949" TEXT="body">
 <node CREATED="1660918562951" MODIFIED="1660918562951" TEXT="write-pattern">
@@ -331,7 +331,7 @@
 <node CREATED="1660918562957" MODIFIED="1660918562957" TEXT="var">
 <node CREATED="1660918562959" MODIFIED="1660918562959" TEXT="typeMongoose"/>
 <node CREATED="1660918562963" MODIFIED="1660918562963" TEXT="expr">
-<node CREATED="1660918562965" LINK="mailto:current()/@type/value" MODIFIED="1660918562965" TEXT="$toMongooseTypes/*[local-name( . ) = current()/@type/value"/>
+<node CREATED="1660918562965" ID="ID_506529768" MODIFIED="1660930385414" TEXT="$toMongooseTypes/*[local-name(.) = current()/@type/value"/>
 </node>
 </node>
 </node>
@@ -339,7 +339,7 @@
 </node>
 <node CREATED="1660918562968" MODIFIED="1660918562968" TEXT="template">
 <node CREATED="1660918562970" MODIFIED="1660918562970" TEXT="match">
-<node CREATED="1660918562973" LINK="mailto:attribute[@mode" MODIFIED="1660918562973" TEXT="attribute[@mode != &apos;directToField&apos;]"/>
+<node CREATED="1660918562973" MODIFIED="1660918562973" TEXT="attribute[@mode != &apos;directToField&apos;]"/>
 </node>
 <node CREATED="1660918562975" MODIFIED="1660918562975" TEXT="body">
 <node CREATED="1660918562977" MODIFIED="1660918562977" TEXT="write-pattern">
