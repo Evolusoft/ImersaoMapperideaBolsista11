@@ -1073,7 +1073,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661019640224" FOLDED="true" ID="ID_1731007364" MODIFIED="1661863567437" TEXT="bashGenerateALL">
+<node CREATED="1661019640224" ID="ID_1731007364" MODIFIED="1661874590282" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1661020875094" ID="ID_796167260" MODIFIED="1661020881670" TEXT="start">
 <icon BUILTIN="element"/>
@@ -1112,6 +1112,27 @@
 </node>
 </node>
 </node>
+<node CREATED="1661875189355" ID="ID_887603661" MODIFIED="1661875264910" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661875218129" ID="ID_1927421778" MODIFIED="1661875283157" TEXT="inicioGeraApiController ">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661021096438" ID="ID_924538360" MODIFIED="1661021102834" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1661021108269" ID="ID_699811949" MODIFIED="1661021111333" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1661021120864" ID="ID_564949070" MODIFIED="1661122070273" TEXT="class[@mode = &apos;bean&apos;]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661021112594" ID="ID_1499790208" MODIFIED="1661021116071" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1661021129729" ID="ID_959392046" MODIFIED="1661875261549" TEXT="geraApiControllers">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
 </node>
 </node>
 <node CREATED="1661020948719" ID="ID_884357810" MODIFIED="1661020954716" TEXT="patterns">
@@ -1130,13 +1151,25 @@
 </node>
 <node CREATED="1661021042387" ID="ID_1279699052" MODIFIED="1661021050879" TEXT="inicioGeraModels">
 <icon BUILTIN="element"/>
-<node CREATED="1661021051999" ID="ID_74083069" MODIFIED="1661021055728" TEXT="cd models">
+<node CREATED="1661021051999" ID="ID_74083069" MODIFIED="1661874951154" TEXT="echo &quot;gerando modelos&quot;">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
 <node CREATED="1661021258900" ID="ID_76452115" MODIFIED="1661021263723" TEXT="geraModel">
 <icon BUILTIN="element"/>
-<node CREATED="1661021278747" ID="ID_879990055" MODIFIED="1661021465076" TEXT="mapperidea generate $1 mean mongoModel entityName={{ @name }} &gt; {{ mi: first-lower(@name) }}.model.js">
+<node CREATED="1661021278747" ID="ID_879990055" MODIFIED="1661875788789" TEXT="mapperidea generate $1 mean mongoModel entityName={{ @name }} &gt; models/{{ mi: first-lower(@name) }}.model.js">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661874874633" ID="ID_1175635749" MODIFIED="1661875064388" TEXT="inicioGeraApiController">
+<icon BUILTIN="element"/>
+<node CREATED="1661021051999" ID="ID_1190441663" MODIFIED="1661875085214" TEXT="echo &quot;gerando api controllers&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661874602317" ID="ID_85060377" MODIFIED="1661875136260" TEXT="geraApiController">
+<icon BUILTIN="element"/>
+<node CREATED="1661874644252" ID="ID_368788930" MODIFIED="1661875892390" TEXT="mapperidea generate $1 mean apiController entityName={{ @name }}  &gt; app/controllers/{{ mi: first-lower(@name) }}.controller.js">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1152,7 +1185,7 @@
 <icon BUILTIN="element"/>
 <node CREATED="1661021219233" ID="ID_1621197484" MODIFIED="1661021221961" TEXT="match">
 <icon BUILTIN="element"/>
-<node CREATED="1661021224016" ID="ID_1490813561" MODIFIED="1661121567486" TEXT="class[@name ! = &apos; &apos;]">
+<node CREATED="1661021224016" ID="ID_1490813561" MODIFIED="1661876025139" TEXT="class[@name ! = &apos; &apos; ]">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1161,6 +1194,30 @@
 <node CREATED="1661021233289" ID="ID_1573353357" MODIFIED="1661021243951" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1661021245261" ID="ID_1350707908" MODIFIED="1661021250850" TEXT="geraModel">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1661021163604" ID="ID_1682529635" MODIFIED="1661021199492" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1661021210590" ID="ID_446325711" MODIFIED="1661875123919" TEXT="geraApiControllers">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661021216246" ID="ID_1782795573" MODIFIED="1661021218888" TEXT="templates">
+<icon BUILTIN="element"/>
+<node CREATED="1661021219233" ID="ID_1349572672" MODIFIED="1661021221961" TEXT="match">
+<icon BUILTIN="element"/>
+<node CREATED="1661021224016" ID="ID_398842011" MODIFIED="1661876021712" TEXT="class[@name ! = &apos; &apos; ]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661021229413" ID="ID_1427013351" MODIFIED="1661021232667" TEXT="body">
+<icon BUILTIN="element"/>
+<node CREATED="1661021233289" ID="ID_328073965" MODIFIED="1661021243951" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661021245261" ID="ID_325953046" MODIFIED="1661875145180" TEXT="geraApiController ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
