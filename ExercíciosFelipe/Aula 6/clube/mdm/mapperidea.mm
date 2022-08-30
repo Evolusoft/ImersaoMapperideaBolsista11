@@ -399,7 +399,7 @@
 </node>
 <node CREATED="1660522312049" ID="ID_462974591" MODIFIED="1661134813213" TEXT="templates">
 <icon BUILTIN="element"/>
-<node CREATED="1660522317936" FOLDED="true" ID="ID_582394048" MODIFIED="1661362226796" TEXT="mode">
+<node CREATED="1660522317936" FOLDED="true" ID="ID_582394048" MODIFIED="1661863050522" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1660522322430" ID="ID_1484472717" MODIFIED="1660522328044" TEXT="declaraSchema">
 <icon BUILTIN="tag_green"/>
@@ -819,7 +819,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661142306752" ID="ID_1565506364" MODIFIED="1661142325207" TEXT="apiController">
+<node CREATED="1661142306752" ID="ID_1565506364" MODIFIED="1661863595602" TEXT="apiController">
 <icon BUILTIN="element"/>
 <node CREATED="1661142327219" ID="ID_178345866" MODIFIED="1661142332868" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -846,6 +846,21 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+<node CREATED="1661864752120" ID="ID_1017321063" MODIFIED="1661864835067" TEXT="create">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1661864761796" ID="ID_308775606" MODIFIED="1661864805997" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_1395838467" MODIFIED="1661864865138" TEXT="inicioCreate">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661864761796" ID="ID_482316302" MODIFIED="1661864805997" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_338833996" MODIFIED="1661865279105" TEXT="validaEmptyRequest">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
 </node>
 </node>
 <node CREATED="1661142484311" ID="ID_201591251" MODIFIED="1661142490805" TEXT="patterns">
@@ -859,9 +874,42 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+<node CREATED="1661864901971" ID="ID_592073131" MODIFIED="1661864938576" TEXT="create">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1661864909476" ID="ID_1684130416" MODIFIED="1661864996424" TEXT="inicioCreate">
+<icon BUILTIN="element"/>
+<node CREATED="1661865058563" ID="ID_1643967160" MODIFIED="1661865064588" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865013712" ID="ID_1362992258" MODIFIED="1661865138256" TEXT="//Cria e salva um novo documento para nova entidade">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865074537" ID="ID_45613297" MODIFIED="1661865118617" TEXT="exports.create = (req, res) =&gt; {">
+<icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1661019640224" ID="ID_1731007364" MODIFIED="1661360100243" TEXT="bashGenerateALL">
+<node CREATED="1661865294369" ID="ID_1594521419" MODIFIED="1661865312736" TEXT="validaEmptyRequest">
+<icon BUILTIN="element"/>
+<node CREATED="1661865369157" ID="ID_956720342" MODIFIED="1661865516807" TEXT="    // Validate request">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865369160" ID="ID_1456598686" MODIFIED="1661865735833" TEXT="    if (!req.body.{{ attributes/attribute[1]/@name}}) {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865369161" ID="ID_848994543" MODIFIED="1661865549912" TEXT="    res.status(400).send({ message: &quot;Conteudo nao pode ser vazio!&quot; });">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865369161" ID="ID_1863947363" MODIFIED="1661865516808" TEXT="        return;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865456050" ID="ID_1803907330" MODIFIED="1661865516808" TEXT="}">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1661019640224" FOLDED="true" ID="ID_1731007364" MODIFIED="1661863567437" TEXT="bashGenerateALL">
 <icon BUILTIN="element"/>
 <node CREATED="1661020875094" ID="ID_796167260" MODIFIED="1661020881670" TEXT="start">
 <icon BUILTIN="element"/>
