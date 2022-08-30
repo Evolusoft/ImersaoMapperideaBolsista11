@@ -974,6 +974,15 @@
 </node>
 </node>
 </node>
+<node CREATED="1661897679279" ID="ID_388297124" MODIFIED="1661897725211" TEXT="persisteInstancia">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1661897741652" ID="ID_553704377" MODIFIED="1661897779301" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661897748513" ID="ID_1372450218" MODIFIED="1661897782925" TEXT="persisteInstancia">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
 <node CREATED="1661868766170" ID="ID_1941893925" MODIFIED="1661868786950" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1661868771933" ID="ID_664440570" MODIFIED="1661868794773" TEXT="fimCreate">
@@ -1046,6 +1055,42 @@
 <node CREATED="1660523554702" ID="ID_722034693" MODIFIED="1661868082008" TEXT="mapeaCampoTipoComumRequest">
 <icon BUILTIN="element"/>
 <node CREATED="1661866141261" ID="ID_730470392" MODIFIED="1661868562311" TEXT="      {{ @name }}: req.body.{{ @name }} ? req.body.{{ @name }} : {{ $defaultMongoose }} : {{ $fimLinha }}">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661897827718" ID="ID_564447569" MODIFIED="1661898276276" TEXT="persisteInstancia">
+<icon BUILTIN="element"/>
+<node CREATED="1661897897628" ID="ID_418297594" MODIFIED="1661898381360" TEXT="   {{ mi:first-lower (@name) }}">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661897917509" ID="ID_1180179428" MODIFIED="1661898430257" TEXT="      .save({{ mi:first-lower (@name) }})">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661897938875" ID="ID_1423410955" MODIFIED="1661898261534" TEXT="      .then(data =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661897980877" ID="ID_1005028403" MODIFIED="1661898261535" TEXT="         res.send(data);">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661897997449" ID="ID_1008692916" MODIFIED="1661898261535" TEXT="   })">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661898013387" ID="ID_569028319" MODIFIED="1661898261535" TEXT="      .catch(err =&gt; { ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661898027872" ID="ID_1889677076" MODIFIED="1661898261536" TEXT="         res.status(500).send({">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661898113800" ID="ID_1015298888" MODIFIED="1661898261536" TEXT="         message:">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661898119685" ID="ID_413546591" MODIFIED="1661898467607" TEXT="         err.message || &quot;Ocorreu um erro de servidor ao tentar salvar {{ @name }}.&quot; ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661898131787" ID="ID_1843429944" MODIFIED="1661898261536" TEXT="      }); ">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661898139997" ID="ID_1445754748" MODIFIED="1661898261537" TEXT="   }); ">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
