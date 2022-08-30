@@ -2,9 +2,9 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1638533520041" ID="ID_1837978527" LINK="io.mapperidea.earlyadopter.mm" MODIFIED="1660918883733" TEXT="mapperidea">
 <icon BUILTIN="element"/>
-<node CREATED="1660888232871" ID="ID_1049238288" MODIFIED="1660890845320" POSITION="right" TEXT="maps">
+<node CREATED="1660888232871" ID="ID_1049238288" MODIFIED="1661867193369" POSITION="right" TEXT="maps">
 <icon BUILTIN="element"/>
-<node CREATED="1660888247521" FOLDED="true" ID="ID_1362548522" MODIFIED="1661142270911" TEXT="toMongooseTypes">
+<node CREATED="1660888247521" FOLDED="true" ID="ID_1362548522" MODIFIED="1661867187984" TEXT="toMongooseTypes">
 <icon BUILTIN="element"/>
 <node CREATED="1660888276184" ID="ID_1601628024" MODIFIED="1660888292135" TEXT="Texto">
 <icon BUILTIN="element"/>
@@ -37,12 +37,45 @@
 </node>
 </node>
 </node>
+<node CREATED="1660888247521" ID="ID_862633112" MODIFIED="1661867221299" TEXT="toMongooseTypeDefaultValues">
+<icon BUILTIN="element"/>
+<node CREATED="1660888276184" ID="ID_1186886074" MODIFIED="1660888292135" TEXT="Texto">
+<icon BUILTIN="element"/>
+<node CREATED="1660888293117" ID="ID_1500899909" MODIFIED="1661867239264" TEXT="null">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1660888305126" ID="ID_593460349" MODIFIED="1660888309169" TEXT="Numero">
+<icon BUILTIN="element"/>
+<node CREATED="1660888309810" ID="ID_771096978" MODIFIED="1661867260233" TEXT="0">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1660888353432" ID="ID_95082675" MODIFIED="1660888376531" TEXT="NumeroDecimal">
+<icon BUILTIN="element"/>
+<node CREATED="1660888426610" ID="ID_1502594581" MODIFIED="1661867265990" TEXT="0.0">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1660888317647" ID="ID_1760990186" MODIFIED="1660888327586" TEXT="Boolean">
+<icon BUILTIN="element"/>
+<node CREATED="1660888330352" ID="ID_1428712354" MODIFIED="1661867276338" TEXT="false">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1660888335879" ID="ID_1057883965" MODIFIED="1660888345133" TEXT="Data">
+<icon BUILTIN="element"/>
+<node CREATED="1660888346686" ID="ID_88766274" MODIFIED="1661867289263" TEXT="null">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
 </node>
 <node CREATED="1657927182738" ID="ID_540280662" MODIFIED="1660391794802" POSITION="right" TEXT="generators">
 <icon BUILTIN="element"/>
 <node CREATED="1659039237684" ID="ID_952785213" MODIFIED="1661020831626" TEXT="struct">
 <icon BUILTIN="element"/>
-<node CREATED="1660180825331" FOLDED="true" HGAP="23" ID="ID_980495860" MODIFIED="1661360396557" TEXT="class" VSHIFT="2">
+<node CREATED="1660180825331" FOLDED="true" HGAP="23" ID="ID_980495860" MODIFIED="1661867728609" TEXT="class" VSHIFT="2">
 <icon BUILTIN="element"/>
 <node CREATED="1660180833808" MODIFIED="1660393494226" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -174,7 +207,7 @@
 </node>
 <node CREATED="1659041592518" ID="ID_49423467" MODIFIED="1661020830892" TEXT="pgsql">
 <icon BUILTIN="element"/>
-<node CREATED="1659041608549" FOLDED="true" ID="ID_1741740675" MODIFIED="1661360377724" TEXT="createTable">
+<node CREATED="1659041608549" FOLDED="true" ID="ID_1741740675" MODIFIED="1661867720505" TEXT="createTable">
 <icon BUILTIN="element"/>
 <node CREATED="1659041642067" MODIFIED="1660391794802" TEXT="start">
 <icon BUILTIN="element"/>
@@ -399,7 +432,7 @@
 </node>
 <node CREATED="1660522312049" ID="ID_462974591" MODIFIED="1661134813213" TEXT="templates">
 <icon BUILTIN="element"/>
-<node CREATED="1660522317936" FOLDED="true" ID="ID_582394048" MODIFIED="1661863050522" TEXT="mode">
+<node CREATED="1660522317936" FOLDED="true" ID="ID_582394048" MODIFIED="1661867763201" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1660522322430" ID="ID_1484472717" MODIFIED="1660522328044" TEXT="declaraSchema">
 <icon BUILTIN="tag_green"/>
@@ -589,7 +622,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661134740491" FOLDED="true" ID="ID_1603003759" MODIFIED="1661362286917" TEXT="mode">
+<node CREATED="1661134740491" ID="ID_1603003759" MODIFIED="1661867760544" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1661134817023" ID="ID_688993907" MODIFIED="1661134842322" TEXT="declaraSchemaAttribute">
 <icon BUILTIN="tag_green"/>
@@ -830,6 +863,18 @@
 </node>
 </node>
 </node>
+<node CREATED="1660888817123" ID="ID_1239896408" MODIFIED="1660888822851" TEXT="vars">
+<icon BUILTIN="element"/>
+<node CREATED="1660888824893" ID="ID_1432100235" MODIFIED="1661867437429" TEXT="toMongooseTypeDefaultValues">
+<icon BUILTIN="element"/>
+<node CREATED="1660888836939" ID="ID_1144222585" MODIFIED="1660888841200" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1660888843240" ID="ID_229918723" MODIFIED="1661867448952" TEXT="//maps/toMongooseTypeDefaultValues">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
 <node CREATED="1661142381931" ID="ID_605046369" MODIFIED="1661142385108" TEXT="start">
 <icon BUILTIN="element"/>
 <node CREATED="1660283104485" ID="ID_28531036" MODIFIED="1660283108522" TEXT="match">
@@ -857,6 +902,42 @@
 <node CREATED="1661864761796" ID="ID_482316302" MODIFIED="1661864805997" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1661864766815" ID="ID_338833996" MODIFIED="1661865279105" TEXT="validaEmptyRequest">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661866461821" ID="ID_1283878900" MODIFIED="1661866478684" TEXT="criaInstancia">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1661864761796" ID="ID_82401477" MODIFIED="1661864805997" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_1702819155" MODIFIED="1661866430835" TEXT="criaInstanciaEntidadeInicio">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661866501796" ID="ID_1205407823" MODIFIED="1661866549420" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1661866632250" ID="ID_387375782" MODIFIED="1661866661280" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1661866634475" ID="ID_23194564" MODIFIED="1661866664900" TEXT="attributes/attribute">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661866733459" ID="ID_253470665" MODIFIED="1661866738345" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1661866755068" ID="ID_1431871678" MODIFIED="1661866804581" TEXT="mapaRequestAttributoEntidade">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1661864761796" ID="ID_407839613" MODIFIED="1661866546286" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_583329539" MODIFIED="1661866444801" TEXT="criaInstanciaEntidadeFim">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1661868766170" ID="ID_1941893925" MODIFIED="1661868786950" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661868771933" ID="ID_664440570" MODIFIED="1661868794773" TEXT="fimCreate">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -888,15 +969,21 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+<node CREATED="1661868677049" ID="ID_92149989" MODIFIED="1661868714328" TEXT="fimCreate">
+<icon BUILTIN="element"/>
+<node CREATED="1661868691578" ID="ID_1459556112" MODIFIED="1661868708583" TEXT="};">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
 <node CREATED="1661865294369" ID="ID_1594521419" MODIFIED="1661865312736" TEXT="validaEmptyRequest">
 <icon BUILTIN="element"/>
 <node CREATED="1661865369157" ID="ID_956720342" MODIFIED="1661865516807" TEXT="    // Validate request">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1661865369160" ID="ID_1456598686" MODIFIED="1661865735833" TEXT="    if (!req.body.{{ attributes/attribute[1]/@name}}) {">
+<node CREATED="1661865369160" ID="ID_1456598686" MODIFIED="1661865747964" TEXT="    if (!req.body.{{ attributes/attribute[1]/@name }}) {">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1661865369161" ID="ID_848994543" MODIFIED="1661865549912" TEXT="    res.status(400).send({ message: &quot;Conteudo nao pode ser vazio!&quot; });">
+<node CREATED="1661865369161" ID="ID_848994543" MODIFIED="1661865973592" TEXT="        res.status(400).send({ message: &quot;Conteudo nao pode ser vazio!&quot; });">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1661865369161" ID="ID_1863947363" MODIFIED="1661865516808" TEXT="        return;">
@@ -904,6 +991,83 @@
 </node>
 <node CREATED="1661865456050" ID="ID_1803907330" MODIFIED="1661865516808" TEXT="}">
 <icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661866105603" ID="ID_601428313" MODIFIED="1661866355793" TEXT="criaInstanciaEntidadeInicio">
+<icon BUILTIN="element"/>
+<node CREATED="1661866141258" ID="ID_479537954" MODIFIED="1661866598257" TEXT="   // Create a {{ @name }}">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661866141259" ID="ID_170133018" MODIFIED="1661869748121" TEXT="   const {{ mi:first-lower (@name) }} = new {{ @name }} ({">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661866141259" ID="ID_936741371" MODIFIED="1661866141259" TEXT="title: req.body.title,"/>
+<node CREATED="1661866141260" ID="ID_1408827853" MODIFIED="1661866141260" TEXT="description: req.body.description,"/>
+</node>
+<node CREATED="1660523554702" ID="ID_722034693" MODIFIED="1661868082008" TEXT="mapeaCampoTipoComumRequest">
+<icon BUILTIN="element"/>
+<node CREATED="1661866141261" ID="ID_730470392" MODIFIED="1661868562311" TEXT="      {{ @name }}: req.body.{{ @name }} ? req.body.{{ @name }} : {{ $defaultMongoose }} : {{ $fimLinha }}">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661866364799" ID="ID_1413814502" MODIFIED="1661866377556" TEXT="criaInstanciaEntidadeFim">
+<icon BUILTIN="element"/>
+<node CREATED="1661866141261" ID="ID_972001466" MODIFIED="1661866608432" TEXT="   });">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1661866887512" ID="ID_1134600720" MODIFIED="1661866931565" TEXT="templates">
+<icon BUILTIN="element"/>
+<node CREATED="1661866909030" ID="ID_1386571956" MODIFIED="1661866931564" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1661866912602" ID="ID_1990557801" MODIFIED="1661866939749" TEXT="mapaRequestAttributoEntidade">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661866953781" ID="ID_1830188464" MODIFIED="1661866964620" TEXT="template">
+<icon BUILTIN="element"/>
+<node CREATED="1660523529839" ID="ID_22299369" MODIFIED="1661123978962" TEXT="match">
+<icon BUILTIN="element"/>
+<node CREATED="1660523535203" ID="ID_1413630546" MODIFIED="1660892036767" TEXT="attribute [@mode = &apos;directToField&apos;]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1660523543194" ID="ID_1455314011" MODIFIED="1660619583843" TEXT="body">
+<icon BUILTIN="element"/>
+<node CREATED="1660889181577" ID="ID_896153607" MODIFIED="1660889191475" TEXT="vars">
+<icon BUILTIN="element"/>
+<node CREATED="1660889185083" ID="ID_523871704" MODIFIED="1661135926494" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1660889193982" ID="ID_713852798" MODIFIED="1661867799603" TEXT="defaultMongoose">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1660889202032" ID="ID_970134257" MODIFIED="1660891925719" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1660889206331" ID="ID_1344267953" MODIFIED="1661867820978" TEXT="$toMongooseTypeDefaultValues/*[local-name(.) = current()/@type]/value">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1661868399134" ID="ID_1819831228" MODIFIED="1661868453519" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1661868407241" ID="ID_1330835098" MODIFIED="1661868460856" TEXT="fimLinha">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661868417310" ID="ID_700598558" MODIFIED="1661868453519" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1661868422949" ID="ID_1057155317" MODIFIED="1661868460855" TEXT="mi:if-else(position() = last(), &apos;&apos;, &apos;,&apos;)">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1660523546607" ID="ID_1242975843" MODIFIED="1660619585255" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1660523554702" ID="ID_1415242688" MODIFIED="1661868037924" TEXT="mapeaCampoTipoComumRequest">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
 </node>
 </node>
 </node>
