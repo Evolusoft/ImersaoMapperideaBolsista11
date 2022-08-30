@@ -819,48 +819,6 @@
 </node>
 </node>
 </node>
-<node CREATED="1661142306752" ID="ID_1565506364" MODIFIED="1661142325207" TEXT="apiController">
-<icon BUILTIN="element"/>
-<node CREATED="1661142327219" ID="ID_178345866" MODIFIED="1661142332868" TEXT="parameters">
-<icon BUILTIN="element"/>
-<node CREATED="1661142334638" ID="ID_321788223" MODIFIED="1661142363371" TEXT="entityName">
-<icon BUILTIN="element"/>
-<node CREATED="1661142341791" ID="ID_1063448435" MODIFIED="1661142348695" TEXT="NOT_DEFINED">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-</node>
-<node CREATED="1661142381931" ID="ID_605046369" MODIFIED="1661142385108" TEXT="start">
-<icon BUILTIN="element"/>
-<node CREATED="1660283104485" ID="ID_28531036" MODIFIED="1660283108522" TEXT="match">
-<icon BUILTIN="element"/>
-<node CREATED="1660283129682" ID="ID_1567074856" MODIFIED="1660283568184" TEXT="/classes/class [@name = $entityName]">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-<node CREATED="1661142436581" ID="ID_1114737680" MODIFIED="1661142440171" TEXT="body">
-<icon BUILTIN="element"/>
-<node CREATED="1661142461684" ID="ID_1633905272" MODIFIED="1661142470766" TEXT="write-pattern">
-<icon BUILTIN="element"/>
-<node CREATED="1661142472428" ID="ID_751165220" MODIFIED="1661142479706" TEXT="inicioController">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-</node>
-</node>
-<node CREATED="1661142484311" ID="ID_201591251" MODIFIED="1661142490805" TEXT="patterns">
-<icon BUILTIN="element"/>
-<node CREATED="1661142491686" ID="ID_615784269" MODIFIED="1661142505490" TEXT="inicioController">
-<icon BUILTIN="element"/>
-<node CREATED="1661142566197" ID="ID_542690848" MODIFIED="1661142582511" TEXT="const db = require(&quot;../models&quot;);">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1661142584843" ID="ID_434036588" MODIFIED="1661146617495" TEXT="const {{ @name }} = db.{{ mi:first-lower(properties/plural/value) }};">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-</node>
-</node>
 <node CREATED="1661019640224" ID="ID_1731007364" MODIFIED="1661360100243" TEXT="bashGenerateALL">
 <icon BUILTIN="element"/>
 <node CREATED="1661020875094" ID="ID_796167260" MODIFIED="1661020881670" TEXT="start">
