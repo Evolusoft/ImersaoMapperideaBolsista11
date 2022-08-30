@@ -12,6 +12,6 @@ exports.create = (req, res) => {
    const tutorial = new Tutorial ({
       title: req.body.title ? req.body.title : null ,
       description: req.body.description ? req.body.description : null ,
-      published: req.body.published ? req.body.published : false 
+      published: req.body.published ? req.body.published : false  
    });
 };

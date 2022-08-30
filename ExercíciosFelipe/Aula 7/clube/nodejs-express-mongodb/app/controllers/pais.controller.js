@@ -10,7 +10,7 @@ exports.create = (req, res) => {
 }
    // Create a Pais
    const pais = new Pais ({
-      sigla: req.body.sigla ? req.body.sigla : null  ,
-      nome: req.body.nome ? req.body.nome : null 
+      sigla: req.body.sigla ? req.body.sigla : null, 
+      nome: req.body.nome ? req.body.nome : null  
    });
 };
