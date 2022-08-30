@@ -1,0 +1,40 @@
+ class:
+   @name: Pessoa
+   @package: io.mapperidea.earlyadopter.domain.pessoas
+   @mode: bean
+   attributes:
+     attribute:
+       @mode: directToField
+       @name: nome
+       @key: false
+       @type: Texto
+       @typeParameter: 64
+       properties:
+         requerido:
+     attribute:
+       @mode: composite
+       @name: endereco
+       @key: false
+       @type: Endereco
+       properties:
+         titulo:
+           value:
+             @color: green
+             Endereço
+     attribute:
+       @mode: directToField
+       @name: dataNascimento
+       @key: false
+       @type: Data
+       properties:
+         requerido:
+     attribute:
+       @mode: oneToMany
+       @name: familia
+       @key: false
+       @type: MembroFamilia
+   constructors:
+   methods:
+   events:
+   internalClasses:
+   body:
