@@ -2,18 +2,44 @@ const db = require("../models");
 const Pessoa = db.pessoas;
 validaCamposRequeridosPessoa = (req) => {
 const CamposRequeridosEmpty = new Array();
-if (!req.body.nome) {
+if (!req.body.) {
+camposRequeridosEmpty.push(" documento");
+) else {
+if (!req.body.) {
+camposRequeridosEmpty.push(" numero");
+ }
+if (!req.body.) {
+camposRequeridosEmpty.push(" tipo");
+ }
+}
+if (!req.body.) {
 camposRequeridosEmpty.push(" nome");
-}
-if (!req.body.endereco) {
+ }
+if (!req.body.) {
 camposRequeridosEmpty.push(" endereco");
+) else {
+if (!req.body.) {
+camposRequeridosEmpty.push(" logradouro");
+ }
+if (!req.body.) {
+camposRequeridosEmpty.push(" numero");
+ }
+if (!req.body.) {
+camposRequeridosEmpty.push(" uf");
+ }
+if (!req.body.) {
+camposRequeridosEmpty.push(" cidade");
+ }
+if (!req.body.) {
+camposRequeridosEmpty.push(" bairro");
+ }
 }
-if (!req.body.dataNascimento) {
+if (!req.body.) {
 camposRequeridosEmpty.push(" dataNascimento");
-}
-if (!req.body.familia) {
+ }
+if (!req.body.) {
 camposRequeridosEmpty.push(" familia");
-}
+ }
 return CamposRequeridosEmpty;
 }
 
@@ -31,8 +57,8 @@ return;
 }
    // Create a Pessoa
    const pessoa = new Pessoa ({
-      nome: req.body.nome ? req.body.nome : null ,
-      dataNascimento: req.body.dataNascimento ? req.body.dataNascimento : null ,
+      nome: req.body.nome ? req.body.nome : null : ,
+      dataNascimento: req.body.dataNascimento ? req.body.dataNascimento : null : ,
    });
    pessoa
       .save(pessoa)
