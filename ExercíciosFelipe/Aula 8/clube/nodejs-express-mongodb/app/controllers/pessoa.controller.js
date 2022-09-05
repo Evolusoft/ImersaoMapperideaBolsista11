@@ -5,10 +5,10 @@ validaCamposRequeridosPessoa = (req) => {
    if (!req.body.documento) {
       camposRequeridosEmpty.push(" documento");
    } else {
-      if (!req.body.numero) {
+      if (!req.body.documento.numero) {
          camposRequeridosEmpty.push(" numero");
       }
-      if (!req.body.tipo) {
+      if (!req.body.documento.tipo) {
          camposRequeridosEmpty.push(" tipo");
       }
    }
@@ -18,31 +18,31 @@ validaCamposRequeridosPessoa = (req) => {
    if (!req.body.endereco) {
       camposRequeridosEmpty.push(" endereco");
    } else {
-      if (!req.body.uf) {
+      if (!req.body.endereco.uf) {
          camposRequeridosEmpty.push(" uf");
       }
-      if (!req.body.cidade) {
+      if (!req.body.endereco.cidade) {
          camposRequeridosEmpty.push(" cidade");
       }
-      if (!req.body.bairro) {
+      if (!req.body.endereco.bairro) {
          camposRequeridosEmpty.push(" bairro");
       }
-      if (!req.body.logradouro) {
+      if (!req.body.endereco.numero) {
          camposRequeridosEmpty.push(" logradouro");
       }
-      if (!req.body.numero) {
+      if (!req.body.endereco.numero) {
          camposRequeridosEmpty.push(" numero");
       }
-      if (!req.body.complemento) {
+      if (!req.body.endereco.complemento) {
          camposRequeridosEmpty.push(" complemento");
       }
-      if (!req.body.pontoReferencia) {
+      if (!req.body.endereco.pontoReferencia) {
          camposRequeridosEmpty.push(" pontoReferencia");
       } else {
-         if (!req.body.tipo) {
+         if (!req.body.endereco.pontoReferencia.tipo) {
             camposRequeridosEmpty.push(" tipo");
          }
-         if (!req.body.numero) {
+         if (!req.body.endereco.pontoReferencia.numero) {
             camposRequeridosEmpty.push(" numero");
          }
       }
