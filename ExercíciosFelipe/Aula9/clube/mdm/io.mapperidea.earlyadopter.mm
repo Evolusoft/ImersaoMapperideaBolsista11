@@ -24,6 +24,15 @@
 <node CREATED="1638358219395" ID="ID_1915374519" MODIFIED="1638358248214" TEXT="Usado para dominio de neg&#xf3;cio n&#xe3;o for persistido ou agregado a um dominio principal"/>
 </node>
 </node>
+<node CREATED="1662577602897" ID="ID_1132451219" MODIFIED="1662577608029" TEXT="campos requeridos">
+<node CREATED="1662577625460" ID="ID_701186081" MODIFIED="1662577632107" TEXT="sem defini&#xe7;&#xe3;o de campo requerido"/>
+<node CREATED="1662577639253" ID="ID_61674798" MODIFIED="1662577650408" TEXT="campos chave s&#xe3;o requeridos"/>
+</node>
+<node CREATED="1662577609721" ID="ID_696016165" MODIFIED="1662577613925" TEXT="campos procuraveis">
+<node CREATED="1662577668277" ID="ID_174729094" MODIFIED="1662577678356" TEXT="Sem defini&#xe7;&#xe3;o na classe searchable">
+<node CREATED="1662577693953" ID="ID_1410646880" MODIFIED="1662577700816" TEXT="Os campos chaves ser&#xe3;o utilizados"/>
+</node>
+</node>
 </node>
 <node CREATED="1638357114382" ID="ID_93707434" MODIFIED="1638357119123" POSITION="right" TEXT="requisitos">
 <node CREATED="1638357179445" ID="ID_634126882" MODIFIED="1638357185265" TEXT="defini&#xe7;&#xe3;o do sistema">
@@ -85,7 +94,7 @@
 </node>
 <node CREATED="1638357403126" ID="ID_1653047089" MODIFIED="1638357408715" POSITION="right" TEXT="domain">
 <icon BUILTIN="Package"/>
-<node CREATED="1638357472205" ID="ID_1907768757" MODIFIED="1661863896962" TEXT="pessoas">
+<node CREATED="1638357472205" FOLDED="true" ID="ID_1907768757" MODIFIED="1662577807493" TEXT="pessoas">
 <icon BUILTIN="Package"/>
 <node CREATED="1638357832650" ID="ID_896364472" MODIFIED="1638358273308" TEXT="Pessoa">
 <icon BUILTIN="Descriptor.bean"/>
@@ -93,6 +102,15 @@
 <node CREATED="1661863923930" ID="ID_408557130" MODIFIED="1661863956131" TEXT="plural">
 <icon BUILTIN="element"/>
 <node CREATED="1661863926903" ID="ID_69147662" MODIFIED="1661863960602" TEXT="Pessoas">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662577419366" ID="ID_938611044" MODIFIED="1662577433532" TEXT="searchable">
+<icon BUILTIN="element"/>
+<node CREATED="1662577480802" ID="ID_1572040992" MODIFIED="1662577503700" TEXT="documento">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662577487040" ID="ID_449456095" MODIFIED="1662577503701" TEXT="nome">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -175,8 +193,9 @@
 <icon BUILTIN="Descriptor.bean"/>
 <node CREATED="1638360322243" ID="ID_1516520294" MODIFIED="1638360339111" TEXT="atributos">
 <icon BUILTIN="Descriptor.grouping"/>
-<node CREATED="1638360324867" ID="ID_1069063397" MODIFIED="1638360341160" TEXT="nome: Texto(32)">
+<node CREATED="1638360324867" ID="ID_1069063397" MODIFIED="1662577547070" TEXT="nome: Texto(32)">
 <icon BUILTIN="Mapping.directToField"/>
+<icon BUILTIN="bullet_key"/>
 </node>
 </node>
 <node CREATED="1638360343306" ID="ID_844169944" MODIFIED="1638360435115" TEXT="instancias">
@@ -382,9 +401,23 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+<node CREATED="1662577817043" ID="ID_1830631056" MODIFIED="1662577867895" TEXT="searchable">
+<icon BUILTIN="element"/>
+<node CREATED="1662577843616" ID="ID_631671915" MODIFIED="1662577864459" TEXT="uf">
+<icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1638359381521" ID="ID_147572066" MODIFIED="1638359426462" TEXT="codigo: Numero()">
+<node CREATED="1662577889811" ID="ID_1144444060" MODIFIED="1662577897084" TEXT="nome">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1638359404490" ID="ID_1377184327" MODIFIED="1662577861232" TEXT="uf: UnidadeFederativa()">
+<icon BUILTIN="Mapping.oneToOne"/>
+<icon BUILTIN="bullet_key"/>
+</node>
+<node CREATED="1638359381521" ID="ID_147572066" MODIFIED="1662577861232" TEXT="codigo: Numero()">
 <icon BUILTIN="Mapping.directToField"/>
+<icon BUILTIN="bullet_key"/>
 <node CREATED="1661879008714" ID="ID_1862910383" MODIFIED="1661879013358" TEXT="@">
 <node CREATED="1661879013360" ID="ID_34953464" MODIFIED="1661879058259" TEXT="requerido">
 <icon BUILTIN="element"/>
@@ -398,9 +431,6 @@
 <icon BUILTIN="element"/>
 </node>
 </node>
-</node>
-<node CREATED="1638359404490" ID="ID_1377184327" MODIFIED="1638359446316" TEXT="uf: UnidadeFederativa()">
-<icon BUILTIN="Mapping.oneToOne"/>
 </node>
 <node CREATED="1638359530287" ID="ID_68447090" MODIFIED="1638359538822" TEXT="bairros: Bairro()">
 <icon BUILTIN="Mapping.oneToMany"/>
@@ -446,18 +476,16 @@
 <icon BUILTIN="Package"/>
 <node CREATED="1661017594402" ID="ID_646141932" MODIFIED="1661017771294" TEXT="Tutorial">
 <icon BUILTIN="Descriptor.bean"/>
-<node CREATED="1661146080130" ID="ID_121892574" MODIFIED="1661146490910" TEXT="@">
-<node CREATED="1661146088577" ID="ID_961058322" MODIFIED="1661146092782" TEXT="plural">
-<icon BUILTIN="element"/>
-<node CREATED="1661146094953" ID="ID_1676229821" MODIFIED="1661146514487" TEXT="tutorials">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-</node>
 <node CREATED="1661017772157" ID="ID_1105717172" MODIFIED="1661017779570" TEXT="@">
 <node CREATED="1661017780561" ID="ID_1276311592" MODIFIED="1661017788878" TEXT="sqlLegado">
 <icon BUILTIN="element"/>
 <node CREATED="1661017790687" ID="ID_633414546" MODIFIED="1661017936973" TEXT="select t1.*&#xa;from table1 t1&#xa;where t1.flagged = 0&#xa;union all&#xa;select t1.*&#xa;from table1 t1&#xa;where t1.flagged = 1 and&#xa;      not exists (select 1&#xa;                  from table1 tt1&#xa;                  where tt1.account = t1.account and tt1.flagged = 0&#xa;                 );">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661146088577" ID="ID_961058322" MODIFIED="1661146092782" TEXT="plural">
+<icon BUILTIN="element"/>
+<node CREATED="1661146094953" ID="ID_1676229821" MODIFIED="1661146514487" TEXT="tutorials">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -474,7 +502,7 @@
 <icon BUILTIN="Mapping.directToField"/>
 </node>
 </node>
-<node CREATED="1661017984260" ID="ID_807636367" MODIFIED="1661360638623" TEXT="metodos">
+<node CREATED="1661017984260" FOLDED="true" ID="ID_807636367" MODIFIED="1662577281986" TEXT="metodos">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661017990135" ID="ID_1979660759" MODIFIED="1661018031118" TEXT="nomesContasAtivas">
 <icon BUILTIN="Method.public"/>
