@@ -75,7 +75,7 @@
 <icon BUILTIN="element"/>
 <node CREATED="1659039237684" ID="ID_952785213" MODIFIED="1661020831626" TEXT="struct">
 <icon BUILTIN="element"/>
-<node CREATED="1660180825331" FOLDED="true" HGAP="23" ID="ID_980495860" MODIFIED="1661955869837" TEXT="class" VSHIFT="2">
+<node CREATED="1660180825331" HGAP="23" ID="ID_980495860" MODIFIED="1662054128206" TEXT="class" VSHIFT="2">
 <icon BUILTIN="element"/>
 <node CREATED="1660180833808" MODIFIED="1660393494226" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -185,7 +185,7 @@
 </node>
 <node CREATED="1660283317685" ID="ID_1455890797" MODIFIED="1660789667739" TEXT="parameters">
 <icon BUILTIN="element"/>
-<node CREATED="1660283324670" FOLDED="true" ID="ID_1680938047" MODIFIED="1660619497893" TEXT="level">
+<node CREATED="1660283324670" FOLDED="true" ID="ID_1680938047" MODIFIED="1662054912736" TEXT="level">
 <icon BUILTIN="element"/>
 <node CREATED="1660283334257" MODIFIED="1660283338044" TEXT="0">
 <icon BUILTIN="tag_green"/>
@@ -1027,7 +1027,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1661954344063" ID="ID_383905208" MODIFIED="1661955034361" TEXT="validaCamposRequeridos">
+<node CREATED="1661954344063" ID="ID_383905208" MODIFIED="1662139582890" TEXT="validaCamposRequeridos">
 <icon BUILTIN="element"/>
 <node CREATED="1661954379092" ID="ID_981409476" MODIFIED="1662052226283" TEXT="const camposRequeridosEmpty = validaCamposRequeridos.{{ @name }} (req);">
 <icon BUILTIN="tag_green"/>
@@ -1042,6 +1042,12 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1661955009469" ID="ID_1868981509" MODIFIED="1661955030285" TEXT="}">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662139553445" ID="ID_1842877450" MODIFIED="1662139574699" TEXT="fechaValidacaoComposite">
+<icon BUILTIN="element"/>
+<node CREATED="1661955009469" ID="ID_1509702901" MODIFIED="1661955030285" TEXT="}">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1067,13 +1073,13 @@
 </node>
 <node CREATED="1661953878420" ID="ID_398527359" MODIFIED="1661953990189" TEXT="verificaCampoRequerido">
 <icon BUILTIN="element"/>
-<node CREATED="1661953913545" ID="ID_1583863780" MODIFIED="1661954162583" TEXT="if (!req.body.{{ name }}) {">
+<node CREATED="1661953913545" ID="ID_1583863780" MODIFIED="1662397490229" TEXT="if (!req.{{ $atributoPai }}.{{ name }}) {">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1661953954743" ID="ID_1743416165" MODIFIED="1661954185988" TEXT="camposRequeridosEmpty.push(&quot; {{ @name }}&quot;);">
+<node CREATED="1661953954743" ID="ID_1743416165" MODIFIED="1662398601822" TEXT="camposRequeridosEmpty.push(&quot; {{ concat(substring-after($atributoPai, &apos;body.&apos;,mi:if-else($level = 0,&apos; &apos;, &apos;.&apos;), @name) }}&quot;);">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1661953982514" ID="ID_675332872" MODIFIED="1661954034292" TEXT="}">
+<node CREATED="1661953982514" ID="ID_675332872" MODIFIED="1662140690135" TEXT="{{ mi:if-else(@mode = &apos;composite&apos;,&apos;) else {&apos;,&apos; }&apos;) }}">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1215,7 +1221,7 @@
 </node>
 <node CREATED="1661868417310" ID="ID_700598558" MODIFIED="1661868453519" TEXT="expr">
 <icon BUILTIN="element"/>
-<node CREATED="1661868422949" ID="ID_1057155317" MODIFIED="1661868460855" TEXT="mi:if-else(position() = last(), &apos;&apos;, &apos;,&apos;)">
+<node CREATED="1661868422949" ID="ID_1057155317" MODIFIED="1662140515810" TEXT="mi:if-else(position() = last(), &apos;&apos;, &apos;,&apos;)">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1297,12 +1303,111 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+<node CREATED="1662397250355" ID="ID_1219510157" MODIFIED="1662397309807" TEXT="parameters">
+<icon BUILTIN="element"/>
+<node CREATED="1662397271889" ID="ID_1749627112" MODIFIED="1662397309806" TEXT="level">
+<icon BUILTIN="element"/>
+<node CREATED="1662397274076" ID="ID_1032318223" MODIFIED="1662397312986" TEXT="0">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662397284146" ID="ID_164858230" MODIFIED="1662397309806" TEXT="atributoPai">
+<icon BUILTIN="element"/>
+<node CREATED="1662397296810" ID="ID_305015017" MODIFIED="1662397323891" TEXT="body">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
 <node CREATED="1661953799234" ID="ID_461549619" MODIFIED="1661953830617" TEXT="body">
 <icon BUILTIN="element"/>
 <node CREATED="1661953803109" ID="ID_958862254" MODIFIED="1661953830617" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1661953813626" ID="ID_474662352" MODIFIED="1661953840467" TEXT="verificaCampoRequerido">
 <icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662053592585" ID="ID_1987039818" MODIFIED="1662137225814" TEXT="if">
+<icon BUILTIN="element"/>
+<node CREATED="1662053594161" ID="ID_1393347782" MODIFIED="1662137216049" TEXT="@mode = &apos;composite&apos;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662137204926" ID="ID_1378709028" MODIFIED="1662137241703" TEXT="then">
+<icon BUILTIN="element"/>
+<node CREATED="1662137280056" ID="ID_245488073" MODIFIED="1662137517348" TEXT="vars">
+<icon BUILTIN="element"/>
+<node CREATED="1662137289775" ID="ID_72647799" MODIFIED="1662137517349" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1662137327058" ID="ID_1883479514" MODIFIED="1662137524350" TEXT="classeAtributo">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662137392977" ID="ID_496220167" MODIFIED="1662137517350" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1662137422189" ID="ID_1517064281" MODIFIED="1662137564863" TEXT="/classes/class[ @name = current()/@type]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1661953405813" ID="ID_1967170647" MODIFIED="1661953495886" TEXT="if">
+<icon BUILTIN="element"/>
+<node CREATED="1661953412734" ID="ID_1351771255" MODIFIED="1662139921326" TEXT="exists($classeAtributo/atributes/[properties/requerido])">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661953417926" ID="ID_1335057816" MODIFIED="1661953495886" TEXT="then">
+<icon BUILTIN="element"/>
+<node CREATED="1661953545858" ID="ID_8737059" MODIFIED="1661953696988" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1661953559113" ID="ID_939319768" MODIFIED="1661953696988" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1661953592735" ID="ID_1026450858" MODIFIED="1662140043730" TEXT="$classeAtributo/attributes/attribute[@key = &apos;true&apos; or properties/requerido]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662397557569" ID="ID_1865554568" MODIFIED="1662397609720" TEXT="parameters">
+<icon BUILTIN="element"/>
+<node CREATED="1662397572076" ID="ID_565359795" MODIFIED="1662397609721" TEXT="atributoPai">
+<icon BUILTIN="element"/>
+<node CREATED="1662397585031" ID="ID_676520052" MODIFIED="1662397609720" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1662397632580" ID="ID_301244395" MODIFIED="1662397734926" TEXT="concat($atributoPai,&apos;.&apos;,@name)">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1661953424446" ID="ID_947132538" MODIFIED="1661953495885" TEXT="else">
+<icon BUILTIN="element"/>
+<node CREATED="1661953545858" ID="ID_235463798" MODIFIED="1661953696988" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1661953559113" ID="ID_768965560" MODIFIED="1661953696988" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1661953592735" ID="ID_179199552" MODIFIED="1662140075252" TEXT="$classeAtributo/attributes/attribute">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662397557569" ID="ID_618732459" MODIFIED="1662397609720" TEXT="parameters">
+<icon BUILTIN="element"/>
+<node CREATED="1662397572076" ID="ID_196025354" MODIFIED="1662397609721" TEXT="atributoPai">
+<icon BUILTIN="element"/>
+<node CREATED="1662397585031" ID="ID_1813264849" MODIFIED="1662397609720" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1662397632580" ID="ID_868280369" MODIFIED="1662397734926" TEXT="concat($atributoPai,&apos;.&apos;,@name)">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1662139473723" ID="ID_1457165344" MODIFIED="1662139514532" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1662139487420" ID="ID_746980636" MODIFIED="1662139508522" TEXT="fechaValidacaoComposite">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
 </node>
 </node>
 </node>

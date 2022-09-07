@@ -99,6 +99,10 @@
 </node>
 <node CREATED="1638358309472" ID="ID_857359159" MODIFIED="1638358314932" TEXT="atributos">
 <icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1662053074581" ID="ID_1564709098" MODIFIED="1662053155214" TEXT="documento: DocumentoIdentificacao()">
+<icon BUILTIN="Mapping.composite"/>
+<icon BUILTIN="bullet_key"/>
+</node>
 <node CREATED="1638358371838" ID="ID_400018100" MODIFIED="1638358783174" TEXT="nome: Texto(64)">
 <icon BUILTIN="Mapping.directToField"/>
 <node CREATED="1638360960495" ID="ID_1390390495" MODIFIED="1638360961211" TEXT="@">
@@ -116,22 +120,43 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-</node>
-</node>
-<node CREATED="1638358381893" ID="ID_1445795266" MODIFIED="1638360250706" TEXT="dataNascimento: Data()">
-<icon BUILTIN="Mapping.directToField"/>
-<node CREATED="1638360960495" ID="ID_304550837" MODIFIED="1638360961211" TEXT="@">
 <node CREATED="1638360963167" ID="ID_925323334" MODIFIED="1638360969829" TEXT="requerido">
 <icon BUILTIN="element"/>
 </node>
 </node>
+</node>
+<node CREATED="1638358381893" ID="ID_1445795266" MODIFIED="1638360250706" TEXT="dataNascimento: Data()">
+<icon BUILTIN="Mapping.directToField"/>
 </node>
 <node CREATED="1638358391797" ID="ID_737059406" MODIFIED="1638360561307" TEXT="familia: MembroFamilia()">
 <icon BUILTIN="Mapping.oneToMany"/>
 </node>
 </node>
 </node>
-<node CREATED="1638360303140" ID="ID_1415365472" MODIFIED="1638360543997" TEXT="MembroFamilia">
+<node CREATED="1662053281269" ID="ID_1944586845" MODIFIED="1662053489281" TEXT="DocumentoIdentificacao">
+<icon BUILTIN="Descriptor.class"/>
+<node CREATED="1662053290732" ID="ID_4709776" MODIFIED="1662053494617" TEXT="atributos">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1662053297136" ID="ID_1694282875" MODIFIED="1662053504731" TEXT="numero: Texto(32)">
+<icon BUILTIN="Mapping.directToField"/>
+</node>
+<node CREATED="1662053330292" ID="ID_1599878246" MODIFIED="1662053507248" TEXT="tipo: Texto(16)">
+<icon BUILTIN="Mapping.directToField"/>
+<node CREATED="1662053353621" ID="ID_1005291197" MODIFIED="1662053356074" TEXT="@">
+<node CREATED="1662053356074" ID="ID_117304258" MODIFIED="1662053417225" TEXT="values">
+<icon BUILTIN="element"/>
+<node CREATED="1662053393752" ID="ID_107348869" MODIFIED="1662053412060" TEXT="RG">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662053397554" ID="ID_559926820" MODIFIED="1662053412061" TEXT="CPF">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1638360303140" ID="ID_1415365472" MODIFIED="1662053461326" TEXT="MembroFamilia">
 <icon BUILTIN="Descriptor.class"/>
 <node CREATED="1638360563703" ID="ID_427298101" MODIFIED="1638360569388" TEXT="atributos">
 <icon BUILTIN="Descriptor.grouping"/>
@@ -205,10 +230,47 @@
 </node>
 <node CREATED="1638359025738" ID="ID_1601278786" MODIFIED="1638359046009" TEXT="Endereco">
 <icon BUILTIN="Descriptor.class"/>
+<node CREATED="1662395454750" ID="ID_1922140848" MODIFIED="1662395457214" TEXT="@">
+<node CREATED="1662395457216" ID="ID_1067502523" MODIFIED="1662395504936" TEXT="plural">
+<icon BUILTIN="element"/>
+<node CREATED="1662395486969" ID="ID_307102697" MODIFIED="1662395520743" TEXT="Enderecos">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
 <node CREATED="1638359109183" ID="ID_134804064" MODIFIED="1638359112021" TEXT="atributos">
 <icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1638358994875" ID="ID_1539554431" MODIFIED="1638360197146" TEXT="uf: UnidadeFederativa()">
+<icon BUILTIN="Mapping.oneToOne"/>
+<node CREATED="1638360960495" ID="ID_537572373" MODIFIED="1638360961211" TEXT="@">
+<node CREATED="1638360963167" ID="ID_431342785" MODIFIED="1638360969829" TEXT="requerido">
+<icon BUILTIN="element"/>
+</node>
+</node>
+</node>
+<node CREATED="1638358992435" ID="ID_536850839" MODIFIED="1638359724030" TEXT="cidade: Cidade()">
+<icon BUILTIN="Mapping.oneToOne"/>
+<node CREATED="1638360960495" ID="ID_1485153771" MODIFIED="1638360961211" TEXT="@">
+<node CREATED="1638360963167" ID="ID_36095297" MODIFIED="1638360969829" TEXT="requerido">
+<icon BUILTIN="element"/>
+</node>
+</node>
+</node>
+<node CREATED="1638359000986" ID="ID_1472776476" MODIFIED="1638359724031" TEXT="bairro: Bairro()">
+<icon BUILTIN="Mapping.oneToOne"/>
+<node CREATED="1638360960495" ID="ID_241369510" MODIFIED="1638360961211" TEXT="@">
+<node CREATED="1638360963167" ID="ID_79010545" MODIFIED="1638360969829" TEXT="requerido">
+<icon BUILTIN="element"/>
+</node>
+</node>
+</node>
 <node CREATED="1638358931220" ID="ID_195649463" MODIFIED="1638359239972" TEXT="logradouro: Texto(64)">
 <icon BUILTIN="Mapping.directToField"/>
+<node CREATED="1638360960495" ID="ID_458892326" MODIFIED="1638360961211" TEXT="@">
+<node CREATED="1638360963167" ID="ID_1706201249" MODIFIED="1638360969829" TEXT="requerido">
+<icon BUILTIN="element"/>
+</node>
+</node>
 </node>
 <node CREATED="1638358986731" ID="ID_1685067123" MODIFIED="1638359239972" TEXT="numero: Texto(32)">
 <icon BUILTIN="Mapping.directToField"/>
@@ -219,16 +281,42 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+<node CREATED="1638360963167" ID="ID_879127420" MODIFIED="1638360969829" TEXT="requerido">
+<icon BUILTIN="element"/>
 </node>
 </node>
-<node CREATED="1638358994875" ID="ID_1539554431" MODIFIED="1638360197146" TEXT="uf: UnidadeFederativa()">
-<icon BUILTIN="Mapping.oneToOne"/>
 </node>
-<node CREATED="1638358992435" ID="ID_536850839" MODIFIED="1638359724030" TEXT="cidade: Cidade()">
-<icon BUILTIN="Mapping.oneToOne"/>
+<node CREATED="1662140894193" ID="ID_637521964" MODIFIED="1662140911743" TEXT="complemento: Texto(64)">
+<icon BUILTIN="Mapping.directToField"/>
 </node>
-<node CREATED="1638359000986" ID="ID_1472776476" MODIFIED="1638359724031" TEXT="bairro: Bairro()">
-<icon BUILTIN="Mapping.oneToOne"/>
+<node CREATED="1662396201879" ID="ID_1813311304" MODIFIED="1662396262361" TEXT="pontoReferencia: PontoReferencia()">
+<icon BUILTIN="Mapping.composite"/>
+</node>
+</node>
+</node>
+<node CREATED="1662396051098" ID="ID_1979243902" MODIFIED="1662396120268" TEXT="PontoReferencia">
+<icon BUILTIN="Descriptor.class"/>
+<node CREATED="1662053290732" ID="ID_834263460" MODIFIED="1662053494617" TEXT="atributos">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1662053330292" ID="ID_1436410061" MODIFIED="1662053507248" TEXT="tipo: Texto(16)">
+<icon BUILTIN="Mapping.directToField"/>
+<node CREATED="1662053353621" ID="ID_385611161" MODIFIED="1662053356074" TEXT="@">
+<node CREATED="1662053356074" ID="ID_1069444945" MODIFIED="1662053417225" TEXT="values">
+<icon BUILTIN="element"/>
+<node CREATED="1662053393752" ID="ID_1626622289" MODIFIED="1662396139621" TEXT="POSTO">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662053397554" ID="ID_1441148431" MODIFIED="1662396150296" TEXT="SUPERMERCADO">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662396164425" ID="ID_1105983315" MODIFIED="1662396172204" TEXT="FARMACIA">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1662053297136" ID="ID_830745436" MODIFIED="1662053504731" TEXT="numero: Texto(32)">
+<icon BUILTIN="Mapping.directToField"/>
 </node>
 </node>
 </node>
