@@ -44,3 +44,27 @@ exports.create = (req, res) => {
          });
       });
 };
+
+exports.findAll = (req, res) => {
+   var condition = {};
+   
+   const title = req.query.title;
+   if (title) {
+      condition.title = { $regex: new RegExp(title), $options: "i" };
+   }
+   const description = req.query.description;
+   if (description) {
+      condition.description =  { $regex: new RegExp(description), $options: "i" };
+   }
+   
+   Tutorial.find(condition)
+     .then(data => {
+       res.send(data);
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Some error occurred while retrieving tutorials."
+       });
+     });
+ };
