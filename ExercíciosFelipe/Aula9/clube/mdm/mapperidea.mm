@@ -1244,24 +1244,19 @@
 </node>
 </node>
 </node>
-<node CREATED="1662579789925" ID="ID_99091856" MODIFIED="1662579835871" TEXT="var">
+</node>
+<node CREATED="1662583636030" ID="ID_826123317" MODIFIED="1662583643699" TEXT="if">
 <icon BUILTIN="element"/>
-<node CREATED="1662579792085" ID="ID_115487513" MODIFIED="1662579805687" TEXT="searchable">
+<node CREATED="1662583661688" ID="ID_912408255" MODIFIED="1662584489500" TEXT="exists($atributosSearchable)">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1662579818768" ID="ID_1870809175" MODIFIED="1662579835870" TEXT="expr">
+<node CREATED="1662583676423" ID="ID_976456375" MODIFIED="1662583695243" TEXT="then">
 <icon BUILTIN="element"/>
-<node CREATED="1662579823112" ID="ID_1104741961" MODIFIED="1662580986924" TEXT="mi:if-else(exists($atributoSearchable),$atributoSearchable,$camposChave);">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-</node>
-</node>
 <node CREATED="1662581031833" ID="ID_1311874472" MODIFIED="1662581073031" TEXT="apply-templates">
 <icon BUILTIN="element"/>
 <node CREATED="1662581051660" ID="ID_950046735" MODIFIED="1662581073031" TEXT="select">
 <icon BUILTIN="element"/>
-<node CREATED="1662581055161" ID="ID_1130894210" MODIFIED="1662581098092" TEXT="$searchable/*">
+<node CREATED="1662581055161" ID="ID_1130894210" MODIFIED="1662583761674" TEXT="$atributosSearchable">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1269,6 +1264,26 @@
 <icon BUILTIN="element"/>
 <node CREATED="1662581122703" ID="ID_538679946" MODIFIED="1662581247145" TEXT="declaraFiltroFindAll">
 <icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1662583685232" ID="ID_1684667717" MODIFIED="1662583695243" TEXT="else">
+<icon BUILTIN="element"/>
+<node CREATED="1662581031833" ID="ID_265209376" MODIFIED="1662581073031" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1662581051660" ID="ID_888096454" MODIFIED="1662581073031" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1662581055161" ID="ID_593766703" MODIFIED="1662583790139" TEXT="$camposChave">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662581120240" ID="ID_450092063" MODIFIED="1662581155858" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1662581122703" ID="ID_708277728" MODIFIED="1662581247145" TEXT="declaraFiltroFindAll">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
 </node>
 </node>
 </node>
@@ -1322,7 +1337,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1661952962930" FOLDED="true" ID="ID_1200804774" MODIFIED="1662581202752" TEXT="functionValidaRequeridos">
+<node CREATED="1661952962930" ID="ID_1200804774" MODIFIED="1662584690877" TEXT="functionValidaRequeridos">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661952977941" ID="ID_1251821623" MODIFIED="1661953004134" TEXT="inicioFunctionValidaRequeridos">
 <icon BUILTIN="element"/>
@@ -1347,7 +1362,7 @@
 <node CREATED="1661953913545" ID="ID_1583863780" MODIFIED="1662397490229" TEXT="if (!req.{{ $atributoPai }}.{{ name }}) {">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1661953954743" ID="ID_1743416165" MODIFIED="1662398601822" TEXT="camposRequeridosEmpty.push(&quot; {{ concat(substring-after($atributoPai, &apos;body.&apos;,mi:if-else($level = 0,&apos; &apos;, &apos;.&apos;), @name) }}&quot;);">
+<node CREATED="1661953954743" ID="ID_1743416165" MODIFIED="1663004681166" TEXT="camposRequeridosEmpty.push(&quot; {[ concat(substring-after($atributoPai,&apos;body.), @name) }]&quot;);">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1661953982514" ID="ID_675332872" MODIFIED="1662140690135" TEXT="{{ mi:if-else(@mode = &apos;composite&apos;,&apos;) else {&apos;,&apos; }&apos;) }}">
@@ -1355,7 +1370,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661864901971" FOLDED="true" ID="ID_592073131" MODIFIED="1662581554089" TEXT="create">
+<node CREATED="1661864901971" FOLDED="true" ID="ID_592073131" MODIFIED="1662584550334" TEXT="create">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864909476" ID="ID_1684130416" MODIFIED="1661864996424" TEXT="inicioCreate">
 <icon BUILTIN="element"/>
@@ -1534,7 +1549,7 @@
 </node>
 <node CREATED="1661866887512" ID="ID_1134600720" MODIFIED="1662581163705" TEXT="templates">
 <icon BUILTIN="element"/>
-<node CREATED="1661866909030" ID="ID_1386571956" MODIFIED="1662582866864" TEXT="mode">
+<node CREATED="1661866909030" FOLDED="true" ID="ID_1386571956" MODIFIED="1662584374515" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1661866912602" ID="ID_1990557801" MODIFIED="1661866939749" TEXT="mapaRequestAttributoEntidade">
 <icon BUILTIN="tag_green"/>
@@ -1585,7 +1600,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661952822268" ID="ID_534813977" MODIFIED="1662582868893" TEXT="mode">
+<node CREATED="1661952822268" FOLDED="true" ID="ID_534813977" MODIFIED="1662584648880" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1661952835844" ID="ID_1275219871" MODIFIED="1661952935447" TEXT="declaraFunctionValidaRequeridos">
 <icon BUILTIN="tag_green"/>
