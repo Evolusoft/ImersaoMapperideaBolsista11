@@ -1,7 +1,7 @@
 const db = require("../models");
 const Pessoa = db.pessoas;
 validaCamposRequeridosPessoa = (req) => {
-   const CamposRequeridosEmpty = new Array();
+const CamposRequeridosEmpty = new Array();
    if (!req.body.documento) {
       camposRequeridosEmpty.push(" documento");
    } else {
@@ -81,7 +81,9 @@ exports.create = (req, res) => {
       .catch(err => {
          res.status(500).send({
             message:
+         err.message || "Ocorreu um erro de servidor ao tentar salvar Pessoa." 
                err.message || "Ocorreu um erro de servidor ao tentar salvar Pessoa."
+         err.message || "Ocorreu um erro de servidor ao tentar salvar Pessoa." 
          });
       });
 };
