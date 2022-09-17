@@ -1362,7 +1362,7 @@
 <node CREATED="1661953913545" ID="ID_1583863780" MODIFIED="1662397490229" TEXT="if (!req.{{ $atributoPai }}.{{ name }}) {">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1661953954743" ID="ID_1743416165" MODIFIED="1663004681166" TEXT="camposRequeridosEmpty.push(&quot; {[ concat(substring-after($atributoPai,&apos;body.), @name) }]&quot;);">
+<node CREATED="1661953954743" ID="ID_1743416165" MODIFIED="1663448149620" TEXT="camposRequeridosEmpty.push(&quot; {[ concat(substring-after($atributoPai,&apos;body.&apos;),mi:if-else($level = 0, &apos; &apos;, &apos; .&apos;),@name) }]&quot;);">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1661953982514" ID="ID_675332872" MODIFIED="1662140690135" TEXT="{{ mi:if-else(@mode = &apos;composite&apos;,&apos;) else {&apos;,&apos; }&apos;) }}">
