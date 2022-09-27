@@ -3,16 +3,16 @@ const Cidade = db.;
 validaCamposRequeridosCidade = (req) => {
 const CamposRequeridosEmpty = new Array();
 if (!req.body.) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.), @name) }]");
+camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
 if (!req.body.) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.), @name) }]");
+camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
 if (!req.body.) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.), @name) }]");
+camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
 if (!req.body.) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.), @name) }]");
+camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
 return CamposRequeridosEmpty;
 }
@@ -48,7 +48,7 @@ return;
 };
 
 //Cria e salva um novo documento para nova entidade
-exports.create = (req, res) => {
+exports.findAll = (req, res) => {
 var condition = {};
    Cidade.find(condition)
      .then(data => {
@@ -58,6 +58,30 @@ var condition = {};
        res.status(500).send({
          message:
            err.message || "Some error occurred while retrieving Cidade."
+       });
+     });
+ };
+
+//Busca a entidade Cidade por id
+exports.findOne = (req, res) => {
+    // Validate request
+    if (!req.body.id) {
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
+}
+
+  const id = req.params.id; 
+
+   Cidade.findById(id)
+     .then(data => {
+       if (!data)
+   res.status(404).send({ message: "Cidade with id " + id + "não encontrada"});
+else res.send(data);
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Erro desconhecido aconteceu ao procurar entidade Cidade."
        });
      });
  };
