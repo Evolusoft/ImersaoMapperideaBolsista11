@@ -1300,11 +1300,34 @@
 </node>
 </node>
 </node>
-<node CREATED="1663448503858" ID="ID_538235253" MODIFIED="1663448518217" TEXT="findOne">
+<node CREATED="1663448503858" ID="ID_538235253" MODIFIED="1664299232212" TEXT="findOne">
+<arrowlink DESTINATION="ID_538235253" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_1073398999" STARTARROW="None" STARTINCLINATION="0;0;"/>
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_538235253" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_1073398999" SOURCE="ID_538235253" STARTARROW="None" STARTINCLINATION="0;0;"/>
 <icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1664297473144" ID="ID_1155871559" MODIFIED="1664297489703" TEXT="vars">
+<icon BUILTIN="element"/>
+<node CREATED="1664297484054" ID="ID_530169150" MODIFIED="1664297489702" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1664297499804" ID="ID_123252588" MODIFIED="1664297535197" TEXT="defineCampoEmpty">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664297518844" ID="ID_402857575" MODIFIED="1664297539670" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1664297527129" ID="ID_1413170294" MODIFIED="1664297545691" TEXT="&apos;id&apos;">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
 <node CREATED="1661864761796" ID="ID_84969372" MODIFIED="1661864805997" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1661864766815" ID="ID_1800983665" MODIFIED="1663448548452" TEXT="inicioFindOne">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661864761796" ID="ID_1151461676" MODIFIED="1661864805997" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_244531451" MODIFIED="1661865279105" TEXT="validaEmptyRequest">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1327,6 +1350,60 @@
 </node>
 </node>
 </node>
+<node CREATED="1664299234649" ID="ID_1057791770" MODIFIED="1664299238879" TEXT="update">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1664297473144" ID="ID_231115458" MODIFIED="1664297489703" TEXT="vars">
+<icon BUILTIN="element"/>
+<node CREATED="1664297484054" ID="ID_1233844700" MODIFIED="1664297489702" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1664297499804" ID="ID_353024404" MODIFIED="1664297535197" TEXT="defineCampoEmpty">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664297518844" ID="ID_461324071" MODIFIED="1664297539670" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1664297527129" ID="ID_700339021" MODIFIED="1664297545691" TEXT="&apos;id&apos;">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1661864761796" ID="ID_943315026" MODIFIED="1661864805997" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_1704141961" MODIFIED="1664299299576" TEXT="inicioUpdate">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661864761796" ID="ID_1754545310" MODIFIED="1661864805997" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_198389254" MODIFIED="1661865279105" TEXT="validaEmptyRequest">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661864761796" ID="ID_985127572" MODIFIED="1661864805997" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_1386270487" MODIFIED="1661954287221" TEXT="validaCamposRequeridos">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1663448588786" ID="ID_1420063653" MODIFIED="1663448593354" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1663448610022" ID="ID_1901941526" MODIFIED="1663448623152" TEXT="declaraFiltroById">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664299534472" ID="ID_1789517878" MODIFIED="1664299556009" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664299541391" ID="ID_1382163920" MODIFIED="1664299551314" TEXT="executaUpdate">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664299534472" ID="ID_224343170" MODIFIED="1664299556009" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664299541391" ID="ID_667894582" MODIFIED="1664299645319" TEXT="fimUpdate">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
 </node>
 </node>
 <node CREATED="1661142484311" ID="ID_201591251" MODIFIED="1662579647226" TEXT="patterns">
@@ -1337,30 +1414,6 @@
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1661142584843" ID="ID_434036588" MODIFIED="1661146617495" TEXT="const {{ @name }} = db.{{ mi:first-lower(properties/plural/value) }};">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-<node CREATED="1661954344063" FOLDED="true" ID="ID_383905208" MODIFIED="1662581205186" TEXT="validaCamposRequeridos">
-<icon BUILTIN="element"/>
-<node CREATED="1661954379092" ID="ID_981409476" MODIFIED="1662052226283" TEXT="const camposRequeridosEmpty = validaCamposRequeridos.{{ @name }} (req);">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1661954469315" ID="ID_58910372" MODIFIED="1661955030282" TEXT="if (camposRequeridosEmpty.length &gt; 0) {">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1661954515547" ID="ID_495091478" MODIFIED="1661955030283" TEXT="res.status(400).send({message: &quot;campos requeridos (&quot;+camposRequeridosEmpty.join (&quot;,&quot;) + &quot;nao podem ser vazios&quot; });">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1661955003835" ID="ID_1501083860" MODIFIED="1661955030285" TEXT="return;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1661955009469" ID="ID_1868981509" MODIFIED="1661955030285" TEXT="}">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-<node CREATED="1662139553445" ID="ID_1842877450" MODIFIED="1662139574699" TEXT="fechaValidacaoComposite">
-<icon BUILTIN="element"/>
-<node CREATED="1661955009469" ID="ID_1509702901" MODIFIED="1661955030285" TEXT="}">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1397,7 +1450,55 @@
 </node>
 </node>
 </node>
-<node CREATED="1661864901971" FOLDED="true" ID="ID_592073131" MODIFIED="1662584550334" TEXT="create">
+<node CREATED="1664297424428" FOLDED="true" ID="ID_707554534" MODIFIED="1664300723352" TEXT="usoComum">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1661865294369" ID="ID_1594521419" MODIFIED="1661865312736" TEXT="validaEmptyRequest">
+<icon BUILTIN="element"/>
+<node CREATED="1661865369157" ID="ID_956720342" MODIFIED="1661865516807" TEXT="    // Validate request">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865369160" ID="ID_1456598686" MODIFIED="1661879823168" TEXT="    if (!req.body.{{ $defineCampoEmpty }}) {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865369161" ID="ID_848994543" MODIFIED="1661865973592" TEXT="        res.status(400).send({ message: &quot;Conteudo nao pode ser vazio!&quot; });">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865369161" ID="ID_1863947363" MODIFIED="1661865516808" TEXT="        return;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865456050" ID="ID_1803907330" MODIFIED="1661865516808" TEXT="}">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661954344063" ID="ID_383905208" MODIFIED="1664299471532" TEXT="validaCamposRequeridos">
+<icon BUILTIN="element"/>
+<node CREATED="1661954379092" ID="ID_981409476" MODIFIED="1662052226283" TEXT="const camposRequeridosEmpty = validaCamposRequeridos.{{ @name }} (req);">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661954469315" ID="ID_58910372" MODIFIED="1661955030282" TEXT="if (camposRequeridosEmpty.length &gt; 0) {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661954515547" ID="ID_495091478" MODIFIED="1661955030283" TEXT="res.status(400).send({message: &quot;campos requeridos (&quot;+camposRequeridosEmpty.join (&quot;,&quot;) + &quot;nao podem ser vazios&quot; });">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661955003835" ID="ID_1501083860" MODIFIED="1661955030285" TEXT="return;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661955009469" ID="ID_1868981509" MODIFIED="1661955030285" TEXT="}">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662581574254" ID="ID_336186192" MODIFIED="1663449928339" TEXT="declaraFiltroById">
+<icon BUILTIN="element"/>
+<node CREATED="1664297893786" ID="ID_1479322308" MODIFIED="1664297896897" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662581762922" ID="ID_656559148" MODIFIED="1663449046903" TEXT="  const id = req.params.id; ">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1661864901971" FOLDED="true" ID="ID_592073131" MODIFIED="1664299032459" TEXT="create">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864909476" ID="ID_1684130416" MODIFIED="1661864996424" TEXT="inicioCreate">
 <icon BUILTIN="element"/>
@@ -1414,24 +1515,6 @@
 <node CREATED="1661868677049" ID="ID_92149989" MODIFIED="1661868714328" TEXT="fimCreate">
 <icon BUILTIN="element"/>
 <node CREATED="1661868691578" ID="ID_1459556112" MODIFIED="1661868708583" TEXT="};">
-<icon BUILTIN="tag_green"/>
-</node>
-</node>
-<node CREATED="1661865294369" ID="ID_1594521419" MODIFIED="1661865312736" TEXT="validaEmptyRequest">
-<icon BUILTIN="element"/>
-<node CREATED="1661865369157" ID="ID_956720342" MODIFIED="1661865516807" TEXT="    // Validate request">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1661865369160" ID="ID_1456598686" MODIFIED="1661879823168" TEXT="    if (!req.body.{{ $defineCampoEmpty }}) {">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1661865369161" ID="ID_848994543" MODIFIED="1661865973592" TEXT="        res.status(400).send({ message: &quot;Conteudo nao pode ser vazio!&quot; });">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1661865369161" ID="ID_1863947363" MODIFIED="1661865516808" TEXT="        return;">
-<icon BUILTIN="tag_green"/>
-</node>
-<node CREATED="1661865456050" ID="ID_1803907330" MODIFIED="1661865516808" TEXT="}">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1573,7 +1656,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1663448701917" ID="ID_981922200" MODIFIED="1663448708506" TEXT="findOne">
+<node CREATED="1663448701917" FOLDED="true" ID="ID_981922200" MODIFIED="1664300721759" TEXT="findOne">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864909476" ID="ID_1746654963" MODIFIED="1663449855528" TEXT="inicioFindOne">
 <icon BUILTIN="element"/>
@@ -1587,9 +1670,9 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1662581574254" ID="ID_336186192" MODIFIED="1663449928339" TEXT="declaraFiltroById">
+<node CREATED="1662581262593" ID="ID_4086891" MODIFIED="1663449494791" TEXT="fimFindOne">
 <icon BUILTIN="element"/>
-<node CREATED="1662581762922" ID="ID_656559148" MODIFIED="1663449046903" TEXT="  const id = req.params.id; ">
+<node CREATED="1661868677049" ID="ID_1852611849" MODIFIED="1662581528957" TEXT=" };">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -1625,7 +1708,7 @@
 <node CREATED="1662582322742" ID="ID_518869286" MODIFIED="1662582406712" TEXT="         message:">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1662582332526" ID="ID_1160683080" MODIFIED="1663449415677" TEXT="           err.message || &quot;Some error occurred while retrieving entity {{ @name }}.&quot;">
+<node CREATED="1662582332526" ID="ID_1160683080" MODIFIED="1664296910349" TEXT="           err.message || &quot;Erro desconhecido aconteceu ao procurar entidade {{ @name }}.&quot;">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1662582357793" ID="ID_1509492896" MODIFIED="1662582406711" TEXT="       });">
@@ -1635,15 +1718,75 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1662581262593" ID="ID_4086891" MODIFIED="1663449494791" TEXT="fimFindOne">
+</node>
+<node CREATED="1664298947047" ID="ID_341652230" MODIFIED="1664299033877" TEXT="update">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1661864909476" ID="ID_1646032679" MODIFIED="1664300570021" TEXT="inicioUpdate">
 <icon BUILTIN="element"/>
-<node CREATED="1661868677049" ID="ID_1852611849" MODIFIED="1662581528957" TEXT=" };">
+<node CREATED="1661865058563" ID="ID_615493866" MODIFIED="1661865064588" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865013712" ID="ID_1095521690" MODIFIED="1664300604755" TEXT="//Altera uma entidade">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865074537" ID="ID_6355913" MODIFIED="1664300576612" TEXT="exports.update = (req, res) =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661868677049" FOLDED="true" ID="ID_325960259" MODIFIED="1664299158479" TEXT="fimUpdate">
+<icon BUILTIN="element"/>
+<node CREATED="1661868691578" ID="ID_620766937" MODIFIED="1661868708583" TEXT="};">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664299595198" ID="ID_867190548" MODIFIED="1664299600017" TEXT="executaUpdate">
+<icon BUILTIN="element"/>
+<node CREATED="1663449088436" ID="ID_1067990482" MODIFIED="1663449091580" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582220150" ID="ID_1899002328" MODIFIED="1664299838435" TEXT="   {{ @name }}.findByIdAndUpdate(id, req.body, { useFindAndModify: false })">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582248278" ID="ID_21099407" MODIFIED="1662582406713" TEXT="     .then(data =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582272448" ID="ID_1654085532" MODIFIED="1664299891682" TEXT=" if (!data) {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1663449251129" ID="ID_161875147" MODIFIED="1664300276431" TEXT="           res.status(404).send({ message: ` A entidade {{ @name }} Cannot update com id=${id}. Maybe {{ @name }} was not found!`">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664300165880" ID="ID_1568343736" MODIFIED="1664300170778" TEXT="        });">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1663449375053" ID="ID_1004679251" MODIFIED="1664300428354" TEXT="      } else res.send({ message: `{{ @name }} com id=${id} foi atualizada com sucesso.` })">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582294986" ID="ID_705109950" MODIFIED="1662582406712" TEXT="     })">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582308767" ID="ID_1513450930" MODIFIED="1662582406712" TEXT="     .catch(err =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582315895" ID="ID_1354825675" MODIFIED="1662582406712" TEXT="       res.status(500).send({">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582322742" ID="ID_1477668696" MODIFIED="1662582406712" TEXT="         message:">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582332526" ID="ID_301046495" MODIFIED="1664300334055" TEXT="           err.message || &quot;Erro desconhecido aconteceu ao alterar entidade {{ @name }}.&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582357793" ID="ID_1492559709" MODIFIED="1662582406711" TEXT="       });">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582374321" ID="ID_264498588" MODIFIED="1662582406711" TEXT="     });">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
 </node>
 </node>
-<node CREATED="1661866887512" ID="ID_1134600720" MODIFIED="1662581163705" TEXT="templates">
+<node CREATED="1661866887512" FOLDED="true" ID="ID_1134600720" MODIFIED="1664297403198" TEXT="templates">
 <icon BUILTIN="element"/>
 <node CREATED="1661866909030" FOLDED="true" ID="ID_1386571956" MODIFIED="1662584374515" TEXT="mode">
 <icon BUILTIN="element"/>

@@ -82,3 +82,33 @@ else res.send(data);
        });
      });
  };
+
+//Altera uma entidade
+exports.update = (req, res) => {
+    // Validate request
+    if (!req.body.id) {
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
+}
+const camposRequeridosEmpty = validaCamposRequeridos.Bairro (req);
+if (camposRequeridosEmpty.length > 0) {
+res.status(400).send({message: "campos requeridos ("+camposRequeridosEmpty.join (",") + "nao podem ser vazios" });
+return;
+}
+
+  const id = req.params.id; 
+
+   Bairro.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+     .then(data => {
+ if (!data) {
+           res.status(404).send({ message: ` A entidade Bairro Cannot update com id=${id}. Maybe Bairro was not found!`
+        });
+      } else res.send({ message: `Bairro com id=${id} foi atualizada com sucesso.` })
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Erro desconhecido aconteceu ao alterar entidade Bairro."
+       });
+     });
+};

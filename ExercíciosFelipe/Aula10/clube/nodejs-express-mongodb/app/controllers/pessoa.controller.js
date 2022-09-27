@@ -4,20 +4,19 @@ validaCamposRequeridosPessoa = (req) => {
 const CamposRequeridosEmpty = new Array();
 if (!req.body.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
-} else {
+) else {
 if (!req.body.documento.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
 if (!req.body.documento.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
-}
 if (!req.body.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
 if (!req.body.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
-} else {
+) else {
 if (!req.body.endereco.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
@@ -38,15 +37,13 @@ camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:
  }
 if (!req.body.endereco.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
-} else {
+) else {
 if (!req.body.endereco.pontoReferencia.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
 if (!req.body.endereco.pontoReferencia.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
-}
-}
 if (!req.body.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
@@ -70,8 +67,8 @@ return;
 }
    // Create a Pessoa
    const pessoa = new Pessoa ({
-      nome: req.body.nome ? req.body.nome : null ,
-      dataNascimento: req.body.dataNascimento ? req.body.dataNascimento : null ,
+      nome: req.body.nome ? req.body.nome : null : ,
+      dataNascimento: req.body.dataNascimento ? req.body.dataNascimento : null : ,
    });
    pessoa
       .save(pessoa)
@@ -124,3 +121,33 @@ else res.send(data);
        });
      });
  };
+
+//Altera uma entidade
+exports.update = (req, res) => {
+    // Validate request
+    if (!req.body.id) {
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
+}
+const camposRequeridosEmpty = validaCamposRequeridos.Pessoa (req);
+if (camposRequeridosEmpty.length > 0) {
+res.status(400).send({message: "campos requeridos ("+camposRequeridosEmpty.join (",") + "nao podem ser vazios" });
+return;
+}
+
+  const id = req.params.id; 
+
+   Pessoa.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
+     .then(data => {
+ if (!data) {
+           res.status(404).send({ message: ` A entidade Pessoa Cannot update com id=${id}. Maybe Pessoa was not found!`
+        });
+      } else res.send({ message: `Pessoa com id=${id} foi atualizada com sucesso.` })
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Erro desconhecido aconteceu ao alterar entidade Pessoa."
+       });
+     });
+};
