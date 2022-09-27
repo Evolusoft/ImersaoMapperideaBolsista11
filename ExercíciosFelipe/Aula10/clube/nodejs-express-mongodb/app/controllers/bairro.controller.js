@@ -112,3 +112,31 @@ return;
        });
      });
 };
+
+//Remove a entidade Bairro por id
+exports.delete = (req, res) => {
+    // Validate request
+    if (!req.body.id) {
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
+}
+
+  const id = req.params.id; 
+
+   Bairro.findByIdAndRemove(id)
+     .then(data => {
+ if (!data) {
+           res.status(404).send({ message: ` A entidade Bairro Cannot delete entidade com id=${id}. Maybe Bairro was not found!`
+        });
+} else {
+        res.send({
+       message: `Bairro com id=${id} foi excluida com sucesso.` });
+      }
+    })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           "Erro desconhecido aconteceu ao excluir entidade Bairro."
+       });
+     });
+ };

@@ -109,3 +109,31 @@ return;
        });
      });
 };
+
+//Remove a entidade UnidadeFederativa por id
+exports.delete = (req, res) => {
+    // Validate request
+    if (!req.body.id) {
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
+}
+
+  const id = req.params.id; 
+
+   UnidadeFederativa.findByIdAndRemove(id)
+     .then(data => {
+ if (!data) {
+           res.status(404).send({ message: ` A entidade UnidadeFederativa Cannot delete entidade com id=${id}. Maybe UnidadeFederativa was not found!`
+        });
+} else {
+        res.send({
+       message: `UnidadeFederativa com id=${id} foi excluida com sucesso.` });
+      }
+    })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           "Erro desconhecido aconteceu ao excluir entidade UnidadeFederativa."
+       });
+     });
+ };
