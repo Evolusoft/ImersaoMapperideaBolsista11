@@ -50,6 +50,9 @@ camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:
 if (!req.body.) {
 camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
  }
+if (!req.body.) {
+camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
+ }
 return CamposRequeridosEmpty;
 }
 
@@ -68,6 +71,7 @@ return;
    // Create a Pessoa
    const pessoa = new Pessoa ({
       nome: req.body.nome ? req.body.nome : null : ,
+      ativo: req.body.ativo ? req.body.ativo : false : ,
       dataNascimento: req.body.dataNascimento ? req.body.dataNascimento : null : ,
    });
    pessoa
@@ -193,6 +197,20 @@ var condition = {};
        res.status(500).send({
          message:
            err.message || "Some error occurred while deleting todos Pessoa."
+       });
+     });
+ };
+
+//Procura por entidade Pessoa onde campo booleano ativo seja true
+exports.findAllAtivo = (req, res) => {
+   Pessoa.find({ ativo: true })
+     .then(data => {
+       res.send(data);
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Some error occurred while retrieving Pessoa."
        });
      });
  };
