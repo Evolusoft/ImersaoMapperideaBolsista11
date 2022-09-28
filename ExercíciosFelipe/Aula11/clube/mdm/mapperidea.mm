@@ -1198,7 +1198,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1662577982789" FOLDED="true" ID="ID_964717344" MODIFIED="1664301317670" TEXT="findAll">
+<node CREATED="1662577982789" FOLDED="true" ID="ID_964717344" MODIFIED="1664385062484" TEXT="findAll">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864761796" ID="ID_1657952743" MODIFIED="1661864805997" TEXT="write-pattern">
 <icon BUILTIN="element"/>
@@ -1404,7 +1404,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664301296416" ID="ID_315796249" MODIFIED="1664301302063" TEXT="delete">
+<node CREATED="1664301296416" ID="ID_315796249" MODIFIED="1664383000547" TEXT="delete">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1664297473144" ID="ID_1345845698" MODIFIED="1664297489703" TEXT="vars">
 <icon BUILTIN="element"/>
@@ -1449,6 +1449,45 @@
 <icon BUILTIN="element"/>
 <node CREATED="1661868771933" ID="ID_1150366831" MODIFIED="1664301343335" TEXT="fimDelete">
 <icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664382905532" ID="ID_1562690787" MODIFIED="1664382917250" TEXT="deleteAll">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1661864761796" ID="ID_29824462" MODIFIED="1661864805997" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_366885552" MODIFIED="1664382950646" TEXT="inicioDeleteAll">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662582049058" ID="ID_717701557" MODIFIED="1662582117704" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1662582132537" ID="ID_942894162" MODIFIED="1664383019067" TEXT="executaDeleteAll">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661868766170" ID="ID_1308359785" MODIFIED="1664383009719" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661868771933" ID="ID_1669614626" MODIFIED="1664382966294" TEXT="fimDeleteAll">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664384740716" ID="ID_1137256445" MODIFIED="1664384747081" TEXT="findAllBoolean">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1664384785058" ID="ID_977114693" MODIFIED="1664384826057" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1664384799894" ID="ID_1517752370" MODIFIED="1664384826057" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1664384829049" ID="ID_526178056" MODIFIED="1664384894940" TEXT="attributes/attribute[@type = &apos;Boolean&apos;]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664384908722" ID="ID_1613398063" MODIFIED="1664384926534" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1664384911613" ID="ID_353771517" MODIFIED="1664384930427" TEXT="declarafindAllBoolean">
+<icon BUILTIN="tag_green"/>
+</node>
 </node>
 </node>
 </node>
@@ -1626,7 +1665,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1662578093181" FOLDED="true" ID="ID_56579066" MODIFIED="1663449182153" TEXT="findAll">
+<node CREATED="1662578093181" FOLDED="true" ID="ID_56579066" MODIFIED="1664385172536" TEXT="findAll">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864909476" ID="ID_34719004" MODIFIED="1662578142885" TEXT="inicioFindAll">
 <icon BUILTIN="element"/>
@@ -1767,7 +1806,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664298947047" ID="ID_341652230" MODIFIED="1664301568954" TEXT="update">
+<node CREATED="1664298947047" FOLDED="true" ID="ID_341652230" MODIFIED="1664382773826" TEXT="update">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864909476" ID="ID_1646032679" MODIFIED="1664300570021" TEXT="inicioUpdate">
 <icon BUILTIN="element"/>
@@ -1833,7 +1872,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1663448701917" ID="ID_1455498355" MODIFIED="1664301429778" TEXT="delete">
+<node CREATED="1663448701917" FOLDED="true" ID="ID_1455498355" MODIFIED="1664382759057" TEXT="delete">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864909476" ID="ID_238488898" MODIFIED="1664301456435" TEXT="inicioDelete">
 <icon BUILTIN="element"/>
@@ -1908,8 +1947,125 @@
 </node>
 </node>
 </node>
+<node CREATED="1662578093181" FOLDED="true" ID="ID_203892461" MODIFIED="1664384114427" TEXT="deleteAll">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1661864909476" ID="ID_155582447" MODIFIED="1664383089230" TEXT="inicioDeleteAll">
+<icon BUILTIN="element"/>
+<node CREATED="1661865058563" ID="ID_377633673" MODIFIED="1661865064588" TEXT="">
+<icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1661866887512" FOLDED="true" ID="ID_1134600720" MODIFIED="1664297403198" TEXT="templates">
+<node CREATED="1661865013712" ID="ID_116734970" MODIFIED="1664383142480" TEXT="//Exclui todos os registros">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865074537" ID="ID_1122475242" MODIFIED="1664383100246" TEXT="exports.deleteAll = (req, res) =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662578720170" ID="ID_1018955529" MODIFIED="1662578723875" TEXT="var condition = {};">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662581262593" ID="ID_1532901451" MODIFIED="1664383164888" TEXT="fimDeleteAll">
+<icon BUILTIN="element"/>
+<node CREATED="1661868677049" ID="ID_990771124" MODIFIED="1662581528957" TEXT=" };">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662582185507" ID="ID_1852594539" MODIFIED="1664383213836" TEXT="executaDeleteAll">
+<icon BUILTIN="element"/>
+<node CREATED="1662582220150" ID="ID_1470305553" MODIFIED="1664383238343" TEXT="   {{ @name }}.deleteMany({})">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582248278" ID="ID_299593959" MODIFIED="1662582406713" TEXT="     .then(data =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582315895" ID="ID_859680988" MODIFIED="1664383319530" TEXT="       res.send({">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582322742" ID="ID_1858663177" MODIFIED="1664383405473" TEXT="        message: `${data.deletedCount} {{ @name }} foram excluidas!`">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582357793" ID="ID_95900332" MODIFIED="1662582406711" TEXT="       });">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582294986" ID="ID_830653208" MODIFIED="1662582406712" TEXT="     })">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582308767" ID="ID_112338891" MODIFIED="1662582406712" TEXT="     .catch(err =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582315895" ID="ID_420416602" MODIFIED="1662582406712" TEXT="       res.status(500).send({">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582322742" ID="ID_510963283" MODIFIED="1662582406712" TEXT="         message:">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582332526" ID="ID_1065183409" MODIFIED="1664383761552" TEXT="           err.message || &quot;Some error occurred while deleting todos {{ @name }}.&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582357793" ID="ID_1827803580" MODIFIED="1662582406711" TEXT="       });">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582374321" ID="ID_702845905" MODIFIED="1662582406711" TEXT="     });">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664384740716" ID="ID_1382726671" MODIFIED="1664384747081" TEXT="findAllBoolean">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1661864909476" ID="ID_438786611" MODIFIED="1664385238327" TEXT="inicioFindAllBoolean">
+<icon BUILTIN="element"/>
+<node CREATED="1661865058563" ID="ID_1453860454" MODIFIED="1661865064588" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865013712" ID="ID_184270845" MODIFIED="1664385406675" TEXT="//Procura por entidade {{ ancestor::class/@name }} onde campo booleano {{ @name }} seja true">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661865074537" ID="ID_1537713783" MODIFIED="1664385516828" TEXT="exports.findAll{{ mi:first-upper(@name) }} = (req, res) =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662582185507" ID="ID_1003302148" MODIFIED="1664385200241" TEXT="executaBuscaFindAllBoolean">
+<icon BUILTIN="element"/>
+<node CREATED="1662582220150" ID="ID_1531390125" MODIFIED="1664385694296" TEXT="   {{ ancestor::class/@name }}.find({ {{ @name }}: true })">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582248278" ID="ID_1879848899" MODIFIED="1662582406713" TEXT="     .then(data =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582272448" ID="ID_846620158" MODIFIED="1662582406712" TEXT="       res.send(data);">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582294986" ID="ID_1459658820" MODIFIED="1662582406712" TEXT="     })">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582308767" ID="ID_1329339729" MODIFIED="1662582406712" TEXT="     .catch(err =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582315895" ID="ID_1223407691" MODIFIED="1662582406712" TEXT="       res.status(500).send({">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582322742" ID="ID_543953413" MODIFIED="1662582406712" TEXT="         message:">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582332526" ID="ID_1016105371" MODIFIED="1664385807100" TEXT="           err.message || &quot;Some error occurred while retrieving {{ ancestor::class/@name }}.&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582357793" ID="ID_470694655" MODIFIED="1662582406711" TEXT="       });">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1662582374321" ID="ID_743905733" MODIFIED="1662582406711" TEXT="     });">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662581262593" ID="ID_393260656" MODIFIED="1664385206061" TEXT="fimFindAllBoolean">
+<icon BUILTIN="element"/>
+<node CREATED="1661868677049" ID="ID_1154501227" MODIFIED="1662581528957" TEXT=" };">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1661866887512" ID="ID_1134600720" MODIFIED="1664384944476" TEXT="templates">
 <icon BUILTIN="element"/>
 <node CREATED="1661866909030" FOLDED="true" ID="ID_1386571956" MODIFIED="1662584374515" TEXT="mode">
 <icon BUILTIN="element"/>
@@ -2157,6 +2313,42 @@
 <node CREATED="1662581438345" ID="ID_1654740358" MODIFIED="1662581469786" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1662581447229" ID="ID_72585260" MODIFIED="1662581473335" TEXT="declaraCampoFiltroFindAll">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1664384908722" ID="ID_81428292" MODIFIED="1664384926534" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1664384911613" ID="ID_1653265748" MODIFIED="1664384930427" TEXT="declarafindAllBoolean">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664384965222" ID="ID_989324517" MODIFIED="1664384971532" TEXT="template">
+<icon BUILTIN="element"/>
+<node CREATED="1662581344091" ID="ID_866534501" MODIFIED="1662581380750" TEXT="match">
+<icon BUILTIN="element"/>
+<node CREATED="1662581382677" ID="ID_1124997410" MODIFIED="1662581388722" TEXT="attribute">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662581407506" ID="ID_69718774" MODIFIED="1664385086452" TEXT="body">
+<icon BUILTIN="element"/>
+<node CREATED="1661864761796" ID="ID_559442480" MODIFIED="1661864805997" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661864766815" ID="ID_198692451" MODIFIED="1664385077003" TEXT="inicioFindAllBoolean">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1662582049058" ID="ID_1063484611" MODIFIED="1662582117704" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1662582132537" ID="ID_712378809" MODIFIED="1664385127144" TEXT="executaBuscaFindAllBoolean">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661868766170" ID="ID_1007591465" MODIFIED="1661868786950" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1661868771933" ID="ID_1978855955" MODIFIED="1664385098685" TEXT="fimFindAllBoolean">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
