@@ -143,3 +143,20 @@ exports.delete = (req, res) => {
        });
      });
  };
+
+//Exclui todos os registros
+exports.deleteAll = (req, res) => {
+var condition = {};
+   Cidade.deleteMany({})
+     .then(data => {
+       res.send({
+        message: `${data.deletedCount} Cidade foram excluidas!`
+       });
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Some error occurred while deleting todos Cidade."
+       });
+     });
+ };

@@ -151,3 +151,48 @@ return;
        });
      });
 };
+
+//Remove a entidade Pessoa por id
+exports.delete = (req, res) => {
+    // Validate request
+    if (!req.body.id) {
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
+}
+
+  const id = req.params.id; 
+
+   Pessoa.findByIdAndRemove(id)
+     .then(data => {
+ if (!data) {
+           res.status(404).send({ message: ` A entidade Pessoa Cannot delete entidade com id=${id}. Maybe Pessoa was not found!`
+        });
+} else {
+        res.send({
+       message: `Pessoa com id=${id} foi excluida com sucesso.` });
+      }
+    })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           "Erro desconhecido aconteceu ao excluir entidade Pessoa."
+       });
+     });
+ };
+
+//Exclui todos os registros
+exports.deleteAll = (req, res) => {
+var condition = {};
+   Pessoa.deleteMany({})
+     .then(data => {
+       res.send({
+        message: `${data.deletedCount} Pessoa foram excluidas!`
+       });
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Some error occurred while deleting todos Pessoa."
+       });
+     });
+ };

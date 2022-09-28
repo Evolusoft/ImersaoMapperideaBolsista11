@@ -137,3 +137,20 @@ exports.delete = (req, res) => {
        });
      });
  };
+
+//Exclui todos os registros
+exports.deleteAll = (req, res) => {
+var condition = {};
+   UnidadeFederativa.deleteMany({})
+     .then(data => {
+       res.send({
+        message: `${data.deletedCount} UnidadeFederativa foram excluidas!`
+       });
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Some error occurred while deleting todos UnidadeFederativa."
+       });
+     });
+ };

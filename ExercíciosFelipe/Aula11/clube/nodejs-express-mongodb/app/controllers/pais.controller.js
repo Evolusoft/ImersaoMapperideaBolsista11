@@ -137,3 +137,20 @@ exports.delete = (req, res) => {
        });
      });
  };
+
+//Exclui todos os registros
+exports.deleteAll = (req, res) => {
+var condition = {};
+   Pais.deleteMany({})
+     .then(data => {
+       res.send({
+        message: `${data.deletedCount} Pais foram excluidas!`
+       });
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Some error occurred while deleting todos Pais."
+       });
+     });
+ };
