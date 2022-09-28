@@ -141,3 +141,20 @@ exports.delete = (req, res) => {
        });
      });
  };
+
+//Exclui todos os registros
+exports.deleteAll = (req, res) => {
+var condition = {};
+   Tutorial.deleteMany({})
+     .then(data => {
+       res.send({
+        message: `${data.deletedCount} Tutorial foram excluidas!`
+       });
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Some error occurred while deleting todos Tutorial."
+       });
+     });
+ };
