@@ -1,0 +1,50 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1664470163987" ID="ID_570783040" LINK="io.mapperidea.earlyadopter.mm" MODIFIED="1664471077324" TEXT="window">
+<icon BUILTIN="Package"/>
+<node CREATED="1664470223223" MODIFIED="1664470226972" POSITION="right" TEXT="tutorial">
+<icon BUILTIN="Package"/>
+</node>
+<node CREATED="1664470268860" MODIFIED="1664470281958" POSITION="right" TEXT="geo">
+<icon BUILTIN="Package"/>
+<node CREATED="1664470271008" MODIFIED="1664470293916" TEXT="pais">
+<icon BUILTIN="Package"/>
+<node CREATED="1664470309186" MODIFIED="1664470370995" TEXT="PaisList">
+<icon BUILTIN="Descriptor.window.list"/>
+<node CREATED="1664470529024" ID="ID_1598930111" MODIFIED="1664470552007" TEXT="atributos">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1664470531593" MODIFIED="1664470579054" TEXT="paisCollection: Pais()">
+<icon BUILTIN="Mapping.oneToMany"/>
+</node>
+<node CREATED="1664470728669" MODIFIED="1664470745243" TEXT="pais: Pais()">
+<icon BUILTIN="Mapping.oneToOne"/>
+</node>
+</node>
+<node CREATED="1664470673957" ID="ID_1746877971" MODIFIED="1664470674945" TEXT="cols">
+<node CREATED="1664470771813" ID="ID_1037772802" MODIFIED="1664470773622" TEXT=".sigla"/>
+<node CREATED="1664470768765" ID="ID_1337064976" MODIFIED="1664470771213" TEXT=".nome"/>
+</node>
+</node>
+<node CREATED="1664470314138" ID="ID_1583481195" MODIFIED="1664470414055" TEXT="PaisEditor">
+<icon BUILTIN="Descriptor.window.editor"/>
+<node CREATED="1664470529024" ID="ID_712739118" MODIFIED="1664470552007" TEXT="atributos">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1664470728669" ID="ID_1885295754" MODIFIED="1664470745243" TEXT="pais: Pais()">
+<icon BUILTIN="Mapping.oneToOne"/>
+</node>
+</node>
+<node CREATED="1664471236058" ID="ID_734988495" MODIFIED="1664471237314" TEXT="rows">
+<node CREATED="1664471338166" ID="ID_1195350592" MODIFIED="1664471339967" TEXT="row">
+<node CREATED="1664471346267" ID="ID_650441226" MODIFIED="1664471348636" TEXT=".sigla"/>
+<node CREATED="1664471339968" ID="ID_632765957" MODIFIED="1664471343676" TEXT=".nome"/>
+</node>
+<node CREATED="1664471364963" ID="ID_1500034608" MODIFIED="1664471366425" TEXT=".ativo"/>
+</node>
+</node>
+</node>
+<node CREATED="1664470278259" MODIFIED="1664470293915" TEXT="cidade">
+<icon BUILTIN="Package"/>
+</node>
+</node>
+</node>
+</map>
