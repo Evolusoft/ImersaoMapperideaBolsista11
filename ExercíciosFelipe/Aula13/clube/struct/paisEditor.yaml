@@ -1,0 +1,15 @@
+ class:
+   @name: PaisEditor
+   @package: io.mapperidea.earlyadopter.window.geo.pais
+   @mode: window.editor
+   attributes:
+     attribute:
+       @mode: oneToOne
+       @name: pais
+       @key: false
+       @type: Pais
+   constructors:
+   methods:
+   events:
+   internalClasses:
+   body:

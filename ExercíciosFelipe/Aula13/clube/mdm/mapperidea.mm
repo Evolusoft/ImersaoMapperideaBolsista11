@@ -222,7 +222,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1559950350941" FOLDED="true" ID="ID_1710416949" MODIFIED="1662580287946" TEXT="templates">
+<node CREATED="1559950350941" FOLDED="true" ID="ID_1710416949" MODIFIED="1664557690785" TEXT="templates">
 <icon BUILTIN="element"/>
 <node CREATED="1559950354129" ID="ID_1420862895" MODIFIED="1559950360706" TEXT="mode">
 <icon BUILTIN="element"/>
@@ -460,7 +460,7 @@
 </node>
 <node CREATED="1660282929138" ID="ID_1779858736" MODIFIED="1660620162806" TEXT="mean">
 <icon BUILTIN="element"/>
-<node CREATED="1660282934484" FOLDED="true" ID="ID_946860577" MODIFIED="1664473541127" TEXT="mongoModel">
+<node CREATED="1660282934484" FOLDED="true" ID="ID_946860577" MODIFIED="1664557617406" TEXT="mongoModel">
 <icon BUILTIN="element"/>
 <node CREATED="1660180833808" ID="ID_1109332726" MODIFIED="1660282990840" TEXT="parameters" VSHIFT="31">
 <icon BUILTIN="element"/>
@@ -1036,7 +1036,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661142306752" FOLDED="true" ID="ID_1565506364" MODIFIED="1664473538999" TEXT="apiController">
+<node CREATED="1661142306752" ID="ID_1565506364" MODIFIED="1664557619269" TEXT="apiController">
 <icon BUILTIN="element"/>
 <node CREATED="1661142327219" ID="ID_178345866" MODIFIED="1661142332868" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -1075,7 +1075,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1661952631276" FOLDED="true" ID="ID_487271768" MODIFIED="1664301321900" TEXT="declaraFunctionValidaRequeridos">
+<node CREATED="1661952631276" FOLDED="true" ID="ID_487271768" MODIFIED="1664557681155" TEXT="declaraFunctionValidaRequeridos">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661952688627" ID="ID_1344118331" MODIFIED="1661952727101" TEXT="apply-templates">
 <icon BUILTIN="element"/>
@@ -1093,7 +1093,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661864752120" FOLDED="true" ID="ID_1017321063" MODIFIED="1664301319582" TEXT="create">
+<node CREATED="1661864752120" FOLDED="true" ID="ID_1017321063" MODIFIED="1664557682763" TEXT="create">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864761796" ID="ID_308775606" MODIFIED="1661864805997" TEXT="write-pattern">
 <icon BUILTIN="element"/>
@@ -1198,7 +1198,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1662577982789" FOLDED="true" ID="ID_964717344" MODIFIED="1664385062484" TEXT="findAll">
+<node CREATED="1662577982789" ID="ID_964717344" MODIFIED="1664557879415" TEXT="findAll">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864761796" ID="ID_1657952743" MODIFIED="1661864805997" TEXT="write-pattern">
 <icon BUILTIN="element"/>
@@ -1404,7 +1404,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664301296416" ID="ID_315796249" MODIFIED="1664383000547" TEXT="delete">
+<node CREATED="1664301296416" FOLDED="true" ID="ID_315796249" MODIFIED="1664557768635" TEXT="delete">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1664297473144" ID="ID_1345845698" MODIFIED="1664297489703" TEXT="vars">
 <icon BUILTIN="element"/>
@@ -1452,7 +1452,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664382905532" ID="ID_1562690787" MODIFIED="1664382917250" TEXT="deleteAll">
+<node CREATED="1664382905532" FOLDED="true" ID="ID_1562690787" MODIFIED="1664557770042" TEXT="deleteAll">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864761796" ID="ID_29824462" MODIFIED="1661864805997" TEXT="write-pattern">
 <icon BUILTIN="element"/>
@@ -1473,7 +1473,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664384740716" ID="ID_1137256445" MODIFIED="1664384747081" TEXT="findAllBoolean">
+<node CREATED="1664384740716" FOLDED="true" ID="ID_1137256445" MODIFIED="1664557771831" TEXT="findAllBoolean">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1664384785058" ID="ID_977114693" MODIFIED="1664384826057" TEXT="apply-templates">
 <icon BUILTIN="element"/>
@@ -1495,7 +1495,7 @@
 </node>
 <node CREATED="1661142484311" ID="ID_201591251" MODIFIED="1662579647226" TEXT="patterns">
 <icon BUILTIN="element"/>
-<node CREATED="1661142491686" FOLDED="true" ID="ID_615784269" MODIFIED="1662581206795" TEXT="inicioController">
+<node CREATED="1661142491686" FOLDED="true" ID="ID_615784269" MODIFIED="1664557916108" TEXT="inicioController">
 <icon BUILTIN="element"/>
 <node CREATED="1661142566197" ID="ID_542690848" MODIFIED="1661142582511" TEXT="const db = require(&quot;../models&quot;);">
 <icon BUILTIN="tag_green"/>
@@ -1504,7 +1504,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1661952962930" FOLDED="true" ID="ID_1200804774" MODIFIED="1663449191169" TEXT="functionValidaRequeridos">
+<node CREATED="1661952962930" ID="ID_1200804774" MODIFIED="1664557906269" TEXT="functionValidaRequeridos">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661952977941" ID="ID_1251821623" MODIFIED="1661953004134" TEXT="inicioFunctionValidaRequeridos">
 <icon BUILTIN="element"/>
@@ -2065,7 +2065,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661866887512" FOLDED="true" ID="ID_1134600720" MODIFIED="1664469560859" TEXT="templates">
+<node CREATED="1661866887512" ID="ID_1134600720" MODIFIED="1664557945033" TEXT="templates">
 <icon BUILTIN="element"/>
 <node CREATED="1661866909030" FOLDED="true" ID="ID_1386571956" MODIFIED="1662584374515" TEXT="mode">
 <icon BUILTIN="element"/>
@@ -2118,7 +2118,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661952822268" FOLDED="true" ID="ID_534813977" MODIFIED="1662584648880" TEXT="mode">
+<node CREATED="1661952822268" ID="ID_534813977" MODIFIED="1664557945078" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1661952835844" ID="ID_1275219871" MODIFIED="1661952935447" TEXT="declaraFunctionValidaRequeridos">
 <icon BUILTIN="tag_green"/>
@@ -2139,7 +2139,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1661953405813" ID="ID_345232316" MODIFIED="1661953495886" TEXT="if">
+<node CREATED="1661953405813" ID="ID_345232316" MODIFIED="1664557949412" TEXT="if">
 <icon BUILTIN="element"/>
 <node CREATED="1661953412734" ID="ID_266469115" MODIFIED="1661953502516" TEXT="exists(attributes[properties/requerido])">
 <icon BUILTIN="tag_green"/>
@@ -2357,7 +2357,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661019640224" FOLDED="true" ID="ID_1731007364" MODIFIED="1661879093301" TEXT="bashGenerateAll">
+<node CREATED="1661019640224" FOLDED="true" ID="ID_1731007364" MODIFIED="1664557728791" TEXT="bashGenerateAll">
 <icon BUILTIN="element"/>
 <node CREATED="1661020875094" ID="ID_796167260" MODIFIED="1661020881670" TEXT="start">
 <icon BUILTIN="element"/>
@@ -2513,7 +2513,7 @@
 </node>
 <node CREATED="1664473561086" ID="ID_1774440471" MODIFIED="1664473592582" TEXT="angular">
 <icon BUILTIN="element"/>
-<node CREATED="1664473584471" ID="ID_1542284455" MODIFIED="1664473659919" TEXT="addEntityHTML">
+<node CREATED="1664473584471" ID="ID_1542284455" MODIFIED="1664555479826" TEXT="addComponentHTML">
 <icon BUILTIN="element"/>
 <node CREATED="1664473672638" ID="ID_1846943517" MODIFIED="1664473692155" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -2589,9 +2589,51 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+<node CREATED="1664557436078" ID="ID_532042627" MODIFIED="1664557445440" TEXT="declaraCampo">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1664555824653" ID="ID_816716926" MODIFIED="1664557332110" TEXT="inicioDeclaraCampo">
+<icon BUILTIN="element"/>
+<node CREATED="1664555868224" ID="ID_1579859415" MODIFIED="1664556280291" TEXT="        &lt;label for=&quot;{{ $classAttribute/@name }}&quot;&gt;{{ $label }}&lt;/label&gt;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664555868225" ID="ID_208832270" MODIFIED="1664556109745" TEXT="        &lt;input">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664555868225" ID="ID_408013972" MODIFIED="1664556109744" TEXT="          type=&quot;text&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664555868226" ID="ID_1462653371" MODIFIED="1664556109744" TEXT="          class=&quot;form-control&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664555868227" ID="ID_660995993" MODIFIED="1664556439346" TEXT="          id=&quot;{{ $classAttribute/@name }}&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664557380887" ID="ID_1123410055" MODIFIED="1664557388150" TEXT="declaraRequerido">
+<icon BUILTIN="element"/>
+<node CREATED="1664555868227" ID="ID_475118594" MODIFIED="1664556109743" TEXT="          required">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664555824653" ID="ID_1391212536" MODIFIED="1664557351027" TEXT="fechaDeclaraCampo">
+<icon BUILTIN="element"/>
+<node CREATED="1664555868228" ID="ID_435757910" MODIFIED="1664556563088" TEXT="          [(ngModel)]=&quot;{{ $editorEntity/@class }}.{{ $classAttribute/@name }}&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664555868229" ID="ID_114170836" MODIFIED="1664556451292" TEXT="          name=&quot;{{ $classAttribute/@name }}&quot;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664555868229" ID="ID_49370945" MODIFIED="1664556109743" TEXT="        /&gt;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664555868230" ID="ID_526336835" MODIFIED="1664556109742" TEXT="      &lt;/div&gt;">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
 <node CREATED="1664474567312" ID="ID_1847260214" MODIFIED="1664474581509" TEXT="fechaNaoSubmetido">
 <icon BUILTIN="element"/>
-<node CREATED="1664474596151" ID="ID_1931224188" MODIFIED="1664474608613" TEXT="       &lt;button (click)=&quot;saveTutorial()&quot; class=&quot;btn btn-success&quot;&gt;Submit&lt;/button&gt;">
+<node CREATED="1664474596151" ID="ID_1931224188" MODIFIED="1664555756187" TEXT="       &lt;button (click)=&quot;save{{ $editorEntity/@type }}()&quot; class=&quot;btn btn-success&quot;&gt;Submit&lt;/button&gt;">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1664474602767" ID="ID_254876081" MODIFIED="1664474608614" TEXT="     &lt;/div&gt;">
@@ -2621,6 +2663,21 @@
 </node>
 <node CREATED="1664474365363" ID="ID_820403513" MODIFIED="1664474375564" TEXT="body">
 <icon BUILTIN="element"/>
+<node CREATED="1664474845488" ID="ID_1704992943" MODIFIED="1664474875288" TEXT="vars">
+<icon BUILTIN="element"/>
+<node CREATED="1664474862527" ID="ID_1221907784" MODIFIED="1664474878263" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1664474871760" ID="ID_1901069945" MODIFIED="1664474910072" TEXT="editorEntity">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664474930132" ID="ID_1139851203" MODIFIED="1664474947365" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1664474932250" ID="ID_1828431598" MODIFIED="1664475147905" TEXT="ancestor::class/attributes/attribute[@mode = &apos;oneToOne&apos;] [1]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
 <node CREATED="1664474367182" ID="ID_473261044" MODIFIED="1664474392251" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1664474402623" ID="ID_1482115381" MODIFIED="1664474419940" TEXT="declaraNaoSubmetido">
@@ -2654,7 +2711,7 @@
 </node>
 <node CREATED="1664474778297" ID="ID_265729647" MODIFIED="1664474780952" TEXT="body">
 <icon BUILTIN="element"/>
-<node CREATED="1664474845488" ID="ID_1461906985" MODIFIED="1664474875288" TEXT="vars">
+<node CREATED="1664474845488" ID="ID_1461906985" MODIFIED="1664556303481" TEXT="vars">
 <icon BUILTIN="element"/>
 <node CREATED="1664474862527" ID="ID_1309342648" MODIFIED="1664474878263" TEXT="var">
 <icon BUILTIN="element"/>
@@ -2680,7 +2737,8 @@
 </node>
 </node>
 </node>
-<node CREATED="1664475552602" ID="ID_760070287" MODIFIED="1664475554160" TEXT="var">
+<node CREATED="1664475552602" ID="ID_760070287" MODIFIED="1664555706513" TEXT="var">
+<icon BUILTIN="element"/>
 <node CREATED="1664475555624" ID="ID_1323471725" MODIFIED="1664475657318" TEXT="attributeName">
 <icon BUILTIN="tag_green"/>
 </node>
@@ -2702,6 +2760,63 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+</node>
+<node CREATED="1664556309132" ID="ID_1318561422" MODIFIED="1664556344328" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1664556311696" ID="ID_1342287015" MODIFIED="1664556348390" TEXT="label">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664556316905" ID="ID_300286572" MODIFIED="1664556344328" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1664556320052" ID="ID_1917001158" MODIFIED="1664556391247" TEXT="mi:first-upper($classAttribute/@name)">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1664555780782" ID="ID_1740189762" MODIFIED="1664555789474" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664555801281" ID="ID_1842674289" MODIFIED="1664557473030" TEXT="inicioDeclaraCampo">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1661953405813" ID="ID_82328916" MODIFIED="1664557949412" TEXT="if">
+<icon BUILTIN="element"/>
+<node CREATED="1661953412734" ID="ID_1709402694" MODIFIED="1664558070338" TEXT="exists(ancestor::class/attributes[properties/requerido])">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1661953417926" ID="ID_548949162" MODIFIED="1661953495886" TEXT="then">
+<icon BUILTIN="element"/>
+<node CREATED="1664558157601" ID="ID_1541004812" MODIFIED="1664558162485" TEXT="if">
+<icon BUILTIN="element"/>
+<node CREATED="1664558164280" ID="ID_1886418626" MODIFIED="1664558194258" TEXT="@key = &apos;true&apos; or properties/requerido">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664558201532" ID="ID_733327047" MODIFIED="1664558227738" TEXT="then">
+<icon BUILTIN="element"/>
+<node CREATED="1664558110869" ID="ID_1395334974" MODIFIED="1664558122244" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664558115642" ID="ID_1259169695" MODIFIED="1664558130673" TEXT="declaraRequerido">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1661953424446" ID="ID_504831117" MODIFIED="1661953495885" TEXT="else">
+<icon BUILTIN="element"/>
+<node CREATED="1664558110869" ID="ID_1607175254" MODIFIED="1664558122244" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664558115642" ID="ID_1339075849" MODIFIED="1664558130673" TEXT="declaraRequerido">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1664555780782" ID="ID_911582966" MODIFIED="1664555789474" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664555801281" ID="ID_1410613932" MODIFIED="1664557533717" TEXT="fechaDeclaraCampo">
+<icon BUILTIN="tag_green"/>
 </node>
 </node>
 </node>
