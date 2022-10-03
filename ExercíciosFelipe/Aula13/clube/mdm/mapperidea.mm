@@ -2604,7 +2604,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1664474455151" ID="ID_443159842" MODIFIED="1664474483856" TEXT="naoSubmetido">
+<node CREATED="1664474455151" ID="ID_443159842" MODIFIED="1664799690732" TEXT="naoSubmetido">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1664474498761" ID="ID_919231599" MODIFIED="1664474519471" TEXT="declaraNaoSubmetido">
 <icon BUILTIN="element"/>
@@ -2667,7 +2667,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664474468134" ID="ID_288805573" MODIFIED="1664474483857" TEXT="submetido">
+<node CREATED="1664474468134" FOLDED="true" ID="ID_288805573" MODIFIED="1664798384220" TEXT="submetido">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1664558540931" ID="ID_514832663" MODIFIED="1664558553532" TEXT="declaraSubmetido">
 <icon BUILTIN="element"/>
