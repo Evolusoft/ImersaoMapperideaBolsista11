@@ -1036,7 +1036,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661142306752" FOLDED="true" ID="ID_1565506364" MODIFIED="1664808075479" TEXT="apiController">
+<node CREATED="1661142306752" ID="ID_1565506364" MODIFIED="1664808653240" TEXT="apiController">
 <icon BUILTIN="element"/>
 <node CREATED="1661142327219" ID="ID_178345866" MODIFIED="1664808056143" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -1504,7 +1504,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1661952962930" ID="ID_1200804774" MODIFIED="1664808056260" TEXT="functionValidaRequeridos">
+<node CREATED="1661952962930" FOLDED="true" ID="ID_1200804774" MODIFIED="1664809009599" TEXT="functionValidaRequeridos">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661952977941" ID="ID_1251821623" MODIFIED="1664808056261" TEXT="inicioFunctionValidaRequeridos">
 <icon BUILTIN="element"/>
@@ -1526,10 +1526,10 @@
 </node>
 <node CREATED="1661953878420" ID="ID_398527359" MODIFIED="1664808056265" TEXT="verificaCampoRequerido">
 <icon BUILTIN="element"/>
-<node CREATED="1661953913545" ID="ID_1583863780" MODIFIED="1662397490229" TEXT="if (!req.{{ $atributoPai }}.{{ name }}) {">
+<node CREATED="1661953913545" ID="ID_1583863780" MODIFIED="1664808948114" TEXT="if (!req.{{ $atributoPai }}.{{ @name }}) {">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1661953954743" ID="ID_1743416165" MODIFIED="1663448149620" TEXT="camposRequeridosEmpty.push(&quot; {[ concat(substring-after($atributoPai,&apos;body.&apos;),mi:if-else($level = 0, &apos; &apos;, &apos; .&apos;),@name) }]&quot;);">
+<node CREATED="1661953954743" ID="ID_1743416165" MODIFIED="1664808739271" TEXT="camposRequeridosEmpty.push(&quot;{{ concat(substring-after($atributoPai,&apos;body.&apos;),mi:if-else($level = 0,&apos;&apos;,&apos;.&apos;),@name) }}&quot;);">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1661953982514" ID="ID_675332872" MODIFIED="1662140690135" TEXT="{{ mi:if-else(@mode = &apos;composite&apos;,&apos;) else {&apos;,&apos; }&apos;) }}">
@@ -1537,7 +1537,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664297424428" ID="ID_707554534" MODIFIED="1664808056268" TEXT="usoComum">
+<node CREATED="1664297424428" FOLDED="true" ID="ID_707554534" MODIFIED="1664808660327" TEXT="usoComum">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661865294369" ID="ID_1594521419" MODIFIED="1664808056271" TEXT="validaEmptyRequest">
 <icon BUILTIN="element"/>
@@ -1585,7 +1585,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661864901971" ID="ID_592073131" MODIFIED="1664808056280" TEXT="create">
+<node CREATED="1661864901971" ID="ID_592073131" MODIFIED="1664809007015" TEXT="create">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661864909476" ID="ID_1684130416" MODIFIED="1664808056281" TEXT="inicioCreate">
 <icon BUILTIN="element"/>
