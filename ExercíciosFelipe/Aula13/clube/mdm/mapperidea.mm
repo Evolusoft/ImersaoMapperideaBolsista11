@@ -2513,7 +2513,7 @@
 </node>
 <node CREATED="1664473561086" ID="ID_1774440471" MODIFIED="1664473592582" TEXT="angular">
 <icon BUILTIN="element"/>
-<node CREATED="1664473584471" ID="ID_1542284455" MODIFIED="1664560103295" TEXT="addComponentHTML">
+<node CREATED="1664473584471" ID="ID_1542284455" MODIFIED="1664802358930" TEXT="addComponentHTML">
 <icon BUILTIN="element"/>
 <node CREATED="1664473672638" ID="ID_1846943517" MODIFIED="1664473692155" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -2584,7 +2584,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664474002347" ID="ID_65964478" MODIFIED="1664474020979" TEXT="patterns">
+<node CREATED="1664474002347" FOLDED="true" ID="ID_65964478" MODIFIED="1664802361678" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1664474005911" ID="ID_1013914433" MODIFIED="1664474032515" TEXT="declaraForm">
 <icon BUILTIN="element"/>
@@ -2834,15 +2834,66 @@
 </node>
 </node>
 </node>
+<node CREATED="1664802616627" ID="ID_27508168" MODIFIED="1664802634003" TEXT="label">
+<icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1664556309132" ID="ID_1318561422" MODIFIED="1664556344328" TEXT="var">
 <icon BUILTIN="element"/>
-<node CREATED="1664556311696" ID="ID_1342287015" MODIFIED="1664556348390" TEXT="label">
+<node CREATED="1664556311696" ID="ID_1342287015" MODIFIED="1664802398771" TEXT="labelNomeCampo">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1664556316905" ID="ID_300286572" MODIFIED="1664556344328" TEXT="expr">
 <icon BUILTIN="element"/>
 <node CREATED="1664556320052" ID="ID_1917001158" MODIFIED="1664556391247" TEXT="mi:first-upper($classAttribute/@name)">
 <icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664805294493" ID="ID_761716461" MODIFIED="1664805800329" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1664805299766" ID="ID_825422689" MODIFIED="1664805312243" TEXT="labelPattern">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664805313509" ID="ID_824775214" MODIFIED="1664805322605" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1664805364239" ID="ID_356186452" MODIFIED="1664805652508" TEXT="functx:if-empty(/classes/class[@name = &apos;Labels&apos;]/properties/*[local-name(.) = $attributeName]/value,$labelNomeCampo)">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664556309132" ID="ID_849070782" MODIFIED="1664556344328" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1664556311696" ID="ID_1294065907" MODIFIED="1664802432284" TEXT="labelDeclaradoEntidade">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664556316905" ID="ID_669531196" MODIFIED="1664556344328" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1664556320052" ID="ID_1030069909" MODIFIED="1664805710286" TEXT="functx:if-empty($classAttribute/properties/label/value,$labelPattern)">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664802497121" ID="ID_951180133" MODIFIED="1664802501375" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1664802506882" ID="ID_1771956024" MODIFIED="1664802523190" TEXT="labelDeclaradoTela">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664802527907" ID="ID_1606982019" MODIFIED="1664802532711" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1664802591109" ID="ID_1096170643" MODIFIED="1664803863297" TEXT="functx:if-empty(properties/label/value,$labelDeclaradoEntidade)">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664803435367" ID="ID_743795899" MODIFIED="1664803439752" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1664803441016" ID="ID_1548896739" MODIFIED="1664803448951" TEXT="label">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664803457496" ID="ID_780197752" MODIFIED="1664803464737" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1664803489664" ID="ID_396072687" MODIFIED="1664803910306" TEXT="$labelDeclaradoTela">
+<icon BUILTIN="tag_green"/>
+</node>
 </node>
 </node>
 </node>
