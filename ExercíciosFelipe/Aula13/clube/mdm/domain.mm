@@ -262,7 +262,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1664802139399" ID="ID_794523794" MODIFIED="1664802155286" TEXT="fts">
+<node CREATED="1664802139399" ID="ID_794523794" MODIFIED="1664891210480" TEXT="searchable">
 <icon BUILTIN="element"/>
 <node CREATED="1664802144912" ID="ID_813912031" MODIFIED="1664802151830" TEXT="sigla">
 <icon BUILTIN="tag_green"/>
@@ -330,7 +330,7 @@
 <node CREATED="1661863917176" MODIFIED="1661863923928" TEXT="@">
 <node CREATED="1661863923930" MODIFIED="1661863956131" TEXT="plural">
 <icon BUILTIN="element"/>
-<node CREATED="1661863926903" MODIFIED="1661864184469" TEXT="estados">
+<node CREATED="1661863926903" ID="ID_773876564" MODIFIED="1664890588849" TEXT="UnidadesFederativa">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -380,14 +380,12 @@
 </node>
 </node>
 </node>
-<node CREATED="1638359284027" MODIFIED="1638359314864" TEXT="Cidade">
+<node CREATED="1638359284027" ID="ID_466137056" MODIFIED="1638359314864" TEXT="Cidade">
 <icon BUILTIN="Descriptor.bean"/>
-<node CREATED="1638359378201" ID="ID_1929911762" MODIFIED="1638359380823" TEXT="atributos">
-<icon BUILTIN="Descriptor.grouping"/>
-<node CREATED="1661863917176" MODIFIED="1661863923928" TEXT="@">
+<node CREATED="1661863917176" ID="ID_1420173755" MODIFIED="1661863923928" TEXT="@">
 <node CREATED="1661863923930" MODIFIED="1661863956131" TEXT="plural">
 <icon BUILTIN="element"/>
-<node CREATED="1661863926903" MODIFIED="1661864287246" TEXT="cidades">
+<node CREATED="1661863926903" ID="ID_1781952612" MODIFIED="1664890602246" TEXT="Cidades">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -401,7 +399,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1638359404490" MODIFIED="1662577861232" TEXT="uf: UnidadeFederativa()">
+<node CREATED="1638359378201" ID="ID_1929911762" MODIFIED="1638359380823" TEXT="atributos">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1638359404490" ID="ID_291387380" MODIFIED="1662577861232" TEXT="uf: UnidadeFederativa()">
 <icon BUILTIN="Mapping.oneToOne"/>
 <icon BUILTIN="bullet_key"/>
 </node>
@@ -435,7 +435,7 @@
 <node CREATED="1661863917176" MODIFIED="1661863923928" TEXT="@">
 <node CREATED="1661863923930" MODIFIED="1661863956131" TEXT="plural">
 <icon BUILTIN="element"/>
-<node CREATED="1661863926903" MODIFIED="1661864161746" TEXT="bairros">
+<node CREATED="1661863926903" ID="ID_30341975" MODIFIED="1664890606601" TEXT="Bairros">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -479,16 +479,25 @@
 <icon BUILTIN="Package"/>
 <node CREATED="1661017594402" MODIFIED="1661017771294" TEXT="Tutorial">
 <icon BUILTIN="Descriptor.bean"/>
-<node CREATED="1661017772157" MODIFIED="1661017779570" TEXT="@">
+<node CREATED="1661017772157" ID="ID_1206769109" MODIFIED="1661017779570" TEXT="@">
 <node CREATED="1661017780561" MODIFIED="1661017788878" TEXT="sqlLegado">
 <icon BUILTIN="element"/>
 <node CREATED="1661017790687" MODIFIED="1661017936973" TEXT="select t1.*&#xa;from table1 t1&#xa;where t1.flagged = 0&#xa;union all&#xa;select t1.*&#xa;from table1 t1&#xa;where t1.flagged = 1 and&#xa;      not exists (select 1&#xa;                  from table1 tt1&#xa;                  where tt1.account = t1.account and tt1.flagged = 0&#xa;                 );">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1661146088577" MODIFIED="1661146092782" TEXT="plural">
+<node CREATED="1661146088577" ID="ID_6365192" MODIFIED="1661146092782" TEXT="plural">
 <icon BUILTIN="element"/>
-<node CREATED="1661146094953" MODIFIED="1661146514487" TEXT="tutorials">
+<node CREATED="1661146094953" ID="ID_163388726" MODIFIED="1664891769984" TEXT="Tutoriais">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664891775868" ID="ID_1237154838" MODIFIED="1664891780244" TEXT="searchable">
+<icon BUILTIN="element"/>
+<node CREATED="1664891783773" ID="ID_1069210513" MODIFIED="1664891791530" TEXT="title">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664891785893" ID="ID_1151824445" MODIFIED="1664891791530" TEXT="description">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
