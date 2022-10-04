@@ -4464,6 +4464,33 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
+<node CREATED="1664893691129" ID="ID_1448587403" MODIFIED="1664893703110" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664893694076" ID="ID_7075790" MODIFIED="1664893700377" TEXT="inicioComponente">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664894458055" ID="ID_1779863319" MODIFIED="1664894466217" TEXT="apply-template">
+<icon BUILTIN="element"/>
+<node CREATED="1664894471328" ID="ID_1552971001" MODIFIED="1664894473715" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1664894480849" ID="ID_1048685002" MODIFIED="1664894488053" TEXT="attributes/attribute">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664894502688" ID="ID_376441733" MODIFIED="1664894507603" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1664894514049" ID="ID_1503003453" MODIFIED="1664894519926" TEXT="declaraAtributosTela">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664893715633" ID="ID_548481379" MODIFIED="1664893724790" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664893720051" ID="ID_786677627" MODIFIED="1664893727614" TEXT="fimComponente">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
 </node>
 </node>
 <node CREATED="1664892586931" ID="ID_1752649342" MODIFIED="1664892589959" TEXT="patterns">
@@ -4473,11 +4500,146 @@
 <node CREATED="1642765517969" ID="ID_1962334106" MODIFIED="1642765665523" TEXT="import { Component, OnInit } from &apos;@angular/core&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1642765517969" ID="ID_1318054988" MODIFIED="1642765665524" TEXT="import { {{ $listClass/@name }} } from &apos;src/app/models/{{ mi:first-lower($listClass/@name) }}.model&apos;;">
+<node CREATED="1642765517969" ID="ID_1318054988" MODIFIED="1664894151214" TEXT="import { {{ $editorClass/@name }} } from &apos;src/app/models/{{ mi:lower-case-add-hifen($editorClass/@name) }}.model&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1642765517969" ID="ID_586415621" MODIFIED="1642765802098" TEXT="import { {{ $listClass/@name }}Service } from &apos;src/app/services/{{ mi:first-lower($listClass/@name) }}.service&apos;;">
+<node CREATED="1642765517969" ID="ID_586415621" MODIFIED="1664894205699" TEXT="import { {{ $editorClass/@name }}Service } from &apos;src/app/services/{{ mi:lower-case-add-hifen($editorClass/@name) }}.service&apos;;">
 <icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664893745504" ID="ID_1941563304" MODIFIED="1664893758798" TEXT="inicioComponente">
+<icon BUILTIN="element"/>
+<node CREATED="1664894222071" ID="ID_1092214437" MODIFIED="1664894232165" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664893774585" ID="ID_462070646" MODIFIED="1664894228821" TEXT="@Component({">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664893774585" ID="ID_956667817" MODIFIED="1664894031127" TEXT="selector: &apos;app-add-{{ mi:lower-case-add-hifen($editorClass/@name, &apos; &apos;) }}&apos;,">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664893774586" ID="ID_615344143" MODIFIED="1664894058451" TEXT="templateUrl: &apos;./add-{{ mi:lower-case-add-hifen($editorClass/@name, &apos; &apos;) }}.component.html&apos;,">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664893774586" ID="ID_915384272" MODIFIED="1664894086240" TEXT="styleUrls: [&apos;./add-{{ mi:lower-case-add-hifen($editorClass/@name, &apos; &apos;) }}.component.css&apos;]">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664893774587" ID="ID_1867842630" MODIFIED="1664893818328" TEXT="})">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664893774587" ID="ID_1088762003" MODIFIED="1664894195824" TEXT="export class Add{{ $editorClass/@name }}Component implements OnInit {">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664894270775" ID="ID_1922920047" MODIFIED="1664894278619" TEXT="fimComponente">
+<icon BUILTIN="element"/>
+<node CREATED="1664894282528" ID="ID_873451591" MODIFIED="1664894303692" TEXT="}">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664895068740" ID="ID_1483163414" MODIFIED="1664895087739" TEXT="atributoTela">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1664894885329" ID="ID_1142989396" MODIFIED="1664894984016" TEXT="inicioAtributoTela">
+<icon BUILTIN="element"/>
+<node CREATED="1664894907418" ID="ID_627553923" MODIFIED="1664894951006" TEXT="  {{ @name }}: {{ @type }} = {">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664895028957" ID="ID_1305864368" MODIFIED="1664895034066" TEXT="fimAtributoTela">
+<icon BUILTIN="element"/>
+<node CREATED="1664895043572" ID="ID_717497348" MODIFIED="1664895047578" TEXT="  };">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1664894529920" ID="ID_1052238852" MODIFIED="1664894537767" TEXT="templates">
+<icon BUILTIN="element"/>
+<node CREATED="1664894545536" ID="ID_1034205612" MODIFIED="1664894565061" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1664894548450" ID="ID_918759000" MODIFIED="1664894573573" TEXT="declaraAtributosTela">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664894582056" ID="ID_904776446" MODIFIED="1664894598958" TEXT="template">
+<icon BUILTIN="element"/>
+<node CREATED="1664894583339" ID="ID_700968234" MODIFIED="1664894598958" TEXT="match">
+<icon BUILTIN="element"/>
+<node CREATED="1664894584563" ID="ID_625298593" MODIFIED="1664894777054" TEXT="attribute[@mode = &apos;oneToOne&apos;]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664894620840" ID="ID_683156520" MODIFIED="1664894623520" TEXT="body">
+<icon BUILTIN="element"/>
+<node CREATED="1664895115492" ID="ID_953516441" MODIFIED="1664895143066" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1664895127453" ID="ID_392466984" MODIFIED="1664895298610" TEXT="classeAtributoTela">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664895149725" ID="ID_1364419131" MODIFIED="1664895153935" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1664895159631" ID="ID_1987925661" MODIFIED="1664895212122" TEXT="/classes/class[@name = current()/@type]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664894812440" ID="ID_767724705" MODIFIED="1664894823877" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664894816330" ID="ID_1902770606" MODIFIED="1664894972718" TEXT="inicioAtributoTela">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664895248704" ID="ID_1202252134" MODIFIED="1664895260156" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1664895254655" ID="ID_1388651220" MODIFIED="1664895260156" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1664895277518" ID="ID_1147785409" MODIFIED="1664895340364" TEXT="$classeAtributoTela/attributes/attribute">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664895342270" ID="ID_1389772606" MODIFIED="1664895345699" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1664895356216" ID="ID_53561549" MODIFIED="1664895376876" TEXT="inicializaInstanciaClasseValoresDefault">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1664894992547" ID="ID_799348201" MODIFIED="1664895018529" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1664894997629" ID="ID_93940856" MODIFIED="1664895006520" TEXT="fimAtributoTela">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1664895394287" ID="ID_1048623953" MODIFIED="1664895397814" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1664895356216" ID="ID_55901253" MODIFIED="1664895376876" TEXT="inicializaInstanciaClasseValoresDefault">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1664895414839" ID="ID_510276635" MODIFIED="1664895456908" TEXT="template">
+<icon BUILTIN="element"/>
+<node CREATED="1664895425135" ID="ID_417700619" MODIFIED="1664895479565" TEXT="match">
+<icon BUILTIN="element"/>
+<node CREATED="1664895429479" ID="ID_1094725786" MODIFIED="1664895493363" TEXT="attribute[@mode = &apos;directToField&apos;]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664895473838" ID="ID_1556391913" MODIFIED="1664895477790" TEXT="body">
+<icon BUILTIN="element"/>
+</node>
+</node>
+<node CREATED="1664895414839" ID="ID_320444542" MODIFIED="1664895456908" TEXT="template">
+<icon BUILTIN="element"/>
+<node CREATED="1664895425135" ID="ID_1947277744" MODIFIED="1664895479565" TEXT="match">
+<icon BUILTIN="element"/>
+<node CREATED="1664895429479" ID="ID_504434027" MODIFIED="1664895452828" TEXT="attribute[@mode = &apos;oneToOne&apos;]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1664895473838" ID="ID_481443270" MODIFIED="1664895477790" TEXT="body">
+<icon BUILTIN="element"/>
+</node>
 </node>
 </node>
 </node>
