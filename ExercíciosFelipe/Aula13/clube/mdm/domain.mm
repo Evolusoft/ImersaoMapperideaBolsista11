@@ -382,7 +382,7 @@
 </node>
 <node CREATED="1638359284027" MODIFIED="1638359314864" TEXT="Cidade">
 <icon BUILTIN="Descriptor.bean"/>
-<node CREATED="1638359378201" MODIFIED="1638359380823" TEXT="atributos">
+<node CREATED="1638359378201" ID="ID_1929911762" MODIFIED="1638359380823" TEXT="atributos">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1661863917176" MODIFIED="1661863923928" TEXT="@">
 <node CREATED="1661863923930" MODIFIED="1661863956131" TEXT="plural">
@@ -422,7 +422,10 @@
 </node>
 </node>
 </node>
-<node CREATED="1638359530287" MODIFIED="1638359538822" TEXT="bairros: Bairro()">
+<node CREATED="1638359530287" ID="ID_1367925114" MODIFIED="1638359538822" TEXT="bairros: Bairro()">
+<icon BUILTIN="Mapping.oneToMany"/>
+</node>
+<node CREATED="1638359530287" ID="ID_453385933" MODIFIED="1664888785192" TEXT="bairrosDesativados: Bairro()">
 <icon BUILTIN="Mapping.oneToMany"/>
 </node>
 </node>
