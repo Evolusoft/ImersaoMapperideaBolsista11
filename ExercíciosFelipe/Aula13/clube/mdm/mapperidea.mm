@@ -3971,7 +3971,7 @@
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1642423802712" ID="ID_1549545042" MODIFIED="1642423907788" TEXT="inicioAtributoTela">
 <icon BUILTIN="element"/>
-<node CREATED="1642423811839" ID="ID_368054375" MODIFIED="1642423852001" TEXT="  {{ @name }}: {{ @type }} = {">
+<node CREATED="1642423811839" ID="ID_368054375" MODIFIED="1664981505511" TEXT="  {{ @name }}:{{ @type }} = {">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -3983,13 +3983,13 @@
 </node>
 <node CREATED="1642590598604" ID="ID_1950525037" MODIFIED="1642590606430" TEXT="inicializaCampoDirectToField">
 <icon BUILTIN="element"/>
-<node CREATED="1642590648350" ID="ID_827587512" MODIFIED="1642596827079" TEXT="{{ $identacaoExtra }}    {{ @name }}: {{ $valorDefault }}{{ $separadorCampos }}">
+<node CREATED="1642590648350" ID="ID_827587512" MODIFIED="1664981508655" TEXT="{{ $identacaoExtra }}    {{ @name }}:{{ $valorDefault }}{{ $separadorCampos }}">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
 <node CREATED="1642591216447" ID="ID_1746874442" MODIFIED="1642591224340" TEXT="inicializacampoOneToOne">
 <icon BUILTIN="element"/>
-<node CREATED="1642590648350" ID="ID_2293071" MODIFIED="1642596832611" TEXT="{{ $identacaoExtra }}    {{ @name }}: {{ @type }}: { }{{ $separadorCampos }}">
+<node CREATED="1642590648350" ID="ID_2293071" MODIFIED="1664981517070" TEXT="{{ $identacaoExtra }}    {{ @name }}:{{ @type }}: { }{{ $separadorCampos }}">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
