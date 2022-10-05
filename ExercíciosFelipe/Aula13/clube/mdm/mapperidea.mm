@@ -3888,10 +3888,10 @@
 <node CREATED="1642765517969" ID="ID_1962334106" MODIFIED="1642765665523" TEXT="import { Component, OnInit } from &apos;@angular/core&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1642765517969" ID="ID_1318054988" MODIFIED="1664894151214" TEXT="import { {{ $editorClass/@name }} } from &apos;src/app/models/{{ mi:lower-case-add-hifen($editorClass/@name) }}.model&apos;;">
+<node CREATED="1642765517969" ID="ID_1318054988" MODIFIED="1664979950119" TEXT="import { {{ $editorClass/@name }} } from &apos;src/app/models/{{ mi:lower-case-add-hifen($editorClass/@name,&apos;.model&apos;) }}&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1642765517969" ID="ID_586415621" MODIFIED="1664894205699" TEXT="import { {{ $editorClass/@name }}Service } from &apos;src/app/services/{{ mi:lower-case-add-hifen($editorClass/@name) }}.service&apos;;">
+<node CREATED="1642765517969" ID="ID_586415621" MODIFIED="1664979959879" TEXT="import { {{ $editorClass/@name }}Service } from &apos;src/app/services/{{ mi:lower-case-add-hifen($editorClass/@name,&apos;.service&apos;) }}&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
