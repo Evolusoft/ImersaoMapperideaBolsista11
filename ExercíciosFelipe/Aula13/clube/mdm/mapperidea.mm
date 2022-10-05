@@ -4348,6 +4348,78 @@
 </node>
 </node>
 </node>
+<node CREATED="1642423387860" ID="ID_1105128426" MODIFIED="1642423390241" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1642423391099" ID="ID_587748495" MODIFIED="1642596453704" TEXT="declaraAtributosTelaNew">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1642423396955" ID="ID_506345894" MODIFIED="1642423413790" TEXT="template">
+<icon BUILTIN="element"/>
+<node CREATED="1642423403032" ID="ID_279584114" MODIFIED="1642423413790" TEXT="match">
+<icon BUILTIN="element"/>
+<node CREATED="1642423406911" ID="ID_113943820" MODIFIED="1642423695543" TEXT="attribute[@mode = &apos;oneToOne&apos;]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642423418987" ID="ID_150491518" MODIFIED="1642423421506" TEXT="body">
+<icon BUILTIN="element"/>
+<node CREATED="1642595650496" ID="ID_1945634024" MODIFIED="1642595653074" TEXT="vars">
+<icon BUILTIN="element"/>
+<node CREATED="1641819084066" ID="ID_511988562" MODIFIED="1641819088671" TEXT="var">
+<icon BUILTIN="element"/>
+<node CREATED="1641819089881" ID="ID_1288574304" MODIFIED="1642424094693" TEXT="classeAtributoTela">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1641819096049" ID="ID_1359932422" MODIFIED="1641819097343" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1641819100849" ID="ID_215794239" MODIFIED="1642424002366" TEXT="/classes/class[@name = current()/@type]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1642423781964" ID="ID_1015668853" MODIFIED="1642423787069" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1642423788379" ID="ID_1566740116" MODIFIED="1642596468931" TEXT="inicioAtributoTelaNew">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642424035574" ID="ID_1779863336" MODIFIED="1642424040433" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1642424044347" ID="ID_745742941" MODIFIED="1642424060895" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1642424068605" ID="ID_568830310" MODIFIED="1642595618070" TEXT="$classeAtributoTela/attributes/attribute">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642424153651" ID="ID_1482568531" MODIFIED="1642424156158" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1642424157394" ID="ID_269344026" MODIFIED="1642424179306" TEXT="inicializaInstanciaClasseValoresDefault">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642596650084" ID="ID_1601383747" MODIFIED="1642596657662" TEXT="parameters">
+<icon BUILTIN="element"/>
+<node CREATED="1642596658676" ID="ID_131753933" MODIFIED="1642596665299" TEXT="identacaoExtra">
+<icon BUILTIN="element"/>
+<node CREATED="1642596667886" ID="ID_1470290982" MODIFIED="1642596671264" TEXT="expr">
+<icon BUILTIN="element"/>
+<node CREATED="1642596672233" ID="ID_1123629990" MODIFIED="1642596678531" TEXT="&apos;  &apos;">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1642423879601" ID="ID_889727586" MODIFIED="1642423883720" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1642423884752" ID="ID_1958489804" MODIFIED="1642596474321" TEXT="fimAtributoTelaNew">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+</node>
 </node>
 </node>
 </node>
