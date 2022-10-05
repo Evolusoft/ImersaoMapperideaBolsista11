@@ -3879,6 +3879,48 @@
 </node>
 </node>
 </node>
+<node CREATED="1642596081605" ID="ID_1605465958" MODIFIED="1642596086815" TEXT="new">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1642596134399" ID="ID_183541578" MODIFIED="1642596142567" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1642596144052" ID="ID_325717503" MODIFIED="1642596153098" TEXT="inicioNewAction">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642591374562" ID="ID_1079990211" MODIFIED="1642596341101" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1642591380165" ID="ID_1624224293" MODIFIED="1642596193618" TEXT="declaraCamposImplicitosNew">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642423340545" ID="ID_1971950966" MODIFIED="1642595548344" TEXT="apply-templates">
+<icon BUILTIN="element"/>
+<node CREATED="1642423346891" ID="ID_214163398" MODIFIED="1642423349130" TEXT="select">
+<icon BUILTIN="element"/>
+<node CREATED="1642423350231" ID="ID_1008254023" MODIFIED="1642423363871" TEXT="attributes/attribute">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642423366283" ID="ID_1647093898" MODIFIED="1642423368193" TEXT="mode">
+<icon BUILTIN="element"/>
+<node CREATED="1642423369181" ID="ID_1318376419" MODIFIED="1642596219523" TEXT="declaraAtributosTelaNew">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1642596163428" ID="ID_1099992376" MODIFIED="1642596894817" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1642596172169" ID="ID_1452038523" MODIFIED="1642596178684" TEXT="fimNewAction">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1642422888304" ID="ID_1945690532" MODIFIED="1642595498478" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1642422893536" ID="ID_1689971416" MODIFIED="1642422898874" TEXT="fimComponente">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
 </node>
 </node>
 <node CREATED="1664892586931" ID="ID_1752649342" MODIFIED="1664978877139" TEXT="patterns">
@@ -4047,6 +4089,48 @@
 <node CREATED="1664976734132" ID="ID_1667212103" MODIFIED="1664976752338" TEXT="fimMapaDadosTela">
 <icon BUILTIN="element"/>
 <node CREATED="1664976767010" ID="ID_1537115669" MODIFIED="1664976769978" TEXT="};">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1642596240853" ID="ID_1130250164" MODIFIED="1642596243799" TEXT="new">
+<icon BUILTIN="Descriptor.grouping"/>
+<node CREATED="1642596245856" ID="ID_799080325" MODIFIED="1642596248809" TEXT="inicioNewAction">
+<icon BUILTIN="element"/>
+<node CREATED="1642596249927" ID="ID_1507087494" MODIFIED="1642596266663" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1642596261847" ID="ID_1807269810" MODIFIED="1642596283630" TEXT="  new{{ $editorClass/@name }}(): void {">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642596331412" ID="ID_1583703727" MODIFIED="1642596335685" TEXT="declaraCamposImplicitosNew">
+<icon BUILTIN="element"/>
+<node CREATED="1642591413371" ID="ID_1528411978" MODIFIED="1642596382110" TEXT="    this.submitted = false;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1642591413371" ID="ID_743965883" MODIFIED="1642596391737" TEXT="    this.debug = true;">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1642591457820" ID="ID_86944304" MODIFIED="1642591461612" TEXT="">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642596306633" ID="ID_1143712420" MODIFIED="1642596311273" TEXT="fimNewAction">
+<icon BUILTIN="element"/>
+<node CREATED="1642596312196" ID="ID_634877330" MODIFIED="1642596313942" TEXT="  }">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642423802712" ID="ID_771813714" MODIFIED="1642596499315" TEXT="inicioAtributoTelaNew">
+<icon BUILTIN="element"/>
+<node CREATED="1642423811839" ID="ID_777407085" MODIFIED="1642596557846" TEXT="    this.{{ @name }} = {">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1642423890709" ID="ID_1340659800" MODIFIED="1642596503690" TEXT="fimAtributoTelaNew">
+<icon BUILTIN="element"/>
+<node CREATED="1642423896025" ID="ID_1125365876" MODIFIED="1642596955047" TEXT="    };">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -4264,7 +4348,6 @@
 </node>
 </node>
 </node>
-<node CREATED="1664978700319" ID="ID_1972149678" MODIFIED="1664978713779" TEXT="//TODO arrumar bug $editorClass e finalizar aula 16"/>
 </node>
 </node>
 </node>
