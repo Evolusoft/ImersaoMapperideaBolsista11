@@ -2,7 +2,7 @@
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
 <node CREATED="1638533520041" ID="ID_1837978527" LINK="io.mapperidea.earlyadopter.mm" MODIFIED="1664808044736" TEXT="mapperidea">
 <icon BUILTIN="element"/>
-<node CREATED="1660888232871" FOLDED="true" ID="ID_1049238288" MODIFIED="1664971805095" POSITION="right" TEXT="maps">
+<node CREATED="1660888232871" ID="ID_1049238288" MODIFIED="1665058305352" POSITION="right" TEXT="maps">
 <icon BUILTIN="element"/>
 <node CREATED="1660888247521" ID="ID_1362548522" MODIFIED="1664808055905" TEXT="toMongooseTypes">
 <icon BUILTIN="element"/>
@@ -103,7 +103,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1660888247521" ID="ID_1927164356" MODIFIED="1664971651580" TEXT="toTypescripTypestDefaultValues">
+<node CREATED="1660888247521" ID="ID_1927164356" MODIFIED="1665058323766" TEXT="toTypescriptTypesDefaultValues">
 <icon BUILTIN="element"/>
 <node CREATED="1660888276184" ID="ID_259980572" MODIFIED="1664808055913" TEXT="Texto">
 <icon BUILTIN="element"/>
@@ -3270,7 +3270,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664473584471" FOLDED="true" ID="ID_1542284455" MODIFIED="1664979255270" TEXT="addComponentHTML">
+<node CREATED="1664473584471" ID="ID_1542284455" MODIFIED="1665058638414" TEXT="addComponentHTML">
 <icon BUILTIN="element"/>
 <node CREATED="1664473672638" ID="ID_1846943517" MODIFIED="1664808056468" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -3448,7 +3448,7 @@
 </node>
 <node CREATED="1664474299044" ID="ID_1021463603" MODIFIED="1664808056502" TEXT="templates">
 <icon BUILTIN="element"/>
-<node CREATED="1664474323406" FOLDED="true" ID="ID_1832880753" MODIFIED="1664886711968" TEXT="mode">
+<node CREATED="1664474323406" ID="ID_1832880753" MODIFIED="1665058655124" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1664474301796" ID="ID_260565089" MODIFIED="1664558466244" TEXT="declaraCamposForm">
 <icon BUILTIN="tag_green"/>
@@ -3736,7 +3736,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1664892425508" ID="ID_1765452026" MODIFIED="1664973689588" TEXT="body">
+<node CREATED="1664892425508" ID="ID_1765452026" MODIFIED="1665059080146" TEXT="body">
 <icon BUILTIN="element"/>
 <node CREATED="1664892728154" ID="ID_174708454" MODIFIED="1664892805561" TEXT="vars">
 <icon BUILTIN="element"/>
@@ -3777,7 +3777,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1664894458055" ID="ID_1779863319" MODIFIED="1664894466217" TEXT="apply-template">
+<node CREATED="1664894458055" FOLDED="true" ID="ID_1779863319" MODIFIED="1665059087339" TEXT="apply-templates">
 <icon BUILTIN="element"/>
 <node CREATED="1664894471328" ID="ID_1552971001" MODIFIED="1664894473715" TEXT="select">
 <icon BUILTIN="element"/>
@@ -3923,7 +3923,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664892586931" ID="ID_1752649342" MODIFIED="1664978877139" TEXT="patterns">
+<node CREATED="1664892586931" ID="ID_1752649342" MODIFIED="1665058648474" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1664892598242" ID="ID_1183117853" MODIFIED="1664892603087" TEXT="declaraImport">
 <icon BUILTIN="element"/>
@@ -3971,7 +3971,7 @@
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1642423802712" ID="ID_1549545042" MODIFIED="1642423907788" TEXT="inicioAtributoTela">
 <icon BUILTIN="element"/>
-<node CREATED="1642423811839" ID="ID_368054375" MODIFIED="1664981505511" TEXT="  {{ @name }}:{{ @type }} = {">
+<node CREATED="1642423811839" ID="ID_368054375" MODIFIED="1665058064334" TEXT="  {{ @name }}: {{ @type }} = {">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -3983,13 +3983,13 @@
 </node>
 <node CREATED="1642590598604" ID="ID_1950525037" MODIFIED="1642590606430" TEXT="inicializaCampoDirectToField">
 <icon BUILTIN="element"/>
-<node CREATED="1642590648350" ID="ID_827587512" MODIFIED="1664981508655" TEXT="{{ $identacaoExtra }}    {{ @name }}:{{ $valorDefault }}{{ $separadorCampos }}">
+<node CREATED="1642590648350" ID="ID_827587512" MODIFIED="1665058580737" TEXT="    {{ @name }}:{{ $valorDefault }}{{ $separadorCampos }}">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
 <node CREATED="1642591216447" ID="ID_1746874442" MODIFIED="1642591224340" TEXT="inicializacampoOneToOne">
 <icon BUILTIN="element"/>
-<node CREATED="1642590648350" ID="ID_2293071" MODIFIED="1664981517070" TEXT="{{ $identacaoExtra }}    {{ @name }}:{{ @type }}: { }{{ $separadorCampos }}">
+<node CREATED="1642590648350" ID="ID_2293071" MODIFIED="1665058586616" TEXT="   {{ @name }}:{{ @type }}: { }{{ $separadorCampos }}">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -4006,7 +4006,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664973629199" ID="ID_1140495922" MODIFIED="1664973639409" TEXT="declaraConstrutor">
+<node CREATED="1664973629199" FOLDED="true" ID="ID_1140495922" MODIFIED="1665058778303" TEXT="declaraConstrutor">
 <icon BUILTIN="element"/>
 <node CREATED="1664973924711" ID="ID_155040811" MODIFIED="1664973927412" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -4015,7 +4015,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1664974022846" ID="ID_219295505" MODIFIED="1664974034852" TEXT="declaraEventoOnInit">
+<node CREATED="1664974022846" FOLDED="true" ID="ID_219295505" MODIFIED="1665058778959" TEXT="declaraEventoOnInit">
 <icon BUILTIN="element"/>
 <node CREATED="1664974079389" ID="ID_433613897" MODIFIED="1664974081243" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -4027,7 +4027,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1664974221142" ID="ID_307262581" MODIFIED="1664974231890" TEXT="save">
+<node CREATED="1664974221142" ID="ID_307262581" MODIFIED="1665058631866" TEXT="save">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1664974141525" ID="ID_1529829810" MODIFIED="1664974254682" TEXT="inicioSaveAction">
 <icon BUILTIN="element"/>
@@ -4093,7 +4093,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642596240853" ID="ID_1130250164" MODIFIED="1642596243799" TEXT="new">
+<node CREATED="1642596240853" ID="ID_1130250164" MODIFIED="1665058633490" TEXT="new">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1642596245856" ID="ID_799080325" MODIFIED="1642596248809" TEXT="inicioNewAction">
 <icon BUILTIN="element"/>
@@ -4210,7 +4210,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664895394287" ID="ID_1048623953" MODIFIED="1664978453378" TEXT="mode">
+<node CREATED="1664895394287" ID="ID_1048623953" MODIFIED="1665058234984" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1664895356216" ID="ID_55901253" MODIFIED="1664895376876" TEXT="inicializaInstanciaClasseValoresDefault">
 <icon BUILTIN="tag_green"/>
@@ -4221,15 +4221,6 @@
 <icon BUILTIN="element"/>
 <node CREATED="1664895429479" ID="ID_1094725786" MODIFIED="1664895493363" TEXT="attribute[@mode = &apos;directToField&apos;]">
 <icon BUILTIN="tag_green"/>
-</node>
-</node>
-<node CREATED="1642596746230" ID="ID_383565980" MODIFIED="1642596750348" TEXT="parameters">
-<icon BUILTIN="element"/>
-<node CREATED="1642596658676" ID="ID_726058282" MODIFIED="1642596665299" TEXT="identacaoExtra">
-<icon BUILTIN="element"/>
-<node CREATED="1642596763361" ID="ID_1563998753" MODIFIED="1642596769521" TEXT="NOT_DEFINED">
-<icon BUILTIN="tag_green"/>
-</node>
 </node>
 </node>
 <node CREATED="1664895473838" ID="ID_1556391913" MODIFIED="1664895477790" TEXT="body">
@@ -4312,7 +4303,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664976249070" ID="ID_1154147320" MODIFIED="1664976253050" TEXT="mode">
+<node CREATED="1664976249070" ID="ID_1154147320" MODIFIED="1665058422035" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1664976258407" ID="ID_1524356709" MODIFIED="1664977497925" TEXT="mapaDadosTelaEntityPrincipal">
 <icon BUILTIN="tag_green"/>
@@ -4378,7 +4369,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642423387860" ID="ID_1105128426" MODIFIED="1642423390241" TEXT="mode">
+<node CREATED="1642423387860" ID="ID_1105128426" MODIFIED="1665058434415" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1642423391099" ID="ID_587748495" MODIFIED="1642596453704" TEXT="declaraAtributosTelaNew">
 <icon BUILTIN="tag_green"/>
