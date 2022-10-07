@@ -1,0 +1,49 @@
+  <div>
+    <div *ngIf="tutorial.id" class="edit-form">
+      <h4>Tutorial</h4>
+      <form>
+      <div class="form-group">
+        <label for=""></label>
+        <input
+          type="text"
+          class="form-control"
+          id=""
+          required
+          [(ngModel)]="tutorial."
+          name=""
+        />
+      </div>
+
+      <div class="form-group">
+        <label for=""></label>
+        <input
+          type="text"
+          class="form-control"
+          id=""
+          required
+          [(ngModel)]="tutorial."
+          name=""
+        />
+      </div>
+
+      </form>
+
+      <button class="badge badge-danger mr-2" (click)="deleteTutorial()">
+        Excluir
+      </button>
+
+      <button
+        type="submit"
+        class="badge badge-success mb-2"
+        (click)="updateTutorial()"
+      >
+        Gravar
+      </button>
+      <p>{{ message }}</p>
+    </div>
+
+    <div *ngIf="!tutorial.id">
+      <br />
+      <p>Não foi possível carregar essa entidade de Tutorial...</p>
+    </div>
+  </div>

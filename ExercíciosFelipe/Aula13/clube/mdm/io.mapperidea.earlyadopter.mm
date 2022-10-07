@@ -35,6 +35,16 @@
 </node>
 <node CREATED="1664384350975" ID="ID_188982383" MODIFIED="1664384354578" TEXT="campos boleanos">
 <node CREATED="1664384359204" ID="ID_460556264" MODIFIED="1664384372501" TEXT="automaticamente terao servi&#xe7;o api para busca direta"/>
+<node CREATED="1665148303999" ID="ID_1268572885" MODIFIED="1665148316946" TEXT="terao uma propriedade value">
+<node CREATED="1665148330487" ID="ID_706600003" MODIFIED="1665148389236" TEXT="onde o texto que deve ser usado quando determinar o significado do valor corrente"/>
+<node CREATED="1665148397682" ID="ID_207462376" MODIFIED="1665148457597" TEXT="a posi&#xe7;&#xe3;o 1 ser&#xe1; usada quando estiver o valor na posi&#xe7;&#xe3;o respectiva"/>
+<node CREATED="1665148471427" ID="ID_839147608" MODIFIED="1665148493895" TEXT="a posi&#xe7;&#xe3;o 2 ser&#xe1; usada quando estiver o valor na posi&#xe7;&#xe3;o inversa daquela op&#xe7;&#xe3;o"/>
+</node>
+<node CREATED="1665148519611" ID="ID_771357492" MODIFIED="1665148545871" TEXT="terao sempre o input padrao de sele&#xe7;&#xe3;o usando os textos da primeira partida"/>
+<node CREATED="1665148571515" ID="ID_145747042" MODIFIED="1665148604975" TEXT="no Editor quando informado o inputType viewerAction">
+<node CREATED="1665148614668" ID="ID_720096704" MODIFIED="1665148620135" TEXT="deve gerar o campo de visualiza&#xe7;&#xe3;o"/>
+<node CREATED="1665148627620" ID="ID_464841663" MODIFIED="1665148648048" TEXT="e gerar os bot&#xf5;es de a&#xe7;&#xe3;o para trocas de valores"/>
+</node>
 </node>
 </node>
 <node CREATED="1638357114382" ID="ID_93707434" MODIFIED="1638357119123" POSITION="right" TEXT="requisitos">
