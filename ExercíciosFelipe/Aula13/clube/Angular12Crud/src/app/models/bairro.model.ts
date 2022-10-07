@@ -1,4 +1,4 @@
-import { Cidade } from "./Cidade.model";
+import { Cidade } from "./cidade.model";
 
 export class Bairro {
     id?: any;

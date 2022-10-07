@@ -7,27 +7,25 @@ import { TutorialService } from 'src/app/services/tutorial.service';
   templateUrl: './list-tutorial.component.html',
   styleUrls: ['./list-tutorial.component.css']
 })
-export class ListTutorialComponent implements OnInit {
+export class TutorialsListComponent implements OnInit {
 
-  tutorialCollection?: Tutorial[];
+  tutorials?: Tutorial[];
   currentTutorial: Tutorial = {};
   currentIndex = -1;
-  debug = true;
-  title = ;
-  description = ;
+  title = '';
 
   constructor(private tutorialService: TutorialService) { }
 
   ngOnInit(): void {
-    this.retrieveTutoriais();
+    this.retrieveTutorials();
   }
 
-  retrieveTutoriais(): void {
+  retrieveTutorials(): void {
     this.tutorialService.getAll()
       .subscribe(
         data => {
-          this.tutorialCollection = data;
-          if (this.debug) console.log(data);
+          this.tutorials = data;
+          console.log(data);
         },
         error => {
           console.log(error);
@@ -35,7 +33,7 @@ export class ListTutorialComponent implements OnInit {
   }
 
   refreshList(): void {
-    this.retrieveTutoriais();
+    this.retrieveTutorials();
     this.currentTutorial = {};
     this.currentIndex = -1;
   }
@@ -45,11 +43,11 @@ export class ListTutorialComponent implements OnInit {
     this.currentIndex = index;
   }
 
-  removeAllTutoriais(): void {
+  removeAllTutorials(): void {
     this.tutorialService.deleteAll()
       .subscribe(
         response => {
-          if (this.debug) console.log(response);
+          console.log(response);
           this.refreshList();
         },
         error => {
@@ -64,23 +62,8 @@ export class ListTutorialComponent implements OnInit {
     this.tutorialService.findByTitle(this.title)
       .subscribe(
         data => {
-          this.tutorialCollection = data;
-          if (this.debug) console.log(data);
-        },
-        error => {
-          console.log(error);
-        });
-  }
-
-  searchDescription(): void {
-    this.currentTutorial = {};
-    this.currentIndex = -1;
-
-    this.tutorialService.findByDescription(this.description)
-      .subscribe(
-        data => {
-          this.tutorialCollection = data;
-          if (this.debug) console.log(data);
+          this.tutorials = data;
+          console.log(data);
         },
         error => {
           console.log(error);

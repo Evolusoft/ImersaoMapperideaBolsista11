@@ -1,5 +1,5 @@
-import { UnidadeFederativa } from "./unidade-federativa.model";
 import { Bairro } from "./bairro.model";
+import { UnidadeFederativa } from "./unidade-federativa.model";
 
 export class Cidade {
     id?: any;
@@ -7,6 +7,5 @@ export class Cidade {
     codigo?: number;
     nome?: string;
     bairros?: Bairro[];
-    bairrosDesativados?: Bairro[];
 }
 

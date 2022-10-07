@@ -11,8 +11,8 @@ import { Tutorial } from 'src/app/models/tutorial.model';
 export class DetailsTutorialComponent implements OnInit {
 
   tutorial: Tutorial = {
-    title: ,
-    description: ,
+    title:'' ,
+    description:'' ,
     published: 
   };
   message = '';
