@@ -1,0 +1,80 @@
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Procurar por Title"
+                [(ngModel)]="title"
+            />
+            <div class="input-group-append">
+                <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    (click)="searchTitle()"
+                >
+                    Procurar
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Procurar por Description"
+                [(ngModel)]="description"
+            />
+            <div class="input-group-append">
+                <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    (click)="searchDescription()"
+                >
+                    Procurar
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4>Lista de Tutoriais</h4>
+        <ul class="list-group">
+        <li
+            class="list-group-item"
+            *ngFor="let tutorial of tutorialCollection; let i = index"
+            [class.active]="i == currentIndex"
+            (click)="setActiveTutorial(tutorial, i)"
+        >
+            {{ tutorial.title }} {{ tutorial.description }} {{ tutorial.published }} 
+        </li>
+        </ul>
+
+        <button class="m-3 btn btn-sm btn-danger" (click)="removeAll()">
+        Remover Tudo
+        </button>
+    </div>
+    <div class="col-md-6">
+        <div *ngIf="currentTutorial.id">
+        <h4>Tutorial</h4>
+        <div>
+            <label><strong>Title:</strong></label> {{ currentTutorial.title }}
+        </div>
+        <div>
+            <label><strong>Description:</strong></label> {{ currentTutorial.description }}
+        </div>
+        <div>
+            <label><strong>Published:</strong></label> {{ currentTutorial.published }}
+        </div>
+
+        <a class="badge badge-warning" routerLink="/tutoriais/{{ currentTutorial.id }}">
+            Editar
+        </a>
+        </div>
+
+        <div *ngIf="!currentTutorial">
+        <br />
+        <p>Por favor selecione uma linha da lista de Tutorial...</p>
+        </div>
+    </div>
+</div>
