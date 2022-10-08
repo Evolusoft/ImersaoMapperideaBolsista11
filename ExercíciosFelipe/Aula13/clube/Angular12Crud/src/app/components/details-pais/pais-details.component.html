@@ -1,0 +1,73 @@
+  <div>
+    <div *ngIf="pais.id" class="edit-form">
+      <h4>Pais</h4>
+      <form>
+      <div class="form-group">
+        <label for="codigo">Código</label>
+        <input
+          type="text"
+          class="form-control"
+          id="codigo"
+          required
+          [(ngModel)]="pais.codigo"
+          name="codigo"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="sigla">COD</label>
+        <input
+          type="text"
+          class="form-control"
+          id="sigla"
+          required
+          [(ngModel)]="pais.sigla"
+          name="sigla"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="nome">Nome do Pais</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nome"
+          required
+          [(ngModel)]="pais.nome"
+          name="nome"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="ativo">Ativo</label>
+        <input
+          type="text"
+          class="form-control"
+          id="ativo"
+          required
+          [(ngModel)]="pais.ativo"
+          name="ativo"
+        />
+      </div>
+
+      </form>
+
+      <button class="badge badge-danger mr-2" (click)="deletePais()">
+        Excluir
+      </button>
+
+      <button
+        type="submit"
+        class="badge badge-success mb-2"
+        (click)="updatePais()"
+      >
+        Gravar
+      </button>
+      <p>{{ message }}</p>
+    </div>
+
+    <div *ngIf="!pais.id">
+      <br />
+      <p>Não foi possível carregar essa entidade de Pais...</p>
+    </div>
+  </div>

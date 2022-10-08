@@ -524,9 +524,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1660282929138" FOLDED="true" ID="ID_1779858736" MODIFIED="1664971809423" TEXT="mean">
+<node CREATED="1660282929138" ID="ID_1779858736" MODIFIED="1665230090728" TEXT="mean">
 <icon BUILTIN="element"/>
-<node CREATED="1660282934484" FOLDED="true" ID="ID_946860577" MODIFIED="1664808071233" TEXT="mongoModel">
+<node CREATED="1660282934484" FOLDED="true" ID="ID_946860577" MODIFIED="1665230528317" TEXT="mongoModel">
 <icon BUILTIN="element"/>
 <node CREATED="1660180833808" ID="ID_1109332726" MODIFIED="1664808056010" TEXT="parameters" VSHIFT="31">
 <icon BUILTIN="element"/>
@@ -1102,7 +1102,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1661142306752" ID="ID_1565506364" MODIFIED="1664808653240" TEXT="apiController">
+<node CREATED="1661142306752" FOLDED="true" ID="ID_1565506364" MODIFIED="1665230092913" TEXT="apiController">
 <icon BUILTIN="element"/>
 <node CREATED="1661142327219" ID="ID_178345866" MODIFIED="1664808056143" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -2577,9 +2577,9 @@
 </node>
 </node>
 </node>
-<node CREATED="1664473561086" FOLDED="true" ID="ID_1774440471" MODIFIED="1665151042896" TEXT="angular">
+<node CREATED="1664473561086" ID="ID_1774440471" MODIFIED="1665231317861" TEXT="angular">
 <icon BUILTIN="element"/>
-<node CREATED="1660282934484" FOLDED="true" ID="ID_1687938860" MODIFIED="1664978632165" STYLE="fork" TEXT="model">
+<node CREATED="1660282934484" FOLDED="true" ID="ID_1687938860" MODIFIED="1665231486932" STYLE="fork" TEXT="model">
 <arrowlink DESTINATION="ID_1687938860" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_966638139" STARTARROW="None" STARTINCLINATION="0;0;"/>
 <linktarget COLOR="#b0b0b0" DESTINATION="ID_1687938860" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_966638139" SOURCE="ID_1687938860" STARTARROW="None" STARTINCLINATION="0;0;"/>
 <icon BUILTIN="element"/>
@@ -2866,7 +2866,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642418082686" FOLDED="true" ID="ID_723127804" MODIFIED="1664892299154" TEXT="dataService">
+<node CREATED="1642418082686" FOLDED="true" ID="ID_723127804" MODIFIED="1665231473255" TEXT="dataService">
 <icon BUILTIN="element"/>
 <node CREATED="1559604105984" ID="ID_1623847310" MODIFIED="1559865608537" TEXT="parameters">
 <font BOLD="true" NAME="Courier New" SIZE="14"/>
@@ -2887,21 +2887,21 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1639136049088" ID="ID_449046951" MODIFIED="1639136051439" TEXT="body">
+<node CREATED="1639136049088" FOLDED="true" ID="ID_449046951" MODIFIED="1665230743131" TEXT="body">
 <icon BUILTIN="element"/>
-<node CREATED="1642418511977" FOLDED="true" ID="ID_1976360503" MODIFIED="1658250520191" TEXT="write-pattern">
+<node CREATED="1642418511977" ID="ID_1976360503" MODIFIED="1665230597044" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1642418518303" ID="ID_296276347" MODIFIED="1642418522483" TEXT="importService">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1642418500056" FOLDED="true" ID="ID_889977945" MODIFIED="1658250519208" TEXT="write-pattern">
+<node CREATED="1642418500056" ID="ID_889977945" MODIFIED="1665230596420" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1642418505717" ID="ID_474880123" MODIFIED="1642418510284" TEXT="baseURL">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1639136087015" FOLDED="true" ID="ID_126477766" MODIFIED="1658250518213" TEXT="write-pattern">
+<node CREATED="1639136087015" ID="ID_126477766" MODIFIED="1665230595300" TEXT="write-pattern">
 <icon BUILTIN="element"/>
 <node CREATED="1639136093830" ID="ID_1288605356" MODIFIED="1642418427042" TEXT="inicioService">
 <icon BUILTIN="tag_green"/>
@@ -3014,7 +3014,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639136120238" FOLDED="true" ID="ID_1239918213" MODIFIED="1664892297761" TEXT="patterns">
+<node CREATED="1639136120238" ID="ID_1239918213" MODIFIED="1665230738639" TEXT="patterns">
 <icon BUILTIN="element"/>
 <node CREATED="1639743713814" FOLDED="true" ID="ID_1702147372" MODIFIED="1639743716338" TEXT="debug">
 <icon BUILTIN="element"/>
@@ -3022,7 +3022,7 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1642418527563" FOLDED="true" ID="ID_696867022" MODIFIED="1658250474547" TEXT="importService">
+<node CREATED="1642418527563" ID="ID_696867022" MODIFIED="1665230601336" TEXT="importService">
 <icon BUILTIN="element"/>
 <node CREATED="1642418596972" ID="ID_1898228136" MODIFIED="1642418602778" TEXT="import { Injectable } from &apos;@angular/core&apos;;">
 <icon BUILTIN="tag_green"/>
@@ -3033,7 +3033,7 @@
 <node CREATED="1642418596973" ID="ID_306138395" MODIFIED="1642418602779" TEXT="import { Observable } from &apos;rxjs&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1642418596973" ID="ID_426002554" MODIFIED="1642420704622" TEXT="import { {{ @name }} } from &apos;../models/{{ mi:lower-case-add-hifen(@name,&apos;.model&apos;) }}&apos;;">
+<node CREATED="1642418596973" ID="ID_426002554" MODIFIED="1665231472863" TEXT="import { {{ @name }} } from &apos;../models/{{ mi:lower-case-add-hifen(@name,&apos;.model&apos;) }}&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -3076,9 +3076,9 @@
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1639741342682" ID="ID_583706444" MODIFIED="1639741345832" TEXT="findAll">
+<node CREATED="1639741342682" FOLDED="true" ID="ID_583706444" MODIFIED="1665230751939" TEXT="findAll">
 <icon BUILTIN="Descriptor.grouping"/>
-<node CREATED="1642418964563" ID="ID_906625477" MODIFIED="1664890904113" TEXT="declaraFindAll">
+<node CREATED="1642418964563" FOLDED="true" ID="ID_906625477" MODIFIED="1665230750763" TEXT="declaraFindAll">
 <icon BUILTIN="element"/>
 <node CREATED="1642419054902" ID="ID_424309565" MODIFIED="1642419056620" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -3094,7 +3094,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1639998794663" ID="ID_406783336" MODIFIED="1639998797516" TEXT="findOne">
+<node CREATED="1639998794663" FOLDED="true" ID="ID_406783336" MODIFIED="1665230752971" TEXT="findOne">
 <icon BUILTIN="Descriptor.grouping"/>
 <node CREATED="1639137206451" ID="ID_904496883" MODIFIED="1664890901298" TEXT="declaraFindOne">
 <icon BUILTIN="element"/>
@@ -3705,7 +3705,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1664892317474" FOLDED="true" ID="ID_362565083" MODIFIED="1665059435986" TEXT="addComponentTS">
+<node CREATED="1664892317474" FOLDED="true" ID="ID_362565083" MODIFIED="1665230207909" TEXT="addComponentTS">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_944548407" MODIFIED="1664971835071" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -3925,7 +3925,7 @@
 </node>
 <node CREATED="1664892586931" ID="ID_1752649342" MODIFIED="1665058648474" TEXT="patterns">
 <icon BUILTIN="element"/>
-<node CREATED="1664892598242" ID="ID_1183117853" MODIFIED="1664892603087" TEXT="declaraImport">
+<node CREATED="1664892598242" FOLDED="true" ID="ID_1183117853" MODIFIED="1665229911237" TEXT="declaraImport">
 <icon BUILTIN="element"/>
 <node CREATED="1642765517969" ID="ID_1962334106" MODIFIED="1642765665523" TEXT="import { Component, OnInit } from &apos;@angular/core&apos;;">
 <icon BUILTIN="tag_green"/>
@@ -4530,7 +4530,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642765134032" FOLDED="true" ID="ID_1931830464" MODIFIED="1665143265599" TEXT="listComponentTS">
+<node CREATED="1642765134032" FOLDED="true" ID="ID_1931830464" MODIFIED="1665231489211" TEXT="listComponentTS">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_905424789" MODIFIED="1641817897029" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -6263,7 +6263,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642422161038" FOLDED="true" ID="ID_957406446" MODIFIED="1665146878175" TEXT="detailsComponentTS">
+<node CREATED="1642422161038" ID="ID_957406446" MODIFIED="1665231490683" TEXT="detailsComponentTS">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_911661603" MODIFIED="1641817897029" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -6455,7 +6455,7 @@
 <node CREATED="1643196830038" ID="ID_904104980" MODIFIED="1643200336353" TEXT="import { ActivatedRoute, Router } from &apos;@angular/router&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1642422431867" ID="ID_1168014194" MODIFIED="1642422674118" TEXT="import { {{ $editorClass/@name }} } from &apos;src/app/models/{{ mi:lower-case-add-hifen($editorClass/@name,&apos;.model&apos;) }}&apos;;">
+<node CREATED="1642422431867" ID="ID_1168014194" MODIFIED="1665231533724" TEXT="import { {{ $editorClass/@name }} } from &apos;src/app/models/{{ mi:lower-case-add-hifen($editorClass/@name,&apos;.model&apos;) }}&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -6560,14 +6560,14 @@
 <node CREATED="1643197139576" ID="ID_1415863864" MODIFIED="1643197144511" TEXT="    this.message = &apos;&apos;;">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1643197156848" ID="ID_1691392093" MODIFIED="1643197159519" TEXT="    this.getTutorial(this.route.snapshot.params.id);">
+<node CREATED="1643197156848" ID="ID_1691392093" MODIFIED="1665230263870" TEXT="    this.get{{ $editorClass/@name }}(this.route.snapshot.params.id);">
 <icon BUILTIN="tag_green"/>
 </node>
 <node CREATED="1642592068034" ID="ID_18577292" MODIFIED="1642592073630" TEXT="  }">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
-<node CREATED="1643197393209" FOLDED="true" ID="ID_427764518" MODIFIED="1665145752348" TEXT="declaraGetEntity">
+<node CREATED="1643197393209" ID="ID_427764518" MODIFIED="1665230253779" TEXT="declaraGetEntity">
 <icon BUILTIN="element"/>
 <node CREATED="1643197750530" ID="ID_293572788" MODIFIED="1643197752441" TEXT="">
 <icon BUILTIN="tag_green"/>
@@ -6773,7 +6773,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642423384273" FOLDED="true" ID="ID_551329944" MODIFIED="1665146876205" TEXT="templates">
+<node CREATED="1642423384273" ID="ID_551329944" MODIFIED="1665230338002" TEXT="templates">
 <icon BUILTIN="element"/>
 <node CREATED="1642423387860" ID="ID_161814784" MODIFIED="1642423390241" TEXT="mode">
 <icon BUILTIN="element"/>
@@ -6960,7 +6960,7 @@
 <node CREATED="1642424195122" ID="ID_1146267895" MODIFIED="1642424207297" TEXT="inicializaInstanciaClasseValoresDefault">
 <icon BUILTIN="tag_green"/>
 </node>
-<node CREATED="1642424212690" FOLDED="true" ID="ID_12019589" MODIFIED="1642424216920" TEXT="template">
+<node CREATED="1642424212690" ID="ID_12019589" MODIFIED="1665230348186" TEXT="template">
 <icon BUILTIN="element"/>
 <node CREATED="1642423403032" ID="ID_540591157" MODIFIED="1642423413790" TEXT="match">
 <icon BUILTIN="element"/>
@@ -7014,7 +7014,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1642424212690" FOLDED="true" ID="ID_248779761" MODIFIED="1642424216920" TEXT="template">
+<node CREATED="1642424212690" ID="ID_248779761" MODIFIED="1665230346624" TEXT="template">
 <icon BUILTIN="element"/>
 <node CREATED="1642423403032" ID="ID_58435240" MODIFIED="1642423413790" TEXT="match">
 <icon BUILTIN="element"/>
@@ -7042,7 +7042,7 @@
 </node>
 <node CREATED="1642590943131" ID="ID_1226119315" MODIFIED="1642590944691" TEXT="expr">
 <icon BUILTIN="element"/>
-<node CREATED="1642590964450" ID="ID_405968096" MODIFIED="1642590966900" TEXT="mi:if-else(position() = last(),&apos;&apos;,&apos;,&apos;)">
+<node CREATED="1642590964450" ID="ID_405968096" MODIFIED="1665230472606" TEXT="mi:if-else(position() = last(),&apos;&apos;,&apos;,&apos;)">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
@@ -7149,7 +7149,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1643369107153" FOLDED="true" ID="ID_1241414392" MODIFIED="1665151041847" TEXT="detailsComponentHTML">
+<node CREATED="1643369107153" FOLDED="true" ID="ID_1241414392" MODIFIED="1665231322934" TEXT="detailsComponentHTML">
 <icon BUILTIN="element"/>
 <node CREATED="1641817891685" ID="ID_1026036948" MODIFIED="1641817897029" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -7468,7 +7468,7 @@
 <icon BUILTIN="textNode"/>
 </node>
 </node>
-<node CREATED="1641990798095" FOLDED="true" ID="ID_372837615" MODIFIED="1641990800751" TEXT="debug">
+<node CREATED="1641990798095" FOLDED="true" ID="ID_372837615" MODIFIED="1665229891115" TEXT="debug">
 <icon BUILTIN="element"/>
 <node CREATED="1641990810432" ID="ID_276491383" MODIFIED="1641991076554" TEXT="match em {{ local-name(.) }} no nivel {{ functx:depth-of-node(.) }}">
 <icon BUILTIN="tag_green"/>
@@ -7477,7 +7477,7 @@
 </node>
 <node CREATED="1641818342200" ID="ID_1493906279" MODIFIED="1641818346038" TEXT="templates">
 <icon BUILTIN="element"/>
-<node CREATED="1641818346552" FOLDED="true" ID="ID_1829952965" MODIFIED="1665149344989" TEXT="mode">
+<node CREATED="1641818346552" ID="ID_1829952965" MODIFIED="1665228306497" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1641818349584" ID="ID_376772662" MODIFIED="1641989793529" TEXT="declaraCamposForm">
 <icon BUILTIN="tag_green"/>
@@ -7738,7 +7738,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1643371896262" FOLDED="true" ID="ID_768307970" MODIFIED="1665147044731" TEXT="mode">
+<node CREATED="1643371896262" ID="ID_768307970" MODIFIED="1665228311424" TEXT="mode">
 <icon BUILTIN="element"/>
 <node CREATED="1643371905348" ID="ID_1504970450" MODIFIED="1643371908024" TEXT="declaraViewerActionButtons">
 <icon BUILTIN="tag_green"/>

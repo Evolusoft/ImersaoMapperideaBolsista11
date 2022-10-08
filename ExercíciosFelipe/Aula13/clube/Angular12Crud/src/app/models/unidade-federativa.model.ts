@@ -1,4 +1,4 @@
-import { Pais } from "./Pais.model";
+import { Pais } from "./pais.model";
 
 export class UnidadeFederativa {
     id?: any;
