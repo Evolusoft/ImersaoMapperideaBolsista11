@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1664470163987" ID="ID_570783040" LINK="io.mapperidea.earlyadopter.mm" MODIFIED="1664471077324" TEXT="window">
+<node CREATED="1664470163987" ID="ID_570783040" LINK="app.mm" MODIFIED="1665495366703" TEXT="window">
 <icon BUILTIN="Package"/>
 <node CREATED="1664470223223" ID="ID_1903840568" MODIFIED="1664470226972" POSITION="right" TEXT="tutorial">
 <icon BUILTIN="Package"/>
