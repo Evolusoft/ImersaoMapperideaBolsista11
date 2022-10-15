@@ -52,6 +52,16 @@ export class TutorialsListComponent implements OnInit {
         error: (e) => console.error(e)
       });
   }
+  addNewTutorial(): void {
+    this.tutorialService.create(this.tutorials)
+      .subscribe({
+        next: (res) => {
+          console.log(res);
+          this.refreshList();
+        },
+        error: (e) => console.error(e)
+      });
+  }
 
   searchTitle(): void {
     this.currentTutorial = {};
