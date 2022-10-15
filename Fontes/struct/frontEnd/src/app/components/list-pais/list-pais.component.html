@@ -1,0 +1,83 @@
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Procurar por Sigla"
+                [(ngModel)]="sigla"
+            />
+            <div class="input-group-append">
+                <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    (click)="searchSigla()"
+                >
+                    Procurar
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Procurar por Nome do Pais"
+                [(ngModel)]="nome"
+            />
+            <div class="input-group-append">
+                <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    (click)="searchNome()"
+                >
+                    Procurar
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4>Lista de paises</h4>
+        <ul class="list-group">
+        <li
+            class="list-group-item"
+            *ngFor="let pais of paisCollection; let i = index"
+            [class.active]="i == currentIndex"
+            (click)="setActivePais(pais, i)"
+        >
+            {{ pais.nome }} {{ pais.sigla }} 
+        </li>
+        </ul>
+
+        <button class="m-3 btn btn-sm btn-danger" (click)="removeAll()">
+        Remover Tudo
+        </button>
+    </div>
+    <div class="col-md-6">
+        <div *ngIf="currentPais.id">
+        <h4>Pais</h4>
+        <div>
+            <label><strong>Sigla:</strong></label> {{ currentPais.sigla }}
+        </div>
+        <div>
+            <label><strong>Codigo:</strong></label> {{ currentPais.codigo }}
+        </div>
+        <div>
+            <label><strong>Nome do Pais:</strong></label> {{ currentPais.nome }}
+        </div>
+        <div>
+            <label><strong>Ativo:</strong></label> {{ currentPais.ativo }}
+        </div>
+
+        <a class="badge badge-warning" routerLink="/paises/{{ currentPais.id }}">
+            Editar
+        </a>
+        </div>
+
+        <div *ngIf="!currentPais">
+        <br />
+        <p>Por favor selecione uma linha da lista de Pais...</p>
+        </div>
+    </div>
+</div>
