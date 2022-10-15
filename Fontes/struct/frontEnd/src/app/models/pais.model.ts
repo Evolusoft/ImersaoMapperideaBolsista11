@@ -1,4 +1,9 @@
-Project app not pushed to mapperidea cloud!
-maybe you forget to run:
- 
-   mapperidea push app
+export class Pais {
+    id?: any;
+    sigla?: string;
+    codigo?: number;
+    ativo?: boolean;
+    nome?: string;
+    
+}
+

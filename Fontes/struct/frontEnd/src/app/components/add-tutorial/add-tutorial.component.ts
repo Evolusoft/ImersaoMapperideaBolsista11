@@ -28,13 +28,14 @@ export class AddTutorialComponent implements OnInit {
     };
 
     this.tutorialService.create(data)
-      .subscribe({
-        next: (res) => {
-          console.log(res);
+      .subscribe(
+        response => {
+          console.log(response);
           this.submitted = true;
         },
-        error: (e) => console.error(e)
-      });
+        error => {
+          console.log(error);
+        });
   }
 
   newTutorial(): void {
@@ -45,5 +46,4 @@ export class AddTutorialComponent implements OnInit {
       published: false
     };
   }
-
 }

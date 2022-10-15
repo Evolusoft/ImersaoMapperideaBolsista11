@@ -1,4 +1,11 @@
-Project app not pushed to mapperidea cloud!
-maybe you forget to run:
- 
-   mapperidea push app
+import { Pais } from "./pais.model";
+
+export class UnidadeFederativa {
+    id?: any;
+    pais?: Pais;
+    codigo?: number;
+    sigla?: string;
+    nome?: string;
+    ativo?: boolean;
+}
+

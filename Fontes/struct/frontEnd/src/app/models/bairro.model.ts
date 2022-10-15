@@ -1,4 +1,10 @@
-Project app not pushed to mapperidea cloud!
-maybe you forget to run:
- 
-   mapperidea push app
+import { Cidade } from "./cidade.model";
+
+export class Bairro {
+    id?: any;
+    cidade?: Cidade;
+    nome?: string;
+    cepPadrao?: number;
+    ativo?: boolean;
+}
+
