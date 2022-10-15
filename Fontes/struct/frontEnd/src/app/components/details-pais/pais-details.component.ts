@@ -5,8 +5,8 @@ import { Pais } from 'src/app/models/pais.model';
 
 @Component({
   selector: 'app-details-pais',
-  templateUrl: './details-pais.component.html',
-  styleUrls: ['./details-pais.component.css']
+  templateUrl: './pais-details.component.html',
+  styleUrls: ['./pais-details.component.css']
 })
 export class DetailsPaisComponent implements OnInit {
 
