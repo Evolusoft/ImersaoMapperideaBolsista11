@@ -1,21 +1,40 @@
 const db = require("../models");
 const Pais = db.paises;
+validaCamposRequeridosPais = (req) => {
+const CamposRequeridosEmpty = new Array();
+if (!req.body.sigla) {
+        camposRequeridosEmpty.push("sigla");
+ }
+if (!req.body.codigo) {
+        camposRequeridosEmpty.push("codigo");
+ }
+if (!req.body.nome) {
+        camposRequeridosEmpty.push("nome");
+ }
+if (!req.body.ativo) {
+        camposRequeridosEmpty.push("ativo");
+ }
+return CamposRequeridosEmpty;
+}
 
 //Cria e salva um novo documento para nova entidade
 exports.create = (req, res) => {
     // Validate request
-    if (!req.body.sigla) {
-        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
-        return; }
     if (!req.body.nome) {
-          res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
-          return;
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
 }
-
+const camposRequeridosEmpty = validaCamposRequeridos.Pais (req);
+if (camposRequeridosEmpty.length > 0) {
+res.status(400).send({message: "campos requeridos ("+camposRequeridosEmpty.join (",") + "nao podem ser vazios" });
+return;
+}
    // Create a Pais
    const pais = new Pais ({
-      sigla: req.body.sigla ? req.body.sigla : null,
-      nome: req.body.nome ? req.body.nome : null  
+      sigla: req.body.sigla ? req.body.sigla : null : ,
+      codigo: req.body.codigo ? req.body.codigo : 0 : ,
+      nome: req.body.nome ? req.body.nome : null : ,
+      ativo: req.body.ativo ? req.body.ativo : false : 
    });
    pais
       .save(pais)
@@ -32,11 +51,7 @@ exports.create = (req, res) => {
 
 //Cria e salva um novo documento para nova entidade
 exports.findAll = (req, res) => {
-  const sigla = req.query.sigla;  
-  const nome = req.query.nome; 
-var condition = sigla ? { sigla: { $regex: new RegExp(sigla), $options: "i" } } : {};
-var condition = nome ? { sigla: { $regex: new RegExp(nome), $options: "i" } } : {};
-
+var condition = {};
    Pais.find(condition)
      .then(data => {
        res.send(data);
@@ -51,7 +66,13 @@ var condition = nome ? { sigla: { $regex: new RegExp(nome), $options: "i" } } : 
 
 //Busca a entidade Pais por id
 exports.findOne = (req, res) => {
-const id = req.params.id; 
+    // Validate request
+    if (!req.body.id) {
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
+}
+
+  const id = req.params.id; 
 
    Pais.findById(id)
      .then(data => {
@@ -69,16 +90,22 @@ else res.send(data);
 
 //Altera uma entidade
 exports.update = (req, res) => {
-    if (!req.body) {
-      return res.status(400).send({ 
-        message: "Conteudo nao pode ser vazio!" 
-      });        
+    // Validate request
+    if (!req.body.id) {
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
 }
+const camposRequeridosEmpty = validaCamposRequeridos.Pais (req);
+if (camposRequeridosEmpty.length > 0) {
+res.status(400).send({message: "campos requeridos ("+camposRequeridosEmpty.join (",") + "nao podem ser vazios" });
+return;
+}
+
   const id = req.params.id; 
 
    Pais.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
      .then(data => {
-        if (!data) {
+ if (!data) {
            res.status(404).send({ message: ` A entidade Pais Cannot update com id=${id}. Maybe Pais was not found!`
         });
       } else res.send({ message: `Pais com id=${id} foi atualizada com sucesso.` })
@@ -86,16 +113,22 @@ exports.update = (req, res) => {
      .catch(err => {
        res.status(500).send({
          message:
-           "Erro desconhecido aconteceu ao alterar entidade Pais."
+           err.message || "Erro desconhecido aconteceu ao alterar entidade Pais."
        });
      });
 };
 
 //Remove a entidade Pais por id
 exports.delete = (req, res) => {
+    // Validate request
+    if (!req.body.id) {
+        res.status(400).send({ message: "Conteudo nao pode ser vazio!" });
+        return;
+}
+
   const id = req.params.id; 
 
-   Pais.findByIdAndRemove(id, { useFindAndModify: false })
+   Pais.findByIdAndRemove(id)
      .then(data => {
  if (!data) {
            res.status(404).send({ message: ` A entidade Pais Cannot delete entidade com id=${id}. Maybe Pais was not found!`
@@ -103,9 +136,8 @@ exports.delete = (req, res) => {
 } else {
         res.send({
        message: `Pais com id=${id} foi excluida com sucesso.` });
-      
-    }
-  })
+      }
+    })
      .catch(err => {
        res.status(500).send({
          message:
@@ -116,6 +148,7 @@ exports.delete = (req, res) => {
 
 //Exclui todos os registros
 exports.deleteAll = (req, res) => {
+var condition = {};
    Pais.deleteMany({})
      .then(data => {
        res.send({
@@ -126,6 +159,20 @@ exports.deleteAll = (req, res) => {
        res.status(500).send({
          message:
            err.message || "Some error occurred while deleting todos Pais."
+       });
+     });
+ };
+
+//Procura por entidade Pais onde campo booleano ativo seja true
+exports.findAllAtivo = (req, res) => {
+   Pais.find({ ativo: true })
+     .then(data => {
+       res.send(data);
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Some error occurred while retrieving Pais."
        });
      });
  };

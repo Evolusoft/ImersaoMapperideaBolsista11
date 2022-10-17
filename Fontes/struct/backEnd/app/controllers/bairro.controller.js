@@ -3,16 +3,16 @@ const Bairro = db.bairros;
 validaCamposRequeridosBairro = (req) => {
 const CamposRequeridosEmpty = new Array();
 if (!req.body.cidade) {
-camposRequeridosEmpty.push("cidade");
+        camposRequeridosEmpty.push("cidade");
  }
 if (!req.body.nome) {
-camposRequeridosEmpty.push("nome");
+        camposRequeridosEmpty.push("nome");
  }
 if (!req.body.cepPadrao) {
-camposRequeridosEmpty.push("cepPadrao");
+        camposRequeridosEmpty.push("cepPadrao");
  }
 if (!req.body.ativo) {
-camposRequeridosEmpty.push("ativo");
+        camposRequeridosEmpty.push("ativo");
  }
 return CamposRequeridosEmpty;
 }

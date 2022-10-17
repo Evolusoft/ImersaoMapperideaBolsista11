@@ -1,12 +1,21 @@
 const db = require("../models");
-const UnidadeFederativa = db.estados;
+const UnidadeFederativa = db.unidadesFederativa;
 validaCamposRequeridosUnidadeFederativa = (req) => {
 const CamposRequeridosEmpty = new Array();
+if (!req.body.pais) {
+        camposRequeridosEmpty.push("pais");
+ }
+if (!req.body.codigo) {
+        camposRequeridosEmpty.push("codigo");
+ }
 if (!req.body.sigla) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
+        camposRequeridosEmpty.push("sigla");
  }
 if (!req.body.nome) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
+        camposRequeridosEmpty.push("nome");
+ }
+if (!req.body.ativo) {
+        camposRequeridosEmpty.push("ativo");
  }
 return CamposRequeridosEmpty;
 }
@@ -25,8 +34,10 @@ return;
 }
    // Create a UnidadeFederativa
    const unidadeFederativa = new UnidadeFederativa ({
-      sigla: req.body.sigla ? req.body.sigla : null ,
-      nome: req.body.nome ? req.body.nome : null
+      codigo: req.body.codigo ? req.body.codigo : 0 : ,
+      sigla: req.body.sigla ? req.body.sigla : null : ,
+      nome: req.body.nome ? req.body.nome : null : ,
+      ativo: req.body.ativo ? req.body.ativo : false : 
    });
    unidadeFederativa
       .save(unidadeFederativa)
@@ -151,6 +162,20 @@ var condition = {};
        res.status(500).send({
          message:
            err.message || "Some error occurred while deleting todos UnidadeFederativa."
+       });
+     });
+ };
+
+//Procura por entidade UnidadeFederativa onde campo booleano ativo seja true
+exports.findAllAtivo = (req, res) => {
+   UnidadeFederativa.find({ ativo: true })
+     .then(data => {
+       res.send(data);
+     })
+     .catch(err => {
+       res.status(500).send({
+         message:
+           err.message || "Some error occurred while retrieving UnidadeFederativa."
        });
      });
  };

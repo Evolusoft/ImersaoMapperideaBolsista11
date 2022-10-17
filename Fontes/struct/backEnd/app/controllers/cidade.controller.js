@@ -2,17 +2,20 @@ const db = require("../models");
 const Cidade = db.cidades;
 validaCamposRequeridosCidade = (req) => {
 const CamposRequeridosEmpty = new Array();
-if (!req.body.sigla) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
+if (!req.body.uf) {
+        camposRequeridosEmpty.push("uf");
  }
-if (!req.body.numero) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
+if (!req.body.codigo) {
+        camposRequeridosEmpty.push("codigo");
  }
-if (!req.body.texto) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
+if (!req.body.nome) {
+        camposRequeridosEmpty.push("nome");
  }
-if (!req.body.ativo) {
-camposRequeridosEmpty.push(" {[ concat(substring-after($atributoPai,'body.'),mi:if-else($level = 0, ' ', ' .'),@name) }]");
+if (!req.body.bairros) {
+        camposRequeridosEmpty.push("bairros");
+ }
+if (!req.body.bairrosDesativados) {
+        camposRequeridosEmpty.push("bairrosDesativados");
  }
 return CamposRequeridosEmpty;
 }
@@ -31,8 +34,8 @@ return;
 }
    // Create a Cidade
    const cidade = new Cidade ({
-      codigo: req.body.codigo ? req.body.codigo : 0,
-      nome: req.body.nome ? req.body.nome : null
+      codigo: req.body.codigo ? req.body.codigo : 0 : ,
+      nome: req.body.nome ? req.body.nome : null : ,
    });
    cidade
       .save(cidade)
