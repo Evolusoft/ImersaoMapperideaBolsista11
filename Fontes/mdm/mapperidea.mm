@@ -2501,7 +2501,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1666008873839" FOLDED="true" ID="ID_516641297" MODIFIED="1666010863553" TEXT="routes">
+<node CREATED="1666008873839" ID="ID_516641297" MODIFIED="1666015628410" TEXT="routes">
 <icon BUILTIN="element"/>
 <node CREATED="1666008915413" ID="ID_1763452409" MODIFIED="1666008964540" TEXT="parameters">
 <icon BUILTIN="element"/>
@@ -2670,6 +2670,192 @@
 <node CREATED="1666009497834" ID="ID_1341605716" MODIFIED="1666009563953" TEXT="fechaRoutes">
 <icon BUILTIN="element"/>
 <node CREATED="1666009553805" ID="ID_1370110666" MODIFIED="1666009579121" TEXT="};">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1666015595316" ID="ID_1785573033" MODIFIED="1666015606330" TEXT="server">
+<icon BUILTIN="element"/>
+<node CREATED="1666008915413" ID="ID_914410232" MODIFIED="1666008964540" TEXT="parameters">
+<icon BUILTIN="element"/>
+<node CREATED="1666008922742" ID="ID_700597158" MODIFIED="1666008964540" TEXT="entityName">
+<icon BUILTIN="element"/>
+<node CREATED="1666008942554" ID="ID_1489884736" MODIFIED="1666008957979" TEXT="NOT_DEFINED">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+<node CREATED="1666016110229" ID="ID_1936892034" MODIFIED="1666016401625" TEXT="start">
+<icon BUILTIN="element"/>
+<node CREATED="1657701020059" ID="ID_1341954057" MODIFIED="1659306649226" TEXT="match">
+<icon BUILTIN="element"/>
+<node CREATED="1638533028623" ID="ID_1542250834" MODIFIED="1638533094276" TEXT="/classes/class[@name = $entityName]">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016119398" ID="ID_820511997" MODIFIED="1666016131116" TEXT="body">
+<icon BUILTIN="element"/>
+<node CREATED="1666016140271" ID="ID_866985519" MODIFIED="1666016259747" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016170735" ID="ID_424558082" MODIFIED="1666016253948" TEXT="declaraConstExpress">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_1931461555" MODIFIED="1666016259749" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016173574" ID="ID_78765116" MODIFIED="1666016253948" TEXT="declaraConstCors">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_731228706" MODIFIED="1666016259749" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016179454" ID="ID_609226842" MODIFIED="1666016253948" TEXT="declaraApp">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_507419244" MODIFIED="1666016259749" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016186118" ID="ID_202336031" MODIFIED="1666016253949" TEXT="origemApp">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_1811092424" MODIFIED="1666016259749" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016190846" ID="ID_1693010110" MODIFIED="1666016253949" TEXT="appUse">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_1948991056" MODIFIED="1666016259749" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016198598" ID="ID_248806639" MODIFIED="1666016253949" TEXT="requireModels">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_831982213" MODIFIED="1666016259748" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016205446" ID="ID_1775827910" MODIFIED="1666016253949" TEXT="inicioConectaDB">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_1937540971" MODIFIED="1666016259748" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016211710" ID="ID_313307827" MODIFIED="1666016253949" TEXT="conectaDB">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_585807714" MODIFIED="1666016259748" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016219422" ID="ID_337690129" MODIFIED="1666016253949" TEXT="fechaConectaDB">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_1211465262" MODIFIED="1666016259748" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016226999" ID="ID_1551256636" MODIFIED="1666016253948" TEXT="mensagemDB">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016140271" ID="ID_918641464" MODIFIED="1666016259748" TEXT="write-pattern">
+<icon BUILTIN="element"/>
+<node CREATED="1666016232255" ID="ID_57651314" MODIFIED="1666016253948" TEXT="erroDB">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1666015636620" ID="ID_1932668271" MODIFIED="1666015640618" TEXT="patterns">
+<icon BUILTIN="element"/>
+<node CREATED="1666015642669" ID="ID_229885374" MODIFIED="1666016165606" TEXT="declaraConstExpress">
+<icon BUILTIN="element"/>
+<node CREATED="1666015656286" ID="ID_1560587100" MODIFIED="1666015675227" TEXT="const express = require(&quot;express&quot;);">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666015677070" ID="ID_1387663731" MODIFIED="1666015702075" TEXT="declaraConstCors">
+<icon BUILTIN="element"/>
+<node CREATED="1666015696375" ID="ID_1599400567" MODIFIED="1666015699067" TEXT="const cors = require(&quot;cors&quot;);">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666015724133" ID="ID_172019311" MODIFIED="1666015752236" TEXT="declaraApp">
+<icon BUILTIN="element"/>
+<node CREATED="1666015733318" ID="ID_709665058" MODIFIED="1666015801523" TEXT="const app = express();">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666015753661" ID="ID_56500993" MODIFIED="1666015761923" TEXT="origemApp">
+<icon BUILTIN="element"/>
+<node CREATED="1666015762926" ID="ID_1323503200" MODIFIED="1666015773387" TEXT="var corsOptions = {   origin: &quot;http://localhost:8081&quot; };">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666015783965" ID="ID_476005594" MODIFIED="1666015797011" TEXT="appUse">
+<icon BUILTIN="element"/>
+<node CREATED="1666015787534" ID="ID_1209927155" MODIFIED="1666015794133" TEXT="app.use(cors(corsOptions));">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666015820669" ID="ID_1053488956" MODIFIED="1666015823144" TEXT="app.use(express.json());">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666015830174" ID="ID_1397501760" MODIFIED="1666015832763" TEXT="app.use(express.urlencoded({ extended: true }));">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666015841168" ID="ID_1296160011" MODIFIED="1666015852996" TEXT="requireModels">
+<icon BUILTIN="element"/>
+<node CREATED="1666015844893" ID="ID_761989976" MODIFIED="1666015848107" TEXT="const db = require(&quot;./app/models&quot;);">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666015873983" ID="ID_1279589239" MODIFIED="1666015895267" TEXT="inicioConectaDB">
+<icon BUILTIN="element"/>
+<node CREATED="1666015891262" ID="ID_182735307" MODIFIED="1666015898627" TEXT="db.mongoose">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666015904677" ID="ID_200321816" MODIFIED="1666015912507" TEXT="conectaDB">
+<icon BUILTIN="element"/>
+<node CREATED="1666015913686" ID="ID_1282397870" MODIFIED="1666015916299" TEXT="  .connect(db.url, {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666015923846" ID="ID_1255567931" MODIFIED="1666015926524" TEXT="    useNewUrlParser: true,">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666015932622" ID="ID_59146568" MODIFIED="1666015934666" TEXT="    useUnifiedTopology: true">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666015943958" ID="ID_1116366994" MODIFIED="1666015968589" TEXT="fechaConectaDB">
+<icon BUILTIN="element"/>
+<node CREATED="1666015951422" ID="ID_755941252" MODIFIED="1666015954939" TEXT="  })">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666015969822" ID="ID_578548581" MODIFIED="1666015980235" TEXT="mensagemDB">
+<icon BUILTIN="element"/>
+<node CREATED="1666015981638" ID="ID_1558784702" MODIFIED="1666015984462" TEXT="  .then(() =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666016001030" ID="ID_1076389145" MODIFIED="1666016003133" TEXT="    console.log(&quot;Connected to the database!&quot;);">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666016014574" ID="ID_1722160322" MODIFIED="1666016023915" TEXT="  })">
+<icon BUILTIN="tag_green"/>
+</node>
+</node>
+<node CREATED="1666016028550" ID="ID_521830043" MODIFIED="1666016034356" TEXT="erroDB">
+<icon BUILTIN="element"/>
+<node CREATED="1666016036046" ID="ID_56937048" MODIFIED="1666016040099" TEXT="  .catch(err =&gt; {">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666016046405" ID="ID_860880864" MODIFIED="1666016048380" TEXT="    console.log(&quot;Cannot connect to the database!&quot;, err);">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666016054510" ID="ID_874339883" MODIFIED="1666016056860" TEXT="    process.exit();">
+<icon BUILTIN="tag_green"/>
+</node>
+<node CREATED="1666016068278" ID="ID_1907670976" MODIFIED="1666016070771" TEXT="  });">
 <icon BUILTIN="tag_green"/>
 </node>
 </node>
