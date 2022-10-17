@@ -28,7 +28,7 @@ db.mongoose
     console.log("Cannot connect to the database!", err);
     process.exit();
   });
-
+//TERMINAR MAPPERIDEA AQUI
 // simple route
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
@@ -36,7 +36,10 @@ app.get("/", (req, res) => {
 
 require("./app/routes/tutorial.routes")(app);
 require("./app/routes/pais.routes")(app);
-
+require("./app/routes/cidade.routes")(app);
+require("./app/routes/bairro.routes")(app);
+require("./app/routes/unidadefederativa.routes")(app);
+require("./app/routes/pessoa.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
